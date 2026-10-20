@@ -1,0 +1,903 @@
+PROMPT MESTRE DEFINITIVO — BIOSITE PREMIUM VÃBORA SOLUÇÕES
+
+Desenvolva um BioSite comercial completo, funcional, responsivo e de alto padrão para a empresa VãBora Soluções. Execute o projeto com atenção máxima ao design, à qualidade visual, à fidelidade dos produtos, à organização do catálogo, à experiência mobile e ao funcionamento de todos os links e botões.
+
+Não quero apenas sugestões, um planejamento, um wireframe, uma imagem de referência ou um protótipo estático. Quero a implementação real do site dentro das capacidades do ambiente de desenvolvimento utilizado.
+
+Se estiver trabalhando no Google AI Studio ou em outro ambiente capaz de gerar aplicações, implemente a aplicação funcional, gere os arquivos necessários, execute os testes disponíveis e corrija os problemas identificados antes de concluir.
+
+Se alguma integração exigir configuração externa, explique exatamente o que falta, sem simular uma funcionalidade que ainda não existe.
+
+1. IDENTIDADE E POSICIONAMENTO DA EMPRESA
+
+Nome: VãBora Soluções.
+
+Slogan oficial: Aproxime. Conecte. VãBora.
+
+Título principal:
+VãBora Soluções | Aproxime. Conecte. VãBora.
+
+Posicionamento comercial:
+Conectando o balcão da sua empresa ao mundo digital.
+
+Descrição institucional:
+A VãBora Soluções conecta empresas e clientes por meio de tecnologia NFC, QR Codes dinâmicos, displays inteligentes, cartões NFC, soluções digitais e ferramentas para fortalecer a presença online dos negócios.
+
+Atendemos empresas, hotéis, restaurantes, clínicas, lojas, consultórios e prestadores de serviços que desejam facilitar a interação com seus clientes e modernizar sua presença digital.
+
+Polos de atendimento:
+
+* Curitiba/PR.
+* Serra Talhada/PE.
+
+A comunicação deve transmitir tecnologia, confiança, sofisticação, praticidade e profissionalismo.
+
+A VãBora não deve parecer apenas uma loja de placas. O posicionamento precisa mostrar que a empresa oferece soluções integradas para conectar estabelecimentos físicos aos seus canais digitais.
+
+2. IDENTIDADE VISUAL — PRETO, AZUL E ACABAMENTO PREMIUM
+
+Desenvolva uma identidade visual moderna, elegante e tecnológica.
+
+Paleta principal:
+
+* Preto profundo: #050608.
+* Preto secundário: #0B0F14.
+* Azul-marinho: #101B32.
+* Azul elétrico: #1677FF.
+* Azul ciano: #35CFFF.
+* Branco: #FFFFFF.
+* Cinza-claro: #B8C2D1.
+
+Utilize gradientes azuis com moderação, superfícies escuras, bordas finas, sombras suaves, profundidade visual e reflexos luminosos.
+
+O site deve transmitir a sensação de uma marca premium de tecnologia, com acabamento visual comparável ao de empresas modernas de software, tecnologia NFC e soluções digitais.
+
+Use:
+
+* Tipografia moderna e legível.
+* Títulos fortes e bem hierarquizados.
+* Espaçamento generoso.
+* Cartões elegantes com cantos arredondados.
+* Efeitos de glassmorphism discretos.
+* Bordas iluminadas em azul.
+* Sombras suaves.
+* Gradientes radiais atrás dos elementos principais.
+* Ícones profissionais.
+* Microinterações rápidas e refinadas.
+
+Não exagere nos efeitos neon. O objetivo é sofisticação, não poluição visual.
+
+Os efeitos de luz devem destacar os elementos mais importantes, especialmente a logomarca, os botões de contato, os produtos premium e os combos.
+
+Mantenha contraste suficiente para que todos os textos sejam fáceis de ler.
+
+3. LOGOMARCA OFICIAL
+
+Arquivo original da logomarca:
+https://i.postimg.cc/PqF7G23b/IMG-0891.png
+
+Esta é a imagem oficial da marca e deve ser utilizada no site.
+
+Instruções obrigatórias:
+
+* Carregue a imagem original fornecida.
+* Preserve o desenho, as proporções, as letras, as cores e os detalhes.
+* Não redesenhe a logomarca.
+* Não substitua a imagem por uma versão inventada pela inteligência artificial.
+* Não distorça a proporção.
+* Não corte partes da marca.
+* Utilize PNG com transparência verdadeira, caso o arquivo original tenha fundo transparente.
+* Caso seja necessário remover o fundo, faça isso sem danificar os contornos, as letras ou os detalhes metálicos.
+* Não simule transparência com quadriculados.
+* Exiba a logomarca em tamanho generoso na abertura do site.
+* Aplique um halo azul discreto atrás da marca.
+* Valorize os detalhes metálicos originais, se existentes.
+* Utilize uma animação de entrada suave, com opacidade, escala e iluminação controlada.
+* Não faça a marca piscar, girar excessivamente ou sofrer deformações.
+* Utilize a marca também no rodapé e nos metadados de compartilhamento, quando tecnicamente adequado.
+
+A logomarca precisa ser o principal ponto de atenção da primeira tela.
+
+4. LINKS OFICIAIS E CONTATOS
+
+Instagram oficial
+
+https://www.instagram.com/vamboraserratalhada?xtok=anU1dDJ0d2V2NHRt&utm_source=qr
+
+Utilize esse endereço exato no ícone e no botão do Instagram.
+
+WhatsApp — Curitiba/PR
+
+Número: (41) 98844-2761.
+
+Link:
+https://wa.me/5541988442761
+
+WhatsApp — Serra Talhada/PE
+
+Número: (87) 99157-8326.
+
+Link:
+https://wa.me/5587991578326
+
+Site oficial
+
+https://vamborasolucoes.com.br
+
+Todos os links devem ser clicáveis e testados.
+
+Os botões de WhatsApp devem abrir uma conversa com a unidade correspondente. Quando possível, utilize uma mensagem pré-preenchida com o nome do produto ou serviço selecionado.
+
+Exemplo de mensagem:
+
+“Olá! Conheci a VãBora Soluções pelo site e gostaria de saber mais sobre [nome do produto ou serviço].”
+
+Codifique corretamente as mensagens dos links de WhatsApp.
+
+Não invente links para redes sociais, endereços, telefones ou canais que não foram fornecidos.
+
+Utilize ícones reconhecíveis de WhatsApp, Instagram e site, com detalhes luminosos elegantes e animações suaves.
+
+5. EXPERIÊNCIA DO SITE — ROLAGEM VERTICAL E CARROSSÉIS
+
+O site deve combinar rolagem vertical natural com carrosséis horizontais de produtos.
+
+Não transforme a página inteira em um único carrossel. Organize o conteúdo em seções verticais independentes.
+
+Quando o visitante descer a página, as seções e os cartões devem aparecer progressivamente, com animações suaves.
+
+Implementar:
+
+* Animação de entrada com opacidade e deslocamento discreto.
+* Revelação dos cartões conforme entram na área visível.
+* Carrosséis horizontais com navegação por toque.
+* Arraste com o dedo em celulares e tablets.
+* Setas de navegação em desktops, quando úteis.
+* Indicadores de posição nos carrosséis, quando necessários.
+* Navegação por teclado.
+* Estados visuais de foco.
+* Transições leves.
+* Respeito à preferência por redução de movimento.
+* Navegação rápida entre as categorias.
+
+No celular, mostre parte do próximo cartão quando isso ajudar o usuário a perceber que pode deslizar a galeria.
+
+Não utilize animações pesadas, rolagem forçada, transições intermináveis ou efeitos que atrapalhem a navegação.
+
+O site precisa funcionar perfeitamente em iPhone, iPad, Android, notebooks e desktops.
+
+6. PRIMEIRA SEÇÃO — APRESENTAÇÃO PREMIUM
+
+Crie uma abertura visual marcante.
+
+Elementos:
+
+1. Logomarca original em destaque.
+2. Nome VãBora Soluções.
+3. Slogan oficial.
+4. Título comercial.
+5. Texto de apresentação.
+6. Botões de contato.
+7. Identificação dos polos de atendimento.
+
+Título:
+“Transforme cada aproximação em uma nova oportunidade de negócio.”
+
+Texto:
+“Conectamos sua empresa ao mundo digital com tecnologia NFC, QR Codes inteligentes, displays personalizados e soluções para fortalecer sua presença online e melhorar a experiência dos seus clientes.”
+
+Texto complementar:
+“Da primeira interação no balcão à presença digital da sua marca, oferecemos soluções práticas para aproximar negócios e pessoas.”
+
+Identificação:
+Curitiba/PR | Serra Talhada/PE.
+
+Botões:
+
+* Falar com Curitiba.
+* Falar com Serra Talhada.
+* Conhecer as soluções.
+
+O botão “Falar com Curitiba” deve abrir o WhatsApp da unidade Curitiba.
+
+O botão “Falar com Serra Talhada” deve abrir o WhatsApp da unidade Serra Talhada.
+
+O botão “Conhecer as soluções” deve conduzir ao catálogo.
+
+Visual:
+
+* Fundo preto profundo.
+* Gradiente azul-marinho.
+* Iluminação radial azul atrás da logomarca.
+* Elementos luminosos discretos.
+* Tipografia de alto impacto.
+* Animação suave na entrada.
+* Botões com bordas iluminadas.
+
+A primeira tela deve causar uma impressão de qualidade e profissionalismo imediatamente.
+
+7. APRESENTAÇÃO DAS SOLUÇÕES
+
+Crie uma seção introdutória com quatro áreas visuais:
+
+1. Placas e displays inteligentes.
+2. Cartões e tags NFC.
+3. BioSites e presença digital.
+4. Gestão de reputação e feedbacks.
+
+Texto de apresentação:
+
+“Tecnologia para aproximar sua empresa dos clientes.”
+
+“Descubra soluções que facilitam o acesso às suas avaliações, aos seus canais digitais e às informações do seu negócio. Escolha o formato ideal para o balcão, a mesa, o quarto, o consultório ou a equipe comercial.”
+
+Cada área deve conduzir à categoria correspondente do catálogo.
+
+8. GALERIA 1 — PLACAS EM L RESINADAS | 11 × 16 CM
+
+Utilize exclusivamente as seguintes fotografias:
+
+1. https://i.postimg.cc/BZCV4SVc/IMG-0706.jpg
+2. https://i.postimg.cc/2jxKrkKQ/IMG-0649.jpg
+3. https://i.postimg.cc/BZCV4SV5/IMG-0703.jpg
+4. https://i.postimg.cc/MZYFq6Fm/IMG-0705.jpg
+
+Título:
+“Displays Premium em L”
+
+Subtítulo:
+“Mais destaque para sua marca no balcão.”
+
+Descrição:
+“Displays inteligentes desenvolvidos para recepções de hotéis, clínicas, restaurantes, lojas e estabelecimentos com grande circulação de clientes. Facilite o acesso às avaliações do Google e aos canais digitais da sua empresa com uma apresentação elegante e profissional.”
+
+Produtos e preços:
+
+* Google Padrão — Preto ou Branco: R$ 139,00.
+* Google Personalizada — com sua marca: R$ 179,00.
+* MultiLinks Padrão: R$ 139,00.
+* MultiLinks Padrão + BioSite Essencial: R$ 219,00.
+* MultiLinks 100% Personalizada em Resina — Combo Completo: R$ 249,00.
+
+Cada produto deve ter cartão próprio, preço visível e botão de contato.
+
+Não associe uma fotografia a uma variação específica sem confirmar visualmente que ela corresponde ao produto anunciado.
+
+Não invente características técnicas ou funcionalidades não informadas.
+
+9. GALERIA 2 — PLACAS PLANAS 10 × 10 CM PADRÃO
+
+Utilize exclusivamente estas fotografias:
+
+1. https://i.postimg.cc/yxzzJ7qC/IMG-0653.jpg
+2. https://i.postimg.cc/HnCCJTGm/IMG-0654.jpg
+3. https://i.postimg.cc/L5MMqmd2/IMG-0655.jpg
+4. https://i.postimg.cc/J0WWyRw1/IMG-0656.jpg
+5. https://i.postimg.cc/HnCCJTGg/IMG-0657.jpg
+
+Título:
+“Displays Planos 10 × 10 cm”
+
+Subtítulo:
+“Praticidade e tecnologia em um formato compacto.”
+
+Descrição:
+“Displays em acrílico resistente, com impressão UV, desenvolvidos para facilitar o acesso dos clientes às avaliações do Google. Possuem formato plano para instalação diretamente sobre a mesa, utilizando fita 3M.”
+
+Produto:
+
+* Google Avaliações Padrão: R$ 79,00.
+
+Não confunda os modelos padrão com os modelos personalizados.
+
+10. GALERIA 3 — PLACAS PLANAS 10 × 10 CM PERSONALIZADAS
+
+Utilize exclusivamente estas fotografias:
+
+1. https://i.postimg.cc/ZKV1m8q8/IMG-0642.jpg
+2. https://i.postimg.cc/15JLSGzH/IMG-0707.jpg
+3. https://i.postimg.cc/Qx0RDQMk/IMG-0646.jpg
+4. https://i.postimg.cc/YqbJ76SN/IMG-0893.jpg
+5. https://i.postimg.cc/KvJdbPYD/IMG-0711.jpg
+
+Título:
+“Displays Personalizados 10 × 10 cm”
+
+Subtítulo:
+“A identidade da sua empresa em cada detalhe.”
+
+Descrição:
+“Displays personalizados com a identidade visual do seu negócio, unindo tecnologia, apresentação profissional e praticidade na interação com seus clientes.”
+
+Produtos:
+
+* Google Avaliações Personalizada: R$ 119,00.
+* MultiLinks Personalizada — Combo Placa + BioSite: R$ 189,00.
+
+Utilize as fotografias reais. Não altere logotipos, cores, textos ou formatos presentes nos produtos.
+
+11. GALERIA 4 — CARTÕES INTELIGENTES NFC
+
+Utilize exclusivamente estas fotografias:
+
+1. https://i.postimg.cc/KzD0NbkF/IMG-0697.jpg
+2. https://i.postimg.cc/wvQwVzyq/IMG-0692.jpg
+3. https://i.postimg.cc/nzG3kxjH/IMG-0691.jpg
+4. https://i.postimg.cc/Y9zd37Gq/IMG-0648.jpg
+5. https://i.postimg.cc/3RFtBh43/IMG-0690.jpg
+6. https://i.postimg.cc/rmNfJT0p/IMG-0612.jpg
+
+Título:
+“Cartões Inteligentes NFC”
+
+Subtítulo:
+“Conectividade e sofisticação na palma da mão.”
+
+Descrição:
+“Cartões inteligentes com apresentação executiva, desenvolvidos para facilitar a conexão com os canais digitais da sua empresa e ampliar as possibilidades de interação com os clientes.”
+
+Produtos e preços:
+
+* Cartão Google Avaliações Padrão: R$ 49,00.
+* Cartão Google Personalizado: R$ 79,00.
+* Cartão Black Executivo: R$ 89,00.
+* Cartão Black Executivo + BioSite: R$ 169,00.
+* Cartão 100% Personalizado Frente e Verso: R$ 119,00.
+* Cartão 100% Personalizado Frente e Verso + BioSite: R$ 199,00.
+
+Crie uma galeria própria para os cartões. Preserve o formato, a proporção e os detalhes das fotografias.
+
+12. GALERIA 5 — PLACAS RESINADAS 8 × 8 CM PERSONALIZADAS
+
+Utilize exclusivamente estas fotografias:
+
+1. https://i.postimg.cc/Bbt2Kf2V/IMG-0679.jpg
+2. https://i.postimg.cc/PJN1wn17/IMG-0682.jpg
+3. https://i.postimg.cc/RhqwHxw8/IMG-0645.jpg
+4. https://i.postimg.cc/nrMqDfqw/IMG-0644.jpg
+5. https://i.postimg.cc/4ynp9Rp2/IMG-0643.jpg
+
+Título:
+“Tags Resinadas Personalizadas”
+
+Subtítulo:
+“Detalhes inteligentes para mesas e ambientes.”
+
+Descrição:
+“Tags compactas para levar a praticidade da tecnologia NFC e dos QR Codes a mesas de restaurantes, quartos de hotel, consultórios e outros ambientes de atendimento.”
+
+Produtos:
+
+* Opção B — Personalizada com Logo + Google: R$ 59,00.
+* Opção B — A partir de 5 unidades: R$ 49,00 por unidade.
+* Opção C — MultiLinks 100% Personalizada por Mesa ou Quarto: R$ 69,00.
+* Opção C — A partir de 5 unidades: R$ 55,00 por unidade.
+
+Apresente os preços unitários e as condições a partir de cinco unidades com clareza.
+
+13. GALERIA 6 — PLACAS RESINADAS 8 × 8 CM PADRÃO
+
+Utilize exclusivamente estas fotografias:
+
+1. https://i.postimg.cc/j2GnnwxQ/IMG-0639.jpg
+2. https://i.postimg.cc/Pq3Wrqwc/IMG-0614.jpg
+3. https://i.postimg.cc/5t7BNtCT/IMG-0615.jpg
+
+Título:
+“Tags Resinadas Padrão”
+
+Subtítulo:
+“Uma solução prática para facilitar o acesso às informações digitais.”
+
+Descrição:
+“Tags compactas para direcionar clientes aos canais e serviços configurados para o seu estabelecimento.”
+
+Produtos:
+
+* Opção A — 1 Link Direto: Wi-Fi, Cardápio ou Google: R$ 49,00.
+* Opção A — A partir de 5 unidades: R$ 39,00 por unidade.
+
+Não confunda esses modelos com as versões personalizadas.
+
+14. GALERIA 7 — TAGS NFC ANTIMETAL PERSONALIZADAS
+
+Utilize exclusivamente estas fotografias:
+
+1. https://i.postimg.cc/tgT6fHMk/IMG-0683.jpg
+2. https://i.postimg.cc/D0q4sf89/IMG-0650.jpg
+
+Título:
+“Tags NFC Antimetal Personalizadas”
+
+Subtítulo:
+“Personalização e tecnologia em um formato compacto.”
+
+Descrição:
+“Tags NFC com tratamento antimetal, destinadas a aplicações compatíveis com celulares e outras superfícies, conforme as especificações do produto.”
+
+Produto:
+
+* Tag Adesiva Personalizada com UV: R$ 69,00.
+
+Não prometa compatibilidade universal com todos os aparelhos. Não apresente essas tags como placas de mesa.
+
+15. GALERIA 8 — TAGS NFC ANTIMETAL SEM PERSONALIZAÇÃO
+
+Utilize exclusivamente estas fotografias:
+
+1. https://i.postimg.cc/G2D4w3PW/IMG-0673.jpg
+2. https://i.postimg.cc/NMRjCJB0/IMG-0665.jpg
+
+Título:
+“Tags NFC Antimetal Básicas”
+
+Subtítulo:
+“Funcionalidade e praticidade para aplicações compatíveis.”
+
+Descrição:
+“Uma alternativa compacta para aplicações NFC compatíveis com celulares, com apresentação discreta e foco na funcionalidade.”
+
+Produto:
+
+* Tag Adesiva Básica: R$ 49,00.
+
+Mantenha esta galeria separada das tags personalizadas.
+
+16. SERVIÇOS DIGITAIS
+
+Crie uma seção independente para os serviços digitais. Utilize cartões sofisticados, com ícones, descrições objetivas, preços e botões de contato.
+
+Criação ou Recuperação de Ficha no Google
+
+Descrição:
+“Criação ou recuperação da ficha da sua empresa para facilitar o acesso dos clientes às informações do estabelecimento no Google.”
+
+Valor: R$ 99,00.
+
+Otimização Completa do Google Meu Negócio — SEO Local
+
+Descrição:
+“Organização e otimização das informações comerciais para fortalecer a apresentação da sua empresa e sua presença nas buscas locais.”
+
+Valor: R$ 149,00.
+
+Não prometa posicionamento garantido.
+
+BioSite Essencial
+
+Descrição:
+“Uma página digital prática para centralizar seus principais contatos e facilitar o acesso aos seus canais.”
+
+Inclui até 6 botões interativos.
+
+Valor: R$ 99,00.
+
+BioSite Profissional
+
+Descrição:
+“Uma apresentação digital mais completa, com informações comerciais, horários, imagens e catálogo ou cardápio.”
+
+Inclui:
+
+* Catálogo ou cardápio em PDF.
+* Horários.
+* Galeria de até 6 fotos.
+
+Valor: R$ 189,00.
+
+BioSite Completo
+
+Descrição:
+“Um mini-site organizado em abas para apresentar sua empresa, seus serviços e sua equipe com mais profundidade.”
+
+Inclui:
+
+* Mini-site em abas.
+* Galeria de até 15 fotos.
+* Apresentação da equipe.
+
+Valor: R$ 299,00.
+
+Não anuncie recursos adicionais que não estejam descritos no pacote correspondente.
+
+17. PROTETOR DE REPUTAÇÃO GOOGLE
+
+Crie uma seção premium de destaque, com escudo digital, estrelas, cartões explicativos e iluminação azul discreta.
+
+Título:
+“Cuide da experiência do cliente. Fortaleça a reputação da sua empresa.”
+
+Descrição:
+“Uma solução de feedback para ajudar sua equipe a identificar problemas no atendimento, receber comentários privados e acompanhar oportunidades de melhoria.”
+
+Explique o funcionamento:
+
+1. O cliente aproxima o celular ou lê o QR Code.
+2. O cliente registra sua avaliação sobre a experiência.
+3. O sistema oferece acesso à avaliação pública no Google e, adicionalmente, a um canal privado de feedback.
+4. A equipe pode utilizar os comentários privados para acompanhar problemas e melhorar os processos de atendimento.
+
+Valores:
+
+* Implantação e cadastro: R$ 50,00, pagamento único.
+* Manutenção e monitoramento contínuo: R$ 20,00 por mês.
+
+IMPORTANTE: não implemente uma lógica que permita publicar no Google apenas avaliações positivas e desvie as negativas para um canal privado. Isso pode configurar filtragem indevida de avaliações e contrariar as políticas do Google.
+
+Todos os clientes devem ter a possibilidade de acessar a avaliação pública, independentemente da nota. O feedback privado deve funcionar como opção complementar.
+
+Não prometa bloquear reclamações públicas, eliminar avaliações negativas ou garantir determinada nota.
+
+Se a integração ainda não estiver implementada, identifique a seção como apresentação comercial e não afirme que o sistema está operacional.
+
+18. COMBOS COMERCIAIS
+
+Crie uma seção de destaque para os combos. Utilize cartões maiores, boa hierarquia de preços e botões de contato.
+
+Combo 1 — Balcão Express
+
+Descrição:
+“Uma solução prática para facilitar a conexão entre o balcão da sua empresa e sua presença digital.”
+
+Inclui:
+
+* 1 display plano de 10 × 10 cm.
+* Configuração Google e redirecionamento.
+
+Investimento: R$ 79,00.
+
+Combo 2 — Kit Duplo
+
+Descrição:
+“Amplie os pontos de interação com um kit prático de displays inteligentes.”
+
+Inclui:
+
+* 2 placas NFC configuradas para entrega imediata, conforme a condição comercial informada.
+
+Investimento: R$ 150,00.
+
+Combo 3 — Blindagem Total
+
+Utilize um destaque visual elegante, sem inventar estatísticas de vendas ou alegações de popularidade.
+
+Descrição:
+“Combine um display premium com uma solução de feedback para acompanhar a experiência dos seus clientes.”
+
+Inclui:
+
+* 1 placa premium em L, branca ou preta.
+* Implantação do Protetor de Reputação.
+
+Investimento: R$ 189,00, com implantação inclusa.
+
+Manutenção: R$ 20,00 por mês.
+
+A implementação do Protetor de Reputação deve respeitar as políticas do Google.
+
+Combo 4 — Hotelaria e Quarto Inteligente
+
+Descrição:
+“Modernize a experiência dos hóspedes com pontos de acesso digital distribuídos pelos ambientes do estabelecimento.”
+
+Solução:
+
+* Displays planos de 10 × 10 cm com fita 3M para quartos e acomodações.
+* Configuração para Wi-Fi, cardápio e serviços, conforme a necessidade.
+* 1 placa em L na recepção.
+* Solução de feedback complementar, sujeita à implementação compatível com as políticas do Google.
+
+Investimento:
+Orçamento sob medida, de acordo com o número de quartos.
+
+Botão:
+“Solicitar orçamento para meu estabelecimento”.
+
+Combo 5 — Presença Digital Completa
+
+Descrição:
+“Uma solução integrada para valorizar a apresentação da sua empresa, conectar seus canais digitais e fortalecer sua presença nas buscas locais.”
+
+Inclui:
+
+* Placa 100% personalizada.
+* BioSite Profissional.
+* Otimização do Google Meu Negócio.
+
+Investimento do pacote promocional: R$ 380,00.
+
+Não altere os valores ou a composição dos combos.
+
+19. PADRÃO VISUAL DOS CARTÕES DE PRODUTOS
+
+Todos os produtos devem seguir um sistema visual consistente.
+
+Cada cartão deve conter:
+
+* Fotografia real do produto.
+* Nome comercial.
+* Descrição curta.
+* Dimensão, quando aplicável.
+* Preço.
+* Variações e condições de quantidade, quando existentes.
+* Botão para solicitar informações pelo WhatsApp.
+
+O botão deve abrir o contato com uma mensagem pré-preenchida com o nome do produto selecionado.
+
+Exemplo:
+“Olá! Tenho interesse no produto [nome do produto] da VãBora Soluções. Poderia me passar mais informações?”
+
+Se houver seleção de unidade, permita escolher Curitiba/PR ou Serra Talhada/PE.
+
+Não invente estoque, descontos, prazos, frete, garantias ou formas de pagamento.
+
+20. REGRAS PARA CARREGAMENTO DAS IMAGENS
+
+As imagens listadas neste prompt são as fotografias fornecidas pelo proprietário e devem ser tratadas como referência visual oficial.
+
+Para cada imagem:
+
+1. Utilize o endereço exato informado.
+2. Teste se a imagem pode ser carregada.
+3. Preserve a proporção e a aparência original.
+4. Não altere o conteúdo do produto.
+5. Não misture as categorias.
+6. Não associe preços a variações sem confirmação.
+7. Não substitua uma imagem quebrada por outra inventada.
+
+Implemente tratamento de erro de carregamento. Se uma imagem não puder ser carregada, apresente um espaço reservado discreto e identifique a necessidade de corrigir o arquivo no ambiente de edição.
+
+Se o ambiente permitir, salve as imagens em uma pasta de assets do próprio projeto para reduzir a dependência de hospedagem externa. Preserve os originais e mantenha os nomes e as categorias organizados.
+
+Não afirme que todos os links foram verificados se a ferramenta não tiver realmente testado o carregamento.
+
+21. NAVEGAÇÃO E ORGANIZAÇÃO DO BIOSITE
+
+Estruture o site nesta ordem:
+
+1. Abertura premium com logomarca.
+2. Apresentação da VãBora Soluções.
+3. Botões de contato.
+4. Categorias de soluções.
+5. Placas premium em L.
+6. Placas planas 10 × 10 cm padrão.
+7. Placas planas 10 × 10 cm personalizadas.
+8. Placas resinadas 8 × 8 cm personalizadas.
+9. Placas resinadas 8 × 8 cm padrão.
+10. Cartões inteligentes NFC.
+11. Tags NFC antimetal personalizadas.
+12. Tags NFC antimetal básicas.
+13. Serviços digitais.
+14. Protetor de Reputação Google.
+15. Combos comerciais.
+16. Perguntas frequentes.
+17. Contato final.
+18. Rodapé institucional.
+
+Inclua navegação simples para permitir que o visitante encontre rapidamente os produtos e serviços.
+
+A navegação pode utilizar links de âncora para as categorias, desde que permaneça discreta e não ocupe espaço excessivo no celular.
+
+22. PERGUNTAS FREQUENTES
+
+Crie uma seção de perguntas frequentes com respostas objetivas e baseadas apenas nas informações confirmadas.
+
+Sugestões:
+
+* Como funciona a tecnologia NFC?
+* Como o cliente acessa o link pelo QR Code?
+* Qual é a diferença entre os modelos padrão e personalizados?
+* Qual é a diferença entre BioSite Essencial, Profissional e Completo?
+* Como solicitar um orçamento?
+* Como entrar em contato com cada unidade?
+
+Explique que a compatibilidade NFC depende do dispositivo e da configuração do produto quando aplicável.
+
+Não invente prazos de entrega, condições de pagamento ou garantias.
+
+23. CONTATO FINAL
+
+Título:
+“Vamos conectar sua empresa ao próximo nível digital?”
+
+Descrição:
+“Conheça nossas soluções e encontre a opção ideal para o seu negócio. A VãBora Soluções está pronta para ajudar sua empresa a aproximar clientes, organizar seus canais digitais e aprimorar sua presença online.”
+
+Botões:
+
+* Falar com Curitiba/PR.
+* Falar com Serra Talhada/PE.
+* Visitar o Instagram.
+* Acessar o site oficial.
+* Explorar o catálogo.
+
+Links:
+
+* Curitiba: https://wa.me/5541988442761
+* Serra Talhada: https://wa.me/5587991578326
+* Instagram: https://www.instagram.com/vamboraserratalhada?xtok=anU1dDJ0d2V2NHRt&utm_source=qr
+* Site: https://vamborasolucoes.com.br
+
+Rodapé:
+VãBora Soluções — Aproxime. Conecte. VãBora.
+
+Conectando o balcão da sua empresa ao mundo digital.
+
+Inclua aviso de direitos reservados sem inventar dados empresariais.
+
+24. REQUISITOS TÉCNICOS
+
+O site precisa ser realmente funcional.
+
+Responsividade
+
+* Layout adaptável a celulares, tablets e computadores.
+* Sem cortes horizontais indesejados.
+* Botões adequados para toque.
+* Carrosséis funcionais.
+* Tipografia legível em telas pequenas.
+
+Desempenho
+
+* Carregamento rápido.
+* Imagens otimizadas.
+* Lazy loading para imagens fora da primeira tela.
+* Evite bibliotecas desnecessárias.
+* Não carregue todas as imagens pesadas simultaneamente.
+* Priorize a logomarca e o conteúdo inicial.
+
+Acessibilidade
+
+* Contraste adequado.
+* Texto alternativo nas imagens.
+* Navegação por teclado.
+* Estados de foco visíveis.
+* Respeito à redução de movimento.
+* Ícones acompanhados de nomes acessíveis quando necessário.
+
+SEO
+
+Título:
+VãBora Soluções | Aproxime. Conecte. VãBora.
+
+Descrição:
+“Conheça as soluções da VãBora Soluções em tecnologia NFC, QR Codes, displays inteligentes, cartões NFC, BioSites e presença digital para empresas.”
+
+Configure:
+
+* Hierarquia adequada de títulos.
+* Metadados para compartilhamento.
+* Imagem social com a logomarca original.
+* Links funcionais.
+* URLs adequadas.
+* Dados estruturados somente quando correspondam a informações reais.
+
+Segurança e confiabilidade
+
+* Não exponha chaves de API.
+* Não colete dados pessoais desnecessários.
+* Não solicite dados bancários no site.
+* Não simule pagamentos ou integrações inexistentes.
+* Não apresente funcionalidades ainda não implementadas como concluídas.
+
+25. CONFERÊNCIA DOS PREÇOS
+
+Antes da entrega, confira se todos os valores abaixo estão corretos e presentes na categoria correspondente.
+
+PLACAS EM L:
+
+* R$ 139,00 — Google Padrão.
+* R$ 179,00 — Google Personalizada.
+* R$ 139,00 — MultiLinks Padrão.
+* R$ 219,00 — MultiLinks Padrão + BioSite Essencial.
+* R$ 249,00 — MultiLinks 100% Personalizada em Resina.
+
+PLACAS PLANAS 10 × 10 CM:
+
+* R$ 79,00 — Google Padrão.
+* R$ 119,00 — Google Personalizada.
+* R$ 189,00 — MultiLinks Personalizada + BioSite.
+
+TAGS 8 × 8 CM:
+
+* R$ 49,00 — Opção A.
+* R$ 39,00 por unidade — Opção A a partir de 5 unidades.
+* R$ 59,00 — Opção B.
+* R$ 49,00 por unidade — Opção B a partir de 5 unidades.
+* R$ 69,00 — Opção C.
+* R$ 55,00 por unidade — Opção C a partir de 5 unidades.
+
+CARTÕES NFC:
+
+* R$ 49,00 — Google Avaliações Padrão.
+* R$ 79,00 — Google Personalizado.
+* R$ 89,00 — Black Executivo.
+* R$ 169,00 — Black Executivo + BioSite.
+* R$ 119,00 — Personalizado Frente e Verso.
+* R$ 199,00 — Personalizado Frente e Verso + BioSite.
+
+TAGS ANTIMETAL:
+
+* R$ 49,00 — Básica.
+* R$ 69,00 — Personalizada com UV.
+
+SERVIÇOS:
+
+* R$ 99,00 — Criação ou Recuperação de Ficha no Google.
+* R$ 149,00 — Otimização Completa do Google Meu Negócio.
+* R$ 99,00 — BioSite Essencial.
+* R$ 189,00 — BioSite Profissional.
+* R$ 299,00 — BioSite Completo.
+
+PROTETOR DE REPUTAÇÃO:
+
+* R$ 50,00 — Implantação e cadastro.
+* R$ 20,00 por mês — Manutenção e monitoramento.
+
+COMBOS:
+
+* R$ 79,00 — Balcão Express.
+* R$ 150,00 — Kit Duplo.
+* R$ 189,00 + R$ 20,00/mês — Blindagem Total.
+* Sob orçamento — Hotelaria e Quarto Inteligente.
+* R$ 380,00 — Presença Digital Completa.
+
+Não remova, arredonde, substitua ou altere nenhum preço.
+
+Se houver qualquer divergência entre os preços nos cartões e nesta conferência, corrija antes de entregar.
+
+26. TESTES FINAIS OBRIGATÓRIOS
+
+Antes de concluir:
+
+1. Teste o carregamento da logomarca.
+2. Teste os links de todas as fotografias.
+3. Confira a separação entre as oito galerias de produtos.
+4. Teste todos os botões de WhatsApp.
+5. Teste o Instagram e o site oficial.
+6. Confira todos os preços.
+7. Verifique as condições de quantidade mínima.
+8. Teste os carrosséis em dispositivos móveis e computadores.
+9. Teste as animações durante a rolagem.
+10. Confira se não há textos cortados.
+11. Verifique a legibilidade dos preços.
+12. Confirme que os links externos abrem os destinos corretos.
+13. Teste o comportamento quando uma imagem não carrega.
+14. Verifique se a primeira tela carrega rapidamente.
+15. Confira a compatibilidade com teclado e redução de movimento.
+16. Corrija erros encontrados no código e na interface.
+17. Não afirme que um teste foi concluído se ele não foi realmente executado.
+
+27. RESULTADO FINAL ESPERADO
+
+Entregue um BioSite premium da VãBora Soluções com:
+
+* Fundo preto sofisticado.
+* Detalhes em azul elétrico e azul ciano.
+* Logomarca original grande e iluminada.
+* Animações suaves ao descer a página.
+* Carrosséis horizontais funcionais.
+* Todas as fotografias fornecidas organizadas corretamente.
+* Todos os produtos e preços.
+* Textos comerciais aprimorados.
+* Botões funcionais para WhatsApp.
+* Link oficial do Instagram.
+* Link do site oficial.
+* Serviços digitais e combos.
+* Experiência responsiva.
+* Desempenho otimizado.
+* Código organizado e fácil de manter.
+
+O resultado precisa transmitir uma marca de tecnologia profissional, com catálogo visualmente atraente e caminho de contato claro.
+
+Prioridades absolutas:
+
+1. Qualidade visual premium.
+2. Fidelidade à logomarca e às fotografias.
+3. Organização correta dos produtos.
+4. Preços e condições comerciais exatos.
+5. Funcionamento real dos botões e carrosséis.
+6. Excelente experiência em celulares e tablets.
+7. Comunicação comercial convincente sem promessas inventadas.
+
+Execute o projeto com atenção aos detalhes. Não pare na etapa de planejamento. Implemente, teste e refine o site dentro das capacidades reais do ambiente de desenvolvimento.

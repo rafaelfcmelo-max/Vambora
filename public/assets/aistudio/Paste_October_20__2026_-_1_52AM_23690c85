@@ -1,0 +1,1176 @@
+PROMPT MESTRE DEFINITIVO — VABORA SOLUÇÕES
+
+Construção, atualização e finalização completa do site comercial
+
+Você é um desenvolvedor web sênior, especialista em UX/UI, comércio eletrônico, identidade visual, conversão, arquitetura de informação, SEO, acessibilidade e integrações digitais.
+
+Sua tarefa é construir ou finalizar o site completo da VaBora Soluções, utilizando o site https://wistag.com.br como referência de organização comercial, apresentação de produtos, navegação e experiência de compra.
+
+Não copie o site da Wistag literalmente. Utilize-o como referência para desenvolver uma experiência original, com identidade visual, textos, catálogo e posicionamento próprios da VaBora.
+
+IMPORTANTE: execute as alterações no projeto existente. Preserve os recursos já implementados que funcionam corretamente, corrija os problemas e complete as partes que faltam. Não se limite a apresentar sugestões, protótipos, telas estáticas ou um plano de desenvolvimento. Implemente tudo o que for possível no ambiente disponível e teste o resultado.
+
+Este documento consolida as instruções comerciais mais recentes. Quando houver divergência com instruções anteriores, prevalecem os preços, as regras e as condições deste documento.
+
+⸻
+
+1. IDENTIDADE DA MARCA
+
+Nome: VaBora Soluções
+
+Slogan: Aproxime. Conecte. VãBora.
+
+Posicionamento: soluções que conectam o ambiente físico ao digital, ajudando empresas a compartilhar informações, facilitar contatos, apresentar cardápios, direcionar clientes, receber avaliações e organizar seus canais digitais.
+
+A VaBora não deve ser apresentada apenas como uma loja de plaquinhas NFC. Os produtos físicos são uma porta de entrada para um portfólio mais amplo de soluções comerciais e digitais.
+
+O site deve transmitir:
+
+* Tecnologia e inovação.
+* Sofisticação e profissionalismo.
+* Confiança e transparência.
+* Facilidade de uso.
+* Atendimento próximo.
+* Personalização para empresas.
+* Potencial de revenda e parcerias comerciais.
+
+A comunicação deve mostrar como as soluções podem ser utilizadas no dia a dia de lojas, consultórios, restaurantes, hotéis, pousadas, prestadores de serviços e outros estabelecimentos.
+
+Não restrinja a marca a um único setor.
+
+1.1. Arquivos e canais oficiais
+
+Utilize os seguintes endereços:
+
+Logotipo oficial
+
+https://i.postimg.cc/PqF7G23b/IMG-0891.png
+
+Instagram oficial
+
+https://www.instagram.com/vamboraserratalhada?xtok=anU1dDJ0d2V2NHRt&utm_source=qr
+
+WhatsApp comercial de Curitiba
+
+https://wa.me/5541988442761
+
+WhatsApp de Serra Talhada
+
+https://wa.me/5587991578326
+
+Utilize o logotipo original. Não o redesenhe com inteligência artificial, não altere sua composição e não substitua a imagem por um símbolo genérico.
+
+O logotipo contém elementos azuis e dourados. Garanta contraste suficiente com o fundo, utilizando espaço negativo, fundo neutro, uma área clara ou outra solução de apresentação que preserve a arte original e a legibilidade.
+
+Não inclua no cabeçalho um link chamado “Site oficial”, porque o próprio site desenvolvido será o site oficial da VaBora.
+
+Não invente CNPJ, endereço comercial, telefone, certificações, depoimentos, prêmios ou informações institucionais.
+
+⸻
+
+2. DIREÇÃO VISUAL
+
+O resultado deve parecer uma marca de tecnologia profissional e premium, não um template genérico produzido por IA.
+
+2.1. Paleta de cores
+
+Utilize como base:
+
+* Preto: #050608
+* Grafite: #0D1118
+* Superfície escura: #151B25
+* Branco: #FFFFFF
+* Cinza: #C4CBD5
+* Azul elétrico: #1677FF
+* Ciano: #35CFFF
+
+O preto deve predominar, mas não transforme todas as seções em grandes blocos visualmente idênticos. Varie sutilmente as superfícies, a iluminação, o espaçamento e a composição.
+
+Utilize branco para garantir a leitura de títulos, preços, descrições e chamadas importantes.
+
+Azul elétrico e ciano devem destacar botões, links, indicadores e elementos tecnológicos. Evite exagerar nos brilhos, gradientes e efeitos neon.
+
+2.2. Logotipo e acabamento
+
+Apresente o logotipo em tamanho adequado, sem distorção e com boa leitura tanto no desktop quanto no celular.
+
+Use uma tipografia moderna, legível e consistente. Crie hierarquia visual clara entre títulos, descrições, preços e especificações.
+
+Os cards de produtos devem ter:
+
+* Bordas discretas.
+* Cantos consistentes.
+* Imagens com proporção adequada.
+* Preços facilmente identificáveis.
+* Botões visíveis.
+* Espaçamento equilibrado.
+* Efeitos de interação discretos.
+
+As animações devem ser suaves e leves. Não sacrifique velocidade, acessibilidade ou facilidade de navegação para produzir efeitos visuais.
+
+2.3. Responsividade
+
+O site deve funcionar corretamente em:
+
+* Celulares.
+* Tablets.
+* Computadores.
+* Diferentes tamanhos de tela.
+
+No celular, as imagens, os preços, as variantes, a sacola e os botões de contato devem continuar fáceis de utilizar. Não esconda informações comerciais essenciais em elementos difíceis de abrir.
+
+⸻
+
+3. ESTRUTURA E NAVEGAÇÃO
+
+Crie um cabeçalho com:
+
+* Logotipo VaBora Soluções.
+* Início.
+* Produtos.
+* Soluções digitais.
+* Para empresas.
+* Revenda.
+* Sobre a VaBora.
+* Contato.
+* Sacola de compras com contador de itens.
+
+O menu deve funcionar de verdade, inclusive no celular.
+
+Organize o site nas seguintes áreas:
+
+1. Página inicial.
+2. Catálogo de produtos.
+3. Categorias de produtos.
+4. Páginas ou detalhes individuais dos produtos.
+5. Combos e ofertas.
+6. Protetor de Reputação.
+7. BioSite e serviços digitais.
+8. Soluções para empresas.
+9. Hotelaria e Quarto Inteligente.
+10. Revenda e parcerias.
+11. Sobre a VaBora.
+12. Perguntas frequentes.
+13. Contato e solicitação de visitas.
+14. Sacola e finalização pelo WhatsApp.
+15. Políticas e informações legais, quando disponíveis.
+
+A navegação deve ajudar o cliente a encontrar rapidamente o que procura. Não coloque todos os produtos, serviços e textos em uma página excessivamente longa e confusa.
+
+⸻
+
+4. PÁGINA INICIAL
+
+4.1. Primeira dobra
+
+Crie uma abertura visual marcante, com uma fotografia real de produto, identidade premium e texto comercial direto.
+
+Título principal:
+
+Sua empresa mais conectada. Seu atendimento mais inteligente.
+
+Subtítulo:
+
+Soluções com NFC, QR Code e tecnologia digital para facilitar avaliações, compartilhar contatos, apresentar cardápios e aproximar sua empresa dos clientes.
+
+Botões principais:
+
+* Conhecer produtos.
+* Quero uma solução personalizada.
+
+A imagem de destaque deve utilizar fotografias reais da VaBora, quando disponíveis. Não substitua os produtos reais por placas fictícias geradas por IA.
+
+4.2. Benefícios imediatos
+
+Logo abaixo, apresente benefícios em blocos visuais:
+
+* Facilite o acesso às informações da sua empresa.
+* Reúna canais de atendimento em um só lugar, conforme a solução contratada.
+* Direcione clientes para avaliações, cardápios e redes sociais.
+* Escolha entre modelos padrão e personalizados.
+* Combine produtos físicos e soluções digitais.
+* Conte com atendimento comercial para escolher a melhor opção.
+
+4.3. Acesso rápido às categorias
+
+Crie cards visuais para:
+
+* Placas de avaliação no Google.
+* Placas MultiLinks.
+* Cartões NFC.
+* Tags antimetal.
+* Placas 8 × 8 cm.
+* BioSite.
+* Protetor de Reputação.
+* Serviços para empresas.
+* Revenda.
+
+Cada card deve conduzir à categoria correspondente.
+
+4.4. Produtos em destaque
+
+Apresente produtos de diferentes categorias, sem repetir indiscriminadamente a mesma imagem.
+
+Cada destaque deve conter nome, imagem correta, benefício principal, preço atualizado e acesso à página do produto.
+
+4.5. Protetor de Reputação em destaque
+
+Apresente o Protetor de Reputação logo abaixo dos primeiros produtos de Google Avaliações.
+
+O objetivo é mostrar uma solução complementar para empresas que desejam organizar o feedback recebido dos clientes.
+
+Não deixe esse serviço aparecer apenas no final do catálogo.
+
+4.6. Outras seções da página inicial
+
+Inclua:
+
+* Combos e ofertas.
+* Soluções digitais.
+* Aplicações por segmento.
+* Soluções para hotéis e pousadas.
+* Revenda e parcerias.
+* Perguntas frequentes.
+* Chamada para atendimento comercial.
+* Rodapé completo.
+
+Distribua as chamadas para ação ao longo da página sem transformar a experiência em uma sequência de anúncios invasivos.
+
+⸻
+
+5. CATÁLOGO VISUAL OFICIAL — REGRAS PARA AS IMAGENS
+
+Os endereços informados neste documento são as referências oficiais das fotografias dos produtos da VaBora.
+
+É obrigatório manter cada fotografia na categoria correta.
+
+Antes de associar uma imagem a uma variante, abra e confira visualmente o arquivo, quando o ambiente permitir.
+
+Não presuma que a ordem dos links define automaticamente o modelo. Não utilize uma imagem de cardápio para representar Google Avaliações, uma placa plana para representar uma placa em L ou um cartão personalizado para representar um cartão padrão.
+
+Se uma imagem não puder ser visualizada, deixe a associação pendente de conferência em vez de inventar sua identificação.
+
+Não substitua os links oficiais por imagens genéricas da internet. Não altere os endereços fornecidos. Não invente fotografias que aparentem representar produtos reais da VaBora.
+
+Quando existirem várias imagens do mesmo modelo, utilize uma galeria ou fotografias complementares. Se as imagens representarem variantes diferentes, identifique cada uma corretamente.
+
+5.1. Logotipo e canais
+
+Logotipo:
+
+https://i.postimg.cc/PqF7G23b/IMG-0891.png
+
+Instagram:
+
+https://www.instagram.com/vamboraserratalhada?xtok=anU1dDJ0d2V2NHRt&utm_source=qr
+
+WhatsApp Curitiba:
+
+https://wa.me/5541988442761
+
+WhatsApp Serra Talhada:
+
+https://wa.me/5587991578326
+
+5.2. Placas em L resinadas — 11 × 16 cm
+
+Google Avaliações padrão preta
+
+https://i.postimg.cc/7hzFmQzG/IMG-0904.jpg
+
+Google Avaliações padrão branca
+
+https://i.postimg.cc/DzYRFKd5/IMG-0903.jpg
+
+MultiLinks padrão
+
+https://i.postimg.cc/44t488sb/IMG-0662.jpg
+
+MultiLinks personalizada
+
+* https://i.postimg.cc/2jxKrkKQ/IMG-0649.jpg
+* https://i.postimg.cc/BZCV4SVc/IMG-0706.jpg
+* https://i.postimg.cc/BZCV4SV5/IMG-0703.jpg
+
+Google Avaliações personalizada
+
+https://i.postimg.cc/MZYFq6Fm/IMG-0705.jpg
+
+Todas as placas em L são resinadas.
+
+Não confunda essas placas com os modelos planos de 10 × 10 cm ou com as placas de 8 × 8 cm.
+
+5.3. Placas planas 10 × 10 cm — padrão sem personalização
+
+Fotografias oficiais:
+
+* https://i.postimg.cc/yxzzJ7qC/IMG-0653.jpg
+* https://i.postimg.cc/HnCCJTGm/IMG-0654.jpg
+* https://i.postimg.cc/L5MMqmd2/IMG-0655.jpg
+* https://i.postimg.cc/J0WWyRw1/IMG-0656.jpg
+* https://i.postimg.cc/HnCCJTGg/IMG-0657.jpg
+
+As variantes de catálogo previstas são:
+
+* Google Avaliações.
+* WhatsApp.
+* Instagram.
+* Cardápio.
+* Google preto.
+* Google azul.
+
+Confira visualmente qual fotografia corresponde a cada variante antes de cadastrá-la.
+
+Não invente a identificação de nenhuma imagem. Se a fotografia não corresponder a uma das variantes listadas, não a classifique por suposição.
+
+5.4. Placas planas 10 × 10 cm — personalizadas
+
+Google Avaliações personalizada
+
+* https://i.postimg.cc/Qx0RDQMk/IMG-0646.jpg
+* https://i.postimg.cc/ZKV1m8q8/IMG-0642.jpg
+
+MultiLinks personalizada
+
+* https://i.postimg.cc/YqbJ76SN/IMG-0893.jpg
+* https://i.postimg.cc/15JLSGzH/IMG-0707.jpg
+* https://i.postimg.cc/KvJdbPYD/IMG-0711.jpg
+
+Mantenha essas imagens na categoria de placas planas personalizadas.
+
+A placa MultiLinks personalizada de R$ 99,90 não inclui BioSite automaticamente.
+
+5.5. Cartões NFC — formato bancário
+
+Google padrão
+
+https://i.postimg.cc/8cLYhf8c/IMG-0902.jpg
+
+Executivo Black
+
+https://i.postimg.cc/KzD0NbkF/IMG-0697.jpg
+
+Google personalizado
+
+* https://i.postimg.cc/Y9zd37Gq/IMG-0648.jpg
+* https://i.postimg.cc/wvQwVzyq/IMG-0692.jpg
+* https://i.postimg.cc/nzG3kxjH/IMG-0691.jpg
+
+MultiLinks 100% personalizado
+
+* https://i.postimg.cc/3RFtBh43/IMG-0690.jpg
+* https://i.postimg.cc/rmNfJT0p/IMG-0612.jpg
+
+O cartão Google padrão deve mostrar o modelo padrão. Não use automaticamente uma fotografia de cartão personalizado para representar esse produto.
+
+Não apresente o Black Executivo como se o BioSite estivesse incluído, exceto na variante específica que contém esse benefício.
+
+5.6. Placas 8 × 8 cm resinadas
+
+Personalizada — Google Avaliações
+
+* https://i.postimg.cc/Bbt2Kf2V/IMG-0679.jpg
+* https://i.postimg.cc/PJN1wn17/IMG-0682.jpg
+* https://i.postimg.cc/nrMqDfqw/IMG-0644.jpg
+
+Personalizada — MultiLinks
+
+* https://i.postimg.cc/4ynp9Rp2/IMG-0643.jpg
+* https://i.postimg.cc/RhqwHxw8/IMG-0645.jpg
+
+Padrão sem personalização
+
+* https://i.postimg.cc/j2GnnwxQ/IMG-0639.jpg
+* https://i.postimg.cc/Pq3Wrqwc/IMG-0614.jpg — Google padrão preta.
+* https://i.postimg.cc/5t7BNtCT/IMG-0615.jpg — Google padrão branca.
+
+Todas as placas de 8 × 8 cm desta categoria são resinadas.
+
+5.7. Tags antimetal para celular com NFC
+
+Personalizadas
+
+* https://i.postimg.cc/tgT6fHMk/IMG-0683.jpg
+* https://i.postimg.cc/D0q4sf89/IMG-0650.jpg
+
+Sem personalização
+
+* https://i.postimg.cc/G2D4w3PW/IMG-0673.jpg
+* https://i.postimg.cc/NMRjCJB0/IMG-0665.jpg
+
+Mantenha as tags em categoria independente das placas e dos cartões bancários.
+
+Não atribua às tags materiais, acabamentos, dimensões ou funcionalidades não confirmados.
+
+5.8. Padrão de exibição das imagens
+
+Em todo o catálogo:
+
+* Não distorça as proporções.
+* Não corte partes importantes do produto.
+* Utilize fundos que valorizem as fotografias.
+* Permita ampliar a imagem nas páginas de detalhes.
+* Mantenha as imagens correspondentes à variante selecionada.
+* Não altere a fotografia quando o usuário mudar apenas a quantidade.
+* Se o cliente selecionar outra variante, atualize imagem, nome e preço conforme o cadastro.
+* Não utilize uma imagem genérica para esconder uma imagem oficial indisponível.
+
+Antes de publicar, faça uma auditoria de todas as associações de imagens.
+
+⸻
+
+6. CATÁLOGO E PREÇOS OFICIAIS
+
+Os valores abaixo são os preços de venda definidos para o catálogo.
+
+Utilize finais de preço como ,90 e ,99 de maneira coerente. Não altere os valores definidos por conta própria.
+
+Não confunda preço de venda com custo de aquisição, lucro líquido ou margem já validada.
+
+Atualize os preços em todas as páginas, cards, combos, sacola, mensagens de WhatsApp e componentes relacionados.
+
+6.1. Placas em L — 11 × 16 cm
+
+Produto	Preço
+Google Avaliações padrão	R$ 139,90
+Google Avaliações personalizada	R$ 169,90
+MultiLinks padrão	R$ 139,90
+MultiLinks padrão + BioSite Essencial	R$ 219,90
+MultiLinks 100% personalizada em resina	R$ 249,90
+
+Todas as placas em L são resinadas.
+
+A variante com BioSite deve ser claramente diferenciada da placa MultiLinks padrão sem BioSite.
+
+6.2. Placas planas — 10 × 10 cm
+
+Produto	Preço
+Google Avaliações padrão	R$ 79,90
+Personalizada	R$ 119,90
+MultiLinks personalizada	R$ 99,90
+Combo de duas placas padrão	R$ 149,90
+Combo de duas placas personalizadas	R$ 199,90
+Placa personalizada Google + Protetor de Reputação	R$ 149,90 + R$ 29,90/mês
+
+Os modelos padrão disponíveis, conforme confirmação visual das imagens, são Google Avaliações, WhatsApp, Instagram, Cardápio, Google preto e Google azul.
+
+O combo padrão contém duas placas padrão sem logomarca personalizada.
+
+O combo personalizado contém duas placas 10 × 10 cm personalizadas com a logomarca do cliente.
+
+Não confunda o preço total dos combos com o preço unitário.
+
+A placa MultiLinks personalizada não inclui BioSite automaticamente.
+
+Para a placa personalizada Google com Protetor de Reputação, mostre o valor inicial de R$ 149,90 e a mensalidade obrigatória de R$ 29,90 em campos separados.
+
+6.3. Cartões NFC
+
+Produto	Preço
+Cartão Google padrão	R$ 49,90
+Cartão Google personalizado	R$ 79,90
+Black Executivo	R$ 119,90
+Black Executivo + BioSite	R$ 169,90
+Personalizado frente e verso	R$ 119,90
+Personalizado frente e verso + BioSite	R$ 199,90
+
+As fotografias devem corresponder ao modelo escolhido. Não inclua BioSite em variantes que não tenham esse benefício na tabela.
+
+6.4. Tags antimetal
+
+Produto	Preço
+Tag padrão	R$ 59,90
+Tag personalizada com acabamento UV/adesivo	R$ 69,90
+Tag padrão + BioSite Essencial	R$ 139,90
+
+Não apresente a tag personalizada como impressão UV direta se o modelo utilizar adesivo; utilize a descrição comercial confirmada para essa variante.
+
+6.5. Placas 8 × 8 cm resinadas
+
+Produto	Preço unitário	A partir de 10 unidades
+Link direto	R$ 48,90	R$ 38,90/un.
+Personalizada com logo + Google	R$ 58,90	R$ 48,90/un.
+MultiLinks por mesa ou quarto	R$ 68,90	R$ 54,90/un.
+
+Aplique automaticamente o preço por quantidade somente quando forem atingidas 10 unidades elegíveis conforme a categoria e a regra comercial correspondente.
+
+Não presuma que quantidades de categorias diferentes podem ser somadas para atingir o limite, caso essa regra não esteja definida.
+
+Mostre preço unitário, quantidade, subtotal e total.
+
+Não some descontos incompatíveis nem aplique descontos adicionais automaticamente.
+
+6.6. Serviços digitais
+
+Serviço	Preço
+Criação ou recuperação simples de Perfil da Empresa no Google	A partir de R$ 99,90
+Otimização / recuperação complexa de ficha suspensa	R$ 149,90 a R$ 199,90
+BioSite Essencial	R$ 99,90
+BioSite Profissional	R$ 189,90
+BioSite Completo	R$ 299,90
+
+O preço de criação ou recuperação simples depende da complexidade real. A recuperação de ficha suspensa deve ser avaliada individualmente.
+
+Não prometa aprovação, recuperação garantida, posicionamento específico no Google ou resultados comerciais garantidos.
+
+⸻
+
+7. COMBOS E OFERTAS
+
+Crie uma seção própria para combos. Cada card deve exibir nome, imagem ou composição visual, itens incluídos, preço, condições e botão de compra.
+
+O cliente precisa compreender o que está comprando sem depender de uma conversa para descobrir o conteúdo do pacote.
+
+7.1. Balcão Express — R$ 79,90
+
+Inclui uma placa plana padrão de 10 × 10 cm com configuração para Google ou redirecionamento, conforme a versão contratada.
+
+Explique claramente a versão selecionada e os recursos incluídos.
+
+Não prometa personalização com logomarca se ela não fizer parte da oferta.
+
+7.2. Kit Duplo padrão — R$ 149,90
+
+Inclui duas placas padrão sem logomarca personalizada.
+
+Permita escolher os dois modelos entre as opções efetivamente disponíveis, como Google, Instagram e Wi-Fi, conforme as variantes confirmadas.
+
+O valor de R$ 149,90 corresponde ao kit completo.
+
+7.3. Kit Duplo personalizado — R$ 199,90
+
+Inclui duas placas planas de 10 × 10 cm personalizadas com a logomarca do cliente.
+
+Permita que o cliente escolha os modelos disponíveis e informe os dados necessários para a personalização.
+
+O valor de R$ 199,90 corresponde às duas placas.
+
+7.4. Blindagem Total — R$ 189,90 + R$ 29,90/mês
+
+O pacote inclui:
+
+* Uma placa em L premium preta ou branca.
+* Implantação do Protetor de Reputação.
+* Mensalidade obrigatória de R$ 29,90 para manutenção do servidor e suporte aos envios de e-mail ao lojista.
+
+Apresente separadamente:
+
+* Valor inicial: R$ 189,90.
+* Mensalidade: R$ 29,90/mês.
+
+Não apresente a mensalidade como opcional, gratuita ou incluída para sempre no valor inicial.
+
+7.5. Presença Digital Completa — R$ 379,90
+
+Inclui:
+
+* Placa personalizada.
+* BioSite Profissional.
+* Otimização do Perfil da Empresa no Google.
+
+Apresente cada componente visualmente, com uma explicação curta do benefício.
+
+O preço de R$ 379,90 corresponde ao pacote descrito. Não inclua serviços adicionais ou mensalidades sem informar as condições.
+
+7.6. Hotelaria e Quarto Inteligente — orçamento personalizado
+
+Crie uma área destinada a hotéis, pousadas e hospedagens.
+
+Apresente aplicações possíveis:
+
+* Placas para Wi-Fi.
+* Cardápios.
+* Informações úteis para hóspedes.
+* Links de serviços e atendimento.
+* Placas para recepção.
+* Soluções para quartos, mesas e áreas comuns.
+
+Inclua botão para solicitar orçamento.
+
+Permita informar tipo de estabelecimento, cidade, quantidade aproximada de quartos ou ambientes e necessidades específicas.
+
+Não invente preço fixo, quantidade mínima, prazo de entrega ou condições de instalação.
+
+⸻
+
+8. PROTETOR DE REPUTAÇÃO
+
+O Protetor de Reputação deve aparecer logo abaixo dos primeiros produtos de Google Avaliações. Também deve permanecer na seção de serviços digitais e ser apresentado nos combos correspondentes.
+
+8.1. Texto comercial sugerido
+
+“Quer ir além da placa? Conheça o Protetor de Reputação e veja como ele pode ajudar a organizar o feedback dos seus clientes e reverter experiências negativas antes delas irem para o público.”
+
+Utilize esse texto como base, mantendo uma comunicação responsável e sem promessas de resultado.
+
+8.2. Funcionamento informado
+
+Explique o fluxo de triagem do serviço:
+
+* Avaliações de 1 a 3 estrelas são direcionadas para a gerência interna.
+* Avaliações de 4 a 5 estrelas seguem diretamente para o Google.
+
+A descrição deve deixar claro que a solução organiza o recebimento do feedback. Não afirme que ela bloqueia, apaga, esconde ou impede avaliações negativas públicas.
+
+Não apresente a triagem como uma obrigação para o consumidor.
+
+Não prometa aumento garantido da nota, quantidade de avaliações, clientes, faturamento ou posição nas buscas.
+
+A comunicação deve respeitar as regras da plataforma e a liberdade do consumidor de publicar sua avaliação.
+
+8.3. Combo de placa plana personalizada Google + Protetor
+
+Preço inicial: R$ 149,90.
+
+Mensalidade obrigatória: R$ 29,90/mês.
+
+A mensalidade corresponde à manutenção do servidor e ao suporte aos envios de e-mail ao lojista, conforme o serviço contratado.
+
+Exiba a mensalidade:
+
+* No card do produto.
+* Na página de detalhes.
+* Na sacola.
+* No resumo do pedido.
+* Na mensagem do WhatsApp.
+
+Não anuncie o serviço como gratuito, sem mensalidade ou com pagamento único.
+
+⸻
+
+9. BIOSITE E SERVIÇOS DIGITAIS
+
+Crie uma seção própria para as soluções digitais, mantendo o mesmo padrão visual do restante do site.
+
+9.1. BioSite Essencial — R$ 99,90
+
+Apresente como uma página digital que reúne links e informações importantes de uma empresa.
+
+A versão Essencial contempla até seis botões interativos, com exemplos como:
+
+* Wi-Fi.
+* Pix.
+* Instagram.
+* WhatsApp.
+* Avaliações no Google.
+* Cardápio.
+
+Esses exemplos devem ser apresentados como possibilidades de configuração, conforme os recursos efetivamente disponibilizados ao cliente.
+
+9.2. BioSite Profissional — R$ 189,90
+
+Apresente a versão como uma opção para empresas que precisam de uma presença digital mais completa.
+
+Não publique quantidade exata de botões, fotos, páginas ou funcionalidades adicionais sem confirmação do escopo comercial vigente.
+
+9.3. BioSite Completo — R$ 299,90
+
+Apresente a versão como a opção mais abrangente do portfólio BioSite, mas limite a descrição às funcionalidades efetivamente disponíveis.
+
+Não prometa recursos de mini-site, galeria, catálogo, integração, domínio próprio ou outras funcionalidades sem confirmação de que estão incluídos.
+
+9.4. Perfil da Empresa no Google
+
+Apresente serviços de criação, configuração, otimização e análise de problemas de perfil.
+
+Os valores são:
+
+* Criação ou recuperação simples: a partir de R$ 99,90.
+* Otimização ou recuperação complexa de ficha suspensa: R$ 149,90 a R$ 199,90.
+
+Explique que a avaliação do caso determina o orçamento. Não garanta a aprovação ou recuperação da ficha.
+
+⸻
+
+10. COMUNICAÇÃO COMERCIAL E PERSUASÃO
+
+O site deve ajudar o visitante a entender a utilidade do produto, escolher uma solução e concluir a compra.
+
+Utilize uma comunicação persuasiva, mas verdadeira.
+
+10.1. Priorize os benefícios
+
+Explique o que o cliente pode fazer com cada produto antes de apresentar as especificações técnicas.
+
+Exemplos:
+
+* Facilitar o acesso à página de avaliações.
+* Reunir contatos e links em uma única página, quando a solução permitir.
+* Compartilhar informações de forma prática.
+* Direcionar para cardápios e serviços.
+* Personalizar a experiência de atendimento.
+* Organizar os canais digitais de uma empresa.
+
+10.2. Explique a tecnologia de maneira simples
+
+Utilize uma explicação como:
+
+“Aproxime um celular compatível ou leia o QR Code para acessar o link configurado.”
+
+Não afirme que todos os celulares possuem NFC nem que todos os produtos têm o mesmo funcionamento.
+
+10.3. Especificações técnicas
+
+Deixe os detalhes técnicos em uma seção própria de cada produto.
+
+Utilize somente as características confirmadas:
+
+* Placas em L: resinadas.
+* Placas de 8 × 8 cm: resinadas.
+* Placas acrílicas: utilize a informação de acrílico de 3 mm e impressão UV somente nos modelos aos quais essa especificação se aplica.
+* Tags: explique o tratamento antimetal sem generalizar outras características.
+* Cartões NFC: não atribua materiais ou acabamentos não confirmados.
+
+Não misture informações técnicas de categorias diferentes.
+
+10.4. Preços e confiança
+
+Mostre os preços com clareza. Destaque os benefícios dos combos, mas não invente descontos fictícios ou preços anteriores.
+
+Não utilize contadores regressivos, escassez artificial, depoimentos inventados, números de clientes ou garantias inexistentes.
+
+Não prometa que o uso de uma placa garante mais avaliações, melhor posicionamento no Google ou aumento de faturamento.
+
+10.5. Calculadora de retorno
+
+Se houver uma calculadora de retorno, utilize dados informados pelo visitante, como ticket médio e margem de contribuição estimada.
+
+Identifique as hipóteses utilizadas e deixe claro que os resultados são ilustrativos, não uma promessa de retorno.
+
+Não trate faturamento como lucro e não apresente um resultado hipotético como desempenho comprovado.
+
+⸻
+
+11. SACOLA DE COMPRAS E FINALIZAÇÃO
+
+Implemente uma sacola de compras funcional.
+
+Não crie apenas um ícone ou uma tela ilustrativa.
+
+11.1. Recursos obrigatórios
+
+A sacola deve permitir:
+
+* Adicionar produtos.
+* Remover produtos.
+* Alterar quantidades.
+* Selecionar variantes disponíveis.
+* Informar dados de personalização quando necessários.
+* Visualizar o preço unitário.
+* Visualizar subtotais.
+* Visualizar o total inicial.
+* Continuar comprando.
+* Finalizar pelo WhatsApp.
+
+O contador de itens deve atualizar automaticamente.
+
+Mantenha a sacola durante a navegação. Se utilizar armazenamento local, implemente-o de maneira adequada ao ambiente e evite armazenar dados pessoais desnecessários.
+
+11.2. Preços por quantidade
+
+Para as placas 8 × 8 cm, aplique o preço especial somente quando a quantidade elegível de 10 unidades for atingida.
+
+Não aplique automaticamente descontos incompatíveis.
+
+Se a elegibilidade de diferentes modelos combinados não estiver definida, não presuma que as quantidades podem ser somadas.
+
+11.3. Produtos com mensalidade
+
+A sacola deve separar:
+
+* Total inicial.
+* Mensalidade recorrente.
+* Produtos e serviços incluídos.
+* Quantidades.
+* Condições aplicáveis.
+
+Para o Protetor de Reputação, mostre R$ 29,90/mês separadamente do valor de implantação.
+
+Não some uma mensalidade ao total inicial como se fosse uma cobrança única.
+
+11.4. Finalização pelo WhatsApp
+
+Ao finalizar, gere uma mensagem organizada contendo:
+
+* Nome do cliente, se informado.
+* Nome de cada produto.
+* Variante exata.
+* Quantidade.
+* Preço unitário.
+* Subtotal por item.
+* Descontos efetivamente aplicáveis.
+* Total inicial.
+* Mensalidades obrigatórias.
+* Observações de personalização.
+
+Exemplo de estrutura da mensagem:
+
+“Olá! Quero fazer um pedido com a VaBora Soluções.
+
+Produto: [nome exato]
+Variante: [variante selecionada]
+Quantidade: [quantidade]
+Preço unitário: [valor]
+Subtotal: [valor]
+
+Outros itens: [lista de itens]
+
+Total inicial: [valor]
+Mensalidades aplicáveis: [valor e descrição]
+
+Observações: [personalização ou solicitação]
+
+Gostaria de confirmar o pedido e as condições comerciais.”
+
+Os campos entre colchetes devem ser preenchidos dinamicamente com os dados reais da sacola.
+
+Utilize o WhatsApp comercial de Curitiba como canal principal: https://wa.me/5541988442761.
+
+Não invente a confirmação de compra, pagamento ou reserva. O pedido só será confirmado após a validação comercial correspondente.
+
+Se não houver integração de pagamento, informe claramente que a finalização ocorre pelo WhatsApp.
+
+⸻
+
+12. BOTÕES, LINKS E ATENDIMENTO
+
+Distribua chamadas para ação nas páginas e categorias.
+
+Exemplos:
+
+* Comprar agora.
+* Adicionar à sacola.
+* Ver detalhes.
+* Quero personalizar.
+* Montar meu kit.
+* Conhecer o BioSite.
+* Quero conhecer o Protetor de Reputação.
+* Quero revender.
+* Solicitar orçamento.
+* Agendar uma visita comercial.
+
+Cada botão deve realizar a ação descrita. Não deixe botões decorativos sem funcionamento.
+
+12.1. Mensagem contextualizada
+
+Quando o cliente clicar no WhatsApp a partir de um produto, a mensagem deve identificar o nome e a variante exatos daquele produto.
+
+Quando o cliente clicar a partir de um combo, a mensagem deve informar o nome do combo e os componentes incluídos.
+
+Quando o cliente finalizar a sacola, a mensagem deve incluir todos os itens selecionados e os valores calculados.
+
+Não envie uma mensagem genérica quando houver informações de produto disponíveis.
+
+12.2. Atendimento regional
+
+A VaBora pode apresentar atendimento comercial em Curitiba e Serra Talhada, com visitas em outras cidades mediante combinação prévia.
+
+Crie uma chamada para solicitar visita presencial, com campos para:
+
+* Nome.
+* Empresa.
+* Cidade.
+* WhatsApp.
+* Produtos ou soluções de interesse.
+* Melhor período para contato.
+* Observações.
+
+Não confirme automaticamente um agendamento se não existir integração com uma agenda real.
+
+Envie a solicitação ao canal de atendimento adequado.
+
+Não prometa visita imediata ou gratuita sem confirmação das condições.
+
+⸻
+
+13. RECOMENDAÇÕES COMPLEMENTARES
+
+Crie recomendações de produtos complementares que ajudem o cliente a encontrar uma solução adequada.
+
+Exemplos:
+
+* Placa Google com Protetor de Reputação.
+* Placa MultiLinks com BioSite.
+* Cartão NFC com solução digital.
+* Placas 8 × 8 cm para diferentes mesas ou quartos.
+* Soluções combinadas para estabelecimentos comerciais.
+
+As recomendações devem ser contextuais e explicar o benefício da combinação.
+
+Nunca adicione um produto à sacola automaticamente. O cliente deve selecionar cada item e aceitar seu preço antes da inclusão.
+
+Não apresente como incluído um serviço que seja vendido separadamente.
+
+⸻
+
+14. REVenda e parcerias
+
+Crie uma seção exclusiva para quem deseja revender os produtos VaBora ou estabelecer uma parceria comercial.
+
+Apresente a possibilidade de solicitar informações sobre:
+
+* Catálogo.
+* Preços por quantidade.
+* Modelos disponíveis.
+* Personalização.
+* Combos.
+* Condições de compra.
+* Logística.
+* Atendimento comercial.
+
+Inclua um formulário com nome, empresa, cidade, WhatsApp e interesse.
+
+Não publique margens garantidas, descontos adicionais, condições de atacado, prazos ou entrega direta sem confirmação.
+
+Não confunda os preços de varejo deste documento com custos de aquisição ou preços de revenda.
+
+⸻
+
+15. SOBRE A VABORA
+
+Crie uma seção institucional com texto claro e profissional.
+
+Explique que a VaBora desenvolve e comercializa soluções para conectar empresas e clientes por meio de produtos físicos, NFC, QR Codes e ferramentas digitais.
+
+Mostre a proposta de facilitar o acesso a informações, contatos, cardápios, avaliações e serviços.
+
+Não invente história empresarial, números de clientes, quantidade de produtos vendidos, tempo de mercado ou resultados.
+
+Se forem incluídos depoimentos ou avaliações, utilize somente conteúdo real e autorizado.
+
+⸻
+
+16. PERGUNTAS FREQUENTES
+
+Inclua perguntas frequentes com respostas curtas, claras e úteis.
+
+NFC e QR Code
+
+* Preciso instalar um aplicativo para utilizar NFC?
+* E se o celular não tiver NFC?
+* Como funciona a leitura do QR Code?
+* Todos os produtos permitem alterar o link depois da compra?
+
+Responda conforme o funcionamento real de cada produto. Não generalize a possibilidade de atualizar links.
+
+Produtos
+
+* Qual é a diferença entre uma placa padrão e uma personalizada?
+* Qual é a diferença entre a placa plana e a placa em L?
+* Quais são as opções de placas 8 × 8 cm?
+* Como funciona a personalização?
+* Como escolho os modelos de um combo?
+* Como funciona o preço para 10 unidades?
+
+Serviços digitais
+
+* O que é o BioSite?
+* O que está incluído no BioSite Essencial?
+* Como funciona o Protetor de Reputação?
+* O Protetor tem mensalidade?
+* É possível recuperar uma ficha suspensa no Google?
+
+Pedidos e atendimento
+
+* Como faço um pedido com vários produtos?
+* Como funciona a compra para revenda?
+* Como solicito uma visita?
+* Qual é o prazo de produção e entrega?
+* Como funcionam frete, garantia e suporte?
+
+Não invente respostas sobre prazos, frete, garantia, formas de pagamento, mensalidades ou funcionalidades que não estejam confirmadas.
+
+Quando necessário, oriente o visitante a consultar a equipe antes de confirmar a compra.
+
+⸻
+
+17. SEO, ACESSIBILIDADE E DESEMPENHO
+
+Implemente os fundamentos técnicos de um site comercial profissional.
+
+17.1. SEO
+
+Utilize:
+
+* Títulos únicos e descritivos.
+* Metadescrições relevantes.
+* Hierarquia adequada de títulos.
+* URLs claras, quando aplicável.
+* Texto alternativo nas imagens.
+* Links internos entre categorias e produtos.
+* Conteúdo original.
+* Informações estruturadas quando compatíveis com a plataforma.
+
+Não invente dados empresariais estruturados ou avaliações.
+
+17.2. Acessibilidade
+
+Garanta:
+
+* Contraste adequado.
+* Navegação por teclado.
+* Botões com nomes compreensíveis.
+* Formulários identificados.
+* Textos legíveis.
+* Mensagens de erro claras.
+* Imagens com texto alternativo.
+* Foco visível nos elementos interativos.
+
+17.3. Desempenho
+
+Otimize as imagens sem comprometer a identificação do produto.
+
+Evite animações pesadas, carregamentos desnecessários e componentes redundantes.
+
+Se possível, carregue imagens secundárias sob demanda. Preserve uma imagem principal de qualidade para cada produto.
+
+⸻
+
+18. INTEGRIDADE COMERCIAL E DADOS
+
+Os preços de venda informados são os valores oficiais de referência deste projeto. Isso não significa que todos os custos e margens já foram auditados.
+
+Não invente:
+
+* Custos de aquisição.
+* Margens de lucro.
+* Taxas de pagamento.
+* Frete.
+* Prazo de entrega.
+* Garantia.
+* Desconto de atacado.
+* CNPJ.
+* Endereço comercial.
+* Resultados de clientes.
+* Quantidades vendidas.
+* Mensalidades adicionais.
+* Recursos não implementados.
+
+Não anuncie que o site oferece checkout, pagamento integrado, estoque em tempo real ou sistema de gestão de pedidos se esses recursos não estiverem efetivamente implementados.
+
+Se alguma funcionalidade depender de backend, banco de dados, API ou serviço externo, implemente-a quando o ambiente permitir. Caso não seja possível, deixe a limitação explícita e não apresente uma simulação como recurso funcional.
+
+18.1. Privacidade
+
+Colete somente as informações necessárias para atendimento e pedidos.
+
+Não solicite dados bancários, senhas ou informações desnecessárias em formulários.
+
+Inclua links para política de privacidade e termos de uso quando esses documentos estiverem disponíveis. Não invente textos legais como se tivessem sido revisados juridicamente.
+
+⸻
+
+19. AUDITORIA FINAL OBRIGATÓRIA
+
+Antes de considerar o site finalizado, execute uma revisão completa.
+
+19.1. Imagens
+
+* Verifique todas as URLs oficiais.
+* Confirme a categoria e a variante de cada fotografia.
+* Corrija imagens trocadas.
+* Confirme a distinção entre padrão e personalizado.
+* Confirme a distinção entre Google e MultiLinks.
+* Confira placas em L, placas planas, cartões, placas 8 × 8 cm e tags.
+* Teste a galeria no celular e no computador.
+
+Se não for possível validar uma imagem, não invente a variante correspondente.
+
+19.2. Preços
+
+Confira cada um dos preços da seção 6.
+
+Garanta que não existam valores antigos ou divergentes em:
+
+* Página inicial.
+* Catálogo.
+* Cards.
+* Páginas de detalhes.
+* Combos.
+* Sacola.
+* Mensagens de WhatsApp.
+* Recomendações.
+* Versão mobile.
+
+19.3. Combos e mensalidades
+
+Confirme que:
+
+* O Kit Duplo padrão custa R$ 149,90.
+* O Kit Duplo personalizado custa R$ 199,90.
+* O Balcão Express custa R$ 79,90.
+* O Blindagem Total custa R$ 189,90 + R$ 29,90/mês.
+* A Presença Digital Completa custa R$ 379,90.
+* A placa personalizada Google + Protetor custa R$ 149,90 + R$ 29,90/mês.
+* Os serviços digitais apresentam os valores da tabela oficial.
+* As placas 8 × 8 cm aplicam o preço por quantidade somente quando elegíveis.
+
+Mensalidades devem estar claramente separadas dos valores iniciais.
+
+19.4. Funcionamento
+
+Teste:
+
+* Menu.
+* Links.
+* Botões.
+* Filtros, caso implementados.
+* Seleção de variantes.
+* Quantidades.
+* Cálculo de subtotais.
+* Cálculo de totais.
+* Regra de quantidade mínima.
+* Inclusão e remoção de produtos.
+* Persistência da sacola.
+* Links de WhatsApp.
+* Mensagens contextuais.
+* Formulários.
+* Layout mobile.
+* Layout desktop.
+
+Corrija os erros encontrados.
+
+19.5. Consistência visual
+
+Verifique:
+
+* Legibilidade do logotipo.
+* Contraste.
+* Hierarquia tipográfica.
+* Alinhamento dos cards.
+* Proporção das imagens.
+* Espaçamento.
+* Consistência dos botões.
+* Clareza dos preços.
+* Facilidade de compra.
+
+⸻
+
+20. ENTREGA FINAL
+
+Quero um site comercial completo, com aparência premium, navegação intuitiva e foco em conversão, utilizando a Wistag como referência de organização comercial, mas mantendo a identidade própria da VaBora Soluções.
+
+O resultado deve conter:
+
+* Identidade visual consistente.
+* Catálogo corretamente organizado.
+* Fotografias oficiais nas categorias certas.
+* Preços atualizados.
+* Combos claros.
+* Protetor de Reputação em posição estratégica.
+* BioSite e serviços digitais.
+* Sacola funcional.
+* Mensagens de WhatsApp contextualizadas.
+* Atendimento comercial.
+* Layout responsivo.
+* SEO básico.
+* Perguntas frequentes.
+* Revisão final dos links, imagens e cálculos.
+
+Não encerre o trabalho apenas com uma descrição do que deveria ser feito. Execute as alterações no projeto, teste os recursos possíveis e corrija os erros.
+
+Se o ambiente não permitir alguma integração, informe especificamente o que depende de configuração externa. Não declare concluído aquilo que não foi implementado ou testado.
+
+Priorize a fidelidade às informações comerciais, a qualidade visual, a clareza dos preços e a facilidade de o cliente escolher e comprar.
+
+Este é o documento consolidado de referência para a versão final do site VaBora Soluções.

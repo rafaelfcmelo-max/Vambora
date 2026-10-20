@@ -1,0 +1,1074 @@
+PROMPT MESTRE DEFINITIVO — REVISÃO COMPLETA DO SITE VÃBORA SOLUÇÕES
+
+OBJETIVO PRINCIPAL
+
+Revise, corrija e aperfeiçoe o site da VãBora Soluções que já foi gerado neste projeto.
+
+Não quero um novo documento de sugestões. Quero que você implemente as alterações diretamente no projeto existente.
+
+O site já foi criado, mas precisa de melhorias importantes nas cores, logo, imagens dos produtos, organização do catálogo, textos comerciais, preços, ofertas, carrinho e conversão de visitantes em clientes.
+
+Trabalhe sobre a estrutura existente, preserve o que já funciona e corrija o que estiver errado. Não descarte funcionalidades úteis nem recrie desnecessariamente o projeto do zero.
+
+Se alguma funcionalidade ainda não existir, implemente-a de verdade dentro das capacidades do ambiente. Não apresente botões decorativos como se fossem funcionais.
+
+A VãBora Soluções comercializa placas de acrílico, cartões e tags NFC, soluções com QR Code, páginas BioSite, serviços relacionados ao Perfil da Empresa no Google, Protetor de Reputação e pacotes digitais personalizados.
+
+Nosso público inclui lojas, restaurantes, clínicas, hotéis, pousadas, prestadores de serviços, profissionais autônomos e empresas em geral.
+
+A proposta da marca é conectar o atendimento presencial à experiência digital, facilitando o acesso às informações, aos contatos, aos cardápios, aos canais de atendimento e às avaliações públicas.
+
+A comunicação deve ser comercial, clara, moderna, persuasiva e acessível. O visitante não precisa conhecer tecnologia para entender o valor da solução.
+
+O objetivo é fazer o cliente pensar:
+
+“Isso facilita meu atendimento, melhora minha apresentação profissional e pode ajudar meus clientes a encontrar e acessar meus canais com mais facilidade.”
+
+⸻
+
+1. IDENTIDADE VISUAL PREMIUM
+
+1.1. Corrigir as cores
+
+O site atual utiliza tons azuis muito escuros em áreas onde a própria logo também possui azul-escuro. Isso prejudica a visualização e precisa ser corrigido.
+
+Adote a seguinte paleta:
+
+* Preto principal: #050608.
+* Grafite: #0D1118.
+* Superfícies alternativas: #151B25.
+* Branco principal: #FFFFFF.
+* Cinza-claro para textos secundários: #C4CBD5.
+* Azul elétrico para destaques e ações: #1677FF.
+* Ciano para detalhes tecnológicos: #35CFFF.
+
+Utilize o preto e o grafite para construir uma aparência sofisticada, o branco para garantir leitura e o azul para chamar a atenção para botões, interações e detalhes importantes.
+
+Não transforme o site inteiro em uma massa azul-escura.
+
+Garanta contraste suficiente em todas as seções, cartões, botões, menus e textos.
+
+1.2. Corrigir a logo
+
+Imagem oficial da logo:
+
+https://i.postimg.cc/PqF7G23b/IMG-0891.png
+
+Use essa imagem como referência principal.
+
+* Preserve o desenho e as proporções originais.
+* Não redesenhe a logo com IA.
+* Reforce a presença do branco já existente na marca.
+* Se os elementos azuis desaparecerem sobre o fundo, utilize uma versão de alto contraste que preserve o desenho original, caso seja possível criá-la sem distorções.
+* Se necessário, coloque a logo sobre um painel claro ou uma área com contraste adequado.
+* Não aplique brilho excessivo, sombras exageradas ou efeitos que prejudiquem a leitura.
+* Não altere arbitrariamente as cores oficiais da marca.
+
+A logo deve ficar legível no cabeçalho, na primeira seção, no celular, no iPad e no computador.
+
+1.3. Estilo visual
+
+Crie uma experiência visual moderna, premium, tecnológica e profissional.
+
+Utilize:
+
+* Tipografia contemporânea e legível.
+* Espaçamento generoso.
+* Cartões com bordas discretas.
+* Imagens de produtos em destaque.
+* Sombras suaves.
+* Detalhes de iluminação azul.
+* Animações discretas de entrada durante a rolagem.
+* Carrosséis de imagens com navegação intuitiva.
+* Efeitos suaves nos botões.
+* Ícones coerentes com cada funcionalidade.
+
+Evite exageros de brilho, animações pesadas, excesso de gradientes e elementos decorativos que desviem a atenção dos produtos.
+
+Respeite a preferência por movimento reduzido do dispositivo.
+
+⸻
+
+2. CABEÇALHO E NAVEGAÇÃO
+
+O site que está sendo construído será o próprio site oficial da VãBora. Portanto, remova o antigo link “Site oficial” que direciona para o mesmo site.
+
+O cabeçalho deve conter:
+
+* Logo.
+* Produtos.
+* Serviços digitais.
+* Combos e ofertas.
+* Como funciona.
+* Sobre a VãBora.
+* Contato.
+* Acesso ao carrinho com indicador da quantidade de itens.
+
+Links oficiais:
+
+Instagram:
+https://www.instagram.com/vamboraserratalhada?xtok=anU1dDJ0d2V2NHRt&utm_source=qr
+
+WhatsApp Curitiba:
+https://wa.me/5541988442761
+
+WhatsApp Serra Talhada:
+https://wa.me/5587991578326
+
+Não invente um novo domínio, endereço físico, CNPJ ou perfil social.
+
+O menu deve funcionar em todas as resoluções. No celular, utilize um menu compacto e acessível.
+
+⸻
+
+3. CORREÇÃO OBRIGATÓRIA DAS IMAGENS
+
+O catálogo atual contém imagens associadas aos produtos errados. Corrija isso antes de finalizar o projeto.
+
+Cada produto deve utilizar fotografias que correspondam exatamente à categoria e à variação apresentada.
+
+Não use uma placa de cardápio como imagem de uma placa Google padrão. Não use um cartão personalizado como imagem de cartão padrão. Não mostre uma placa plana como se fosse uma placa em L.
+
+Não substitua as fotografias fornecidas por imagens genéricas ou fictícias.
+
+Confira visualmente o conteúdo dos arquivos antes de associá-los aos produtos. O nome do arquivo, sozinho, não comprova qual variação aparece na foto.
+
+3.1. Placas em L resinadas — 11 × 16 cm
+
+Imagens:
+
+1. https://i.postimg.cc/BZCV4SVc/IMG-0706.jpg
+2. https://i.postimg.cc/2jxKrkKQ/IMG-0649.jpg
+3. https://i.postimg.cc/BZCV4SV5/IMG-0703.jpg
+4. https://i.postimg.cc/MZYFq6Fm/IMG-0705.jpg
+
+Todas as placas dessa categoria são resinadas.
+
+3.2. Placas planas — 10 × 10 cm, padrão sem personalização
+
+Imagens:
+
+1. https://i.postimg.cc/yxzzJ7qC/IMG-0653.jpg
+2. https://i.postimg.cc/HnCCJTGm/IMG-0654.jpg
+3. https://i.postimg.cc/L5MMqmd2/IMG-0655.jpg
+4. https://i.postimg.cc/J0WWyRw1/IMG-0656.jpg
+5. https://i.postimg.cc/HnCCJTGg/IMG-0657.jpg
+
+As opções de catálogo devem incluir:
+
+* Google Avaliações padrão.
+* WhatsApp padrão.
+* Instagram padrão.
+* Cardápio padrão.
+* Google Avaliações padrão preta.
+* Google Avaliações padrão azul.
+
+A disponibilidade das duas cores de Google deve ser associada às fotografias corretas. Não invente uma variação que não esteja confirmada.
+
+Cada opção deve ter nome, imagem e seleção próprios.
+
+3.3. Placas planas — 10 × 10 cm, personalizadas
+
+Imagens:
+
+1. https://i.postimg.cc/ZKV1m8q8/IMG-0642.jpg
+2. https://i.postimg.cc/15JLSGzH/IMG-0707.jpg
+3. https://i.postimg.cc/Qx0RDQMk/IMG-0646.jpg
+4. https://i.postimg.cc/YqbJ76SN/IMG-0893.jpg
+5. https://i.postimg.cc/KvJdbPYD/IMG-0711.jpg
+
+Utilize as fotos para demonstrar a personalização. Não misture essa categoria com os modelos padrão.
+
+3.4. Cartões NFC — formato bancário
+
+Imagens:
+
+1. https://i.postimg.cc/KzD0NbkF/IMG-0697.jpg
+2. https://i.postimg.cc/wvQwVzyq/IMG-0692.jpg
+3. https://i.postimg.cc/nzG3kxjH/IMG-0691.jpg
+4. https://i.postimg.cc/Y9zd37Gq/IMG-0648.jpg
+5. https://i.postimg.cc/3RFtBh43/IMG-0690.jpg
+6. https://i.postimg.cc/rmNfJT0p/IMG-0612.jpg
+
+Corrija especificamente:
+
+* O cartão Google padrão deve mostrar um modelo realmente padrão.
+* Os cartões personalizados devem ficar identificados como personalizados.
+* O cartão Black Executivo + BioSite está com a imagem errada. Corrija a associação.
+* Se não houver foto específica do combo, utilize a foto correta do cartão e explique o BioSite como serviço digital complementar, sem criar uma composição falsa.
+
+3.5. Placas 8 × 8 cm resinadas personalizadas
+
+Imagens:
+
+1. https://i.postimg.cc/Bbt2Kf2V/IMG-0679.jpg
+2. https://i.postimg.cc/PJN1wn17/IMG-0682.jpg
+3. https://i.postimg.cc/RhqwHxw8/IMG-0645.jpg
+4. https://i.postimg.cc/nrMqDfqw/IMG-0644.jpg
+5. https://i.postimg.cc/4ynp9Rp2/IMG-0643.jpg
+
+Todas são resinadas.
+
+3.6. Placas 8 × 8 cm resinadas padrão, sem personalização
+
+Imagens:
+
+1. https://i.postimg.cc/j2GnnwxQ/IMG-0639.jpg
+2. https://i.postimg.cc/Pq3Wrqwc/IMG-0614.jpg
+3. https://i.postimg.cc/5t7BNtCT/IMG-0615.jpg
+
+Não misture com as personalizadas.
+
+3.7. Tags NFC antimetal para celular, personalizadas
+
+Imagens:
+
+1. https://i.postimg.cc/tgT6fHMk/IMG-0683.jpg
+2. https://i.postimg.cc/D0q4sf89/IMG-0650.jpg
+
+3.8. Tags NFC antimetal para celular, padrão sem personalização
+
+Imagens:
+
+1. https://i.postimg.cc/G2D4w3PW/IMG-0673.jpg
+2. https://i.postimg.cc/NMRjCJB0/IMG-0665.jpg
+
+Não misture os modelos.
+
+Regras para todas as imagens
+
+* Não distorcer as proporções.
+* Não recortar partes importantes do produto.
+* Criar carrosséis independentes por categoria.
+* Permitir navegação por gesto no celular e setas no computador.
+* Utilizar carregamento otimizado.
+* Adicionar textos alternativos.
+* Se uma imagem falhar, mostrar uma alternativa comprovadamente pertencente à mesma categoria.
+* Nunca substituir silenciosamente uma foto por uma de outro produto.
+
+Se uma fotografia não puder ser identificada com segurança, não invente sua correspondência. Deixe a associação pendente para revisão.
+
+⸻
+
+4. POSICIONAMENTO E COMUNICAÇÃO COMERCIAL
+
+O site não pode parecer um catálogo técnico de NFC e QR Codes.
+
+O visitante deve compreender primeiro o benefício, depois o funcionamento e, por último, as especificações.
+
+A mensagem principal da marca deve girar em torno de:
+
+“Conecte seu negócio aos clientes com mais praticidade, uma apresentação profissional e acesso rápido aos seus canais digitais.”
+
+Apresente a VãBora como uma empresa que ajuda a organizar a conexão entre o estabelecimento físico e o ambiente digital.
+
+Os benefícios prioritários são:
+
+* Facilitar o acesso aos links.
+* Organizar canais de atendimento.
+* Facilitar o compartilhamento de contatos.
+* Ajudar clientes a encontrar o perfil da empresa.
+* Facilitar o acesso às avaliações públicas.
+* Apresentar produtos e serviços de forma profissional.
+* Personalizar a experiência de atendimento.
+* Reunir soluções físicas e digitais em um pacote.
+
+Linguagem simples
+
+Exemplo de explicação:
+
+“Seu cliente aproxima o celular compatível da placa ou lê o QR Code e acessa diretamente o link configurado. Pode ser seu WhatsApp, Instagram, cardápio, Wi-Fi, perfil de avaliações ou outra página.”
+
+Não repita termos técnicos desnecessariamente.
+
+Mantenha as especificações em uma seção expansível chamada “Detalhes do produto”.
+
+⸻
+
+5. FICHA TÉCNICA DOS PRODUTOS
+
+Todas as placas em L de 11 × 16 cm são resinadas.
+
+Todas as placas de 8 × 8 cm são resinadas.
+
+As placas em L, placas planas de 10 × 10 cm e placas de 8 × 8 cm que recebem impressão são produzidas com impressão UV sobre acrílico de 3 mm.
+
+Apresente essas características na ficha técnica dos modelos correspondentes.
+
+Não afirme que todas as tags, cartões ou outros produtos possuem o mesmo material, acabamento ou forma de fixação sem confirmação.
+
+Para cada produto, organize as informações em duas partes:
+
+Apresentação comercial:
+
+* Nome.
+* Foto.
+* Principal benefício.
+* Aplicação prática.
+* Preço.
+* Opções de personalização.
+* Botão para adicionar ao carrinho.
+* Botão para conversar pelo WhatsApp.
+
+Detalhes técnicos:
+
+* Dimensões.
+* Material.
+* Impressão.
+* Resina.
+* Fixação, quando confirmada.
+* Funcionamento.
+* Personalização.
+* Itens incluídos.
+* Observações relevantes.
+
+Não invente garantia, resistência, impermeabilidade, durabilidade, prazo de entrega ou condições de produção não confirmadas.
+
+⸻
+
+6. CATÁLOGO E PREÇOS COM PRECIFICAÇÃO PSICOLÓGICA
+
+Utilize preços com finais estratégicos, principalmente ,90 e ,99, quando fizer sentido comercial.
+
+Não aplique preços quebrados aleatoriamente. A apresentação deve continuar profissional, coerente e fácil de comparar.
+
+Ajuste os preços do catálogo para a tabela abaixo. Estes são os valores de venda propostos para a revisão do site.
+
+6.1. Placas em L — 11 × 16 cm
+
+Produto	Preço
+Google Avaliações padrão	R$ 119,90
+Google Avaliações personalizada	R$ 149,90
+MultiLinks padrão	R$ 139,90
+MultiLinks padrão + BioSite Essencial	R$ 219,90
+MultiLinks 100% personalizada em resina	R$ 249,90
+
+Todas as placas em L são resinadas.
+
+6.2. Placas planas — 10 × 10 cm
+
+Produto	Preço
+Google Avaliações padrão	R$ 79,90
+Personalizada	R$ 99,90
+MultiLinks personalizada	R$ 99,90
+Combo de duas placas elegíveis	R$ 149,90
+Personalizada Google + Protetor de Reputação	R$ 119,90 + mensalidade
+
+Os modelos padrão devem incluir, conforme as imagens e variações confirmadas:
+
+* Google Avaliações.
+* WhatsApp.
+* Instagram.
+* Cardápio.
+* Google preto.
+* Google azul.
+
+O combo de duas placas deve permitir apenas as combinações aprovadas. Não presuma que todos os modelos podem ser combinados.
+
+A placa MultiLinks personalizada não inclui BioSite automaticamente.
+
+O combo de placa personalizada Google + Protetor deve exibir a mensalidade separadamente.
+
+6.3. Cartões NFC
+
+Produto	Preço
+Cartão Google padrão	R$ 49,90
+Cartão Google personalizado	R$ 79,90
+Black Executivo	R$ 119,90
+Black Executivo + BioSite	R$ 169,90
+Personalizado frente e verso	R$ 119,90
+Personalizado frente e verso + BioSite	R$ 199,90
+
+As fotos precisam corresponder exatamente aos modelos.
+
+6.4. Tags antimetal
+
+Produto	Preço
+Tag padrão	R$ 59,90
+Tag personalizada com impressão UV	R$ 69,90
+Tag padrão + BioSite Essencial	R$ 99,90
+
+6.5. Placas 8 × 8 cm resinadas
+
+Produto	Preço unitário	A partir de 5 unidades
+Link direto	R$ 48,90	R$ 38,90/un.
+Personalizada com logo + Google	R$ 58,90	R$ 48,90/un.
+MultiLinks por mesa ou quarto	R$ 68,90	R$ 54,90/un.
+
+O preço por quantidade deve ser aplicado automaticamente apenas quando a quantidade elegível for atingida. Não some descontos incompatíveis sem confirmação.
+
+6.6. Serviços digitais
+
+Serviço	Preço
+Criação ou recuperação simples de Perfil da Empresa no Google	A partir de R$ 49,90
+Serviço intermediário de criação/recuperação	R$ 79,90
+Caso complexo de criação/recuperação	Até R$ 99,90
+Otimização do Perfil da Empresa no Google	R$ 149,90
+BioSite Essencial	R$ 99,90
+BioSite Profissional	R$ 189,90
+BioSite Completo	R$ 299,90
+
+O valor de criação ou recuperação deve depender da complexidade real. Não prometa aprovação ou recuperação garantida.
+
+Escopo dos BioSites
+
+Essencial — R$ 99,90
+
+Até seis botões interativos. Exemplos: Wi-Fi, Pix, Instagram, WhatsApp, avaliação Google e cardápio.
+
+Profissional — R$ 189,90
+
+Proposta de escopo: até dez botões, galeria de até seis fotos, horário de funcionamento e catálogo ou cardápio em PDF.
+
+Completo — R$ 299,90
+
+Proposta de escopo: até quinze botões, mini-site com abas, galeria de até quinze fotos e seção de equipe.
+
+Os limites e os recursos dos planos Profissional e Completo devem ser confirmados antes de serem publicados como compromisso definitivo. Se ainda não estiverem aprovados, identifique-os como pendentes de validação e não prometa funcionalidades não implementadas.
+
+⸻
+
+7. COMBOS E OFERTAS
+
+Crie uma seção visual de combos com benefícios claros, itens incluídos, preço e botão de compra.
+
+Balcão Express — R$ 79,90
+
+Placa plana de 10 × 10 cm com configuração para Google ou redirecionamento, conforme a versão contratada.
+
+Kit Duplo — R$ 149,90
+
+Duas placas elegíveis, com escolha dos modelos permitidos.
+
+Blindagem Total — R$ 189,90 + mensalidade
+
+Placa em L premium preta ou branca e implantação do Protetor de Reputação, conforme o escopo comercial confirmado.
+
+Não invente o valor da mensalidade.
+
+Presença Digital Completa — R$ 379,90
+
+Inclui:
+
+* Placa personalizada.
+* BioSite Profissional.
+* Otimização do Perfil da Empresa no Google.
+
+Apresente cada componente visualmente.
+
+Hotelaria e Quarto Inteligente — orçamento personalizado
+
+Solução para hotéis, pousadas e hospedagens, incluindo possibilidades de placas para Wi-Fi, cardápio, informações úteis e recepção, conforme a necessidade e o pacote acordado.
+
+Não invente preço fixo.
+
+Promoção por indicação
+
+O cliente que indicar três novos clientes distintos que concluam suas compras poderá receber uma placa plana de 10 × 10 cm gratuita, padrão ou personalizada, de acordo com as regras confirmadas.
+
+Antes de publicar, defina as condições de participação, validade e acumulação com outras promoções. Não conte como indicação válida uma pessoa que apenas iniciou uma conversa.
+
+Não invente prazo de validade ou condições comerciais ainda não aprovadas.
+
+⸻
+
+8. GATILHOS MENTAIS E COPYWRITING
+
+Aplique gatilhos de persuasão de maneira contextualizada. Não repita o mesmo argumento em todos os produtos.
+
+A comunicação deve aumentar a clareza, a confiança e a percepção de valor, sem manipulação enganosa.
+
+8.1. Identificação do problema
+
+Exemplos de chamadas:
+
+* “Seu cliente consegue encontrar rapidamente os canais da sua empresa?”
+* “Facilite o acesso ao seu cardápio, WhatsApp e Instagram.”
+* “Seus contatos profissionais estão organizados em um só lugar?”
+* “Torne mais simples o caminho até suas avaliações Google.”
+* “Sua empresa merece uma apresentação digital organizada.”
+
+8.2. Benefício e praticidade
+
+Destaque o resultado prático de usar o produto.
+
+Exemplos:
+
+* “Aproxime o celular e acesse o link configurado.”
+* “Compartilhe seus contatos de maneira prática.”
+* “Reúna os principais links da sua empresa em uma página.”
+* “Facilite o acesso às informações que seus clientes procuram.”
+
+8.3. Autoridade e apresentação profissional
+
+Utilize mensagens como:
+
+* “Sua marca também merece uma apresentação à altura.”
+* “Uma solução personalizada para a rotina do seu negócio.”
+* “Transforme um ponto de contato em uma experiência mais organizada.”
+
+Não prometa que a compra garantirá autoridade ou crescimento.
+
+8.4. Demonstração
+
+Crie uma seção “Veja como funciona”:
+
+1. O cliente aproxima o celular compatível ou lê o QR Code.
+2. O link configurado é aberto.
+3. O cliente acessa o destino desejado.
+
+Demonstre o funcionamento real, sem simular integrações que não existam.
+
+8.5. Ancoragem de valor
+
+Apresente o preço acompanhado dos benefícios e do que está incluído.
+
+Compare produtos com transparência.
+
+Não invente preços anteriores, descontos, economia ou retorno financeiro garantido.
+
+8.6. Prova social
+
+Prepare espaço para:
+
+* Depoimentos verdadeiros.
+* Fotografias de produtos instalados.
+* Estudos de caso.
+* Avaliações públicas.
+* Resultados documentados.
+
+Não invente clientes, depoimentos, notas, números ou logos.
+
+Enquanto não houver material real, utilize demonstrações de produto e exemplos de aplicação identificados como ilustrativos.
+
+8.7. Redução de risco
+
+Use chamadas como:
+
+* “Não sabe qual modelo escolher? Converse com nossa equipe.”
+* “Quer personalizar com sua logo? Vamos entender sua necessidade.”
+* “Precisa atender várias mesas ou quartos? Solicite uma proposta.”
+* “Quer ver amostras antes de decidir? Consulte a possibilidade de uma visita.”
+
+Não prometa garantias ou condições não confirmadas.
+
+8.8. Urgência e escassez
+
+Utilize urgência somente quando existir uma campanha real com prazo verdadeiro ou uma disponibilidade efetivamente limitada.
+
+Não crie contadores regressivos falsos, estoque fictício ou frases enganosas.
+
+⸻
+
+9. AVALIAÇÕES GOOGLE E OPORTUNIDADES DE NEGÓCIO
+
+Crie uma seção que explique por que facilitar o acesso às avaliações pode ser útil.
+
+Título:
+
+“Facilite o caminho entre uma boa experiência e uma avaliação.”
+
+Texto sugerido:
+
+“Seu cliente teve uma boa experiência? Facilite o acesso ao perfil da sua empresa no Google. Com uma placa de avaliação, ele pode aproximar o celular compatível ou ler o QR Code para chegar ao destino configurado com menos etapas.”
+
+Explique que avaliações públicas ajudam outros consumidores a conhecer experiências de clientes e que a quantidade de avaliações e as notas podem contribuir para a popularidade considerada nos resultados locais.
+
+Não afirme que uma placa:
+
+* Garante o primeiro lugar no Google.
+* Garante um número de avaliações.
+* Gera determinado número de clientes.
+* Aumenta automaticamente o faturamento.
+
+A placa facilita o acesso; a avaliação depende da decisão do consumidor; os resultados comerciais dependem de diversos fatores.
+
+Inclua o botão “Quero facilitar as avaliações da minha empresa”.
+
+⸻
+
+10. CALCULADORA DE RETORNO POTENCIAL
+
+Crie uma calculadora interativa para o visitante estimar quantos clientes, com base em seu lucro de contribuição, seriam necessários para cobrir o investimento inicial.
+
+Campos:
+
+* Investimento no produto ou combo.
+* Lucro de contribuição estimado por cliente, após custos variáveis.
+* Quantidade hipotética de novos clientes.
+
+Cálculo:
+
+Quantidade de clientes para cobrir o investimento = investimento inicial dividido pelo lucro de contribuição por cliente, arredondando para cima.
+
+Exemplo:
+
+Produto de R$ 79,90 e lucro de contribuição de R$ 40,00 por cliente.
+
+* Um cliente representa R$ 40,00 de contribuição.
+* Dois clientes representam R$ 80,00 de contribuição.
+* Nesse cenário hipotético, dois clientes cobririam aproximadamente o investimento inicial.
+
+Inclua a observação:
+
+“Esta é uma simulação matemática, não uma previsão de vendas. O produto não garante a conquista de novos clientes. O resultado depende da demanda, do atendimento, da oferta e de outros fatores.”
+
+Não confunda faturamento com lucro.
+
+Se o lucro por cliente for zero ou negativo, informe que não é possível calcular uma quantidade finita para cobrir o investimento usando esse valor.
+
+Não apresente estimativas fictícias de clientes gerados pela placa.
+
+⸻
+
+11. CARTÕES NFC: CONTATOS PROFISSIONAIS E PRATICIDADE
+
+Título:
+
+“Seu contato profissional, pronto para compartilhar.”
+
+Texto:
+
+“Em vez de depender apenas de um cartão de papel, compartilhe seus dados profissionais de forma prática. Com o cartão NFC compatível, a pessoa aproxima o celular ou lê o QR Code para acessar o link configurado.”
+
+Destaque:
+
+* Compartilhamento prático.
+* Apresentação profissional.
+* Acesso a WhatsApp, Instagram, site ou outros destinos configurados.
+* Possibilidade de salvar os dados de contato, quando houver um recurso compatível.
+* Reutilização do cartão.
+* Personalização conforme o modelo.
+
+Não afirme que todos os contatos serão salvos automaticamente. Explique que isso depende da funcionalidade configurada e da ação do destinatário.
+
+Crie uma comparação honesta com cartões de papel:
+
+Cartões impressos podem ter baixo custo unitário em grandes quantidades e são úteis para distribuição em massa. O cartão NFC é reutilizável e facilita compartilhar links digitais sem precisar reimprimir os dados a cada alteração.
+
+Se utilizar valores de referência de milheiros de cartões impressos, verifique fornecedores, quantidade, material, acabamento, frete e data do orçamento. Não compare configurações diferentes como se fossem equivalentes.
+
+Botão: “Quero meu cartão profissional”.
+
+⸻
+
+12. BIOSITE: PRESENÇA DIGITAL PERSONALIZADA
+
+Título:
+
+“Seus principais links em uma página com a identidade da sua marca.”
+
+Texto:
+
+“Reúna seus canais em uma página organizada, com apresentação visual personalizada e acesso rápido às informações que seus clientes procuram.”
+
+Explique que um BioSite pode oferecer, conforme o plano:
+
+* Identidade visual personalizada.
+* Botões direcionados.
+* Fotos e informações comerciais.
+* Catálogo ou cardápio em PDF, quando incluído.
+* Galeria e seções adicionais nos planos que oferecerem esses recursos.
+
+Compare de forma honesta:
+
+“Uma página simples de links resolve uma necessidade básica. Um BioSite personalizado permite trabalhar melhor a apresentação da marca e organizar a jornada do cliente conforme os recursos contratados.”
+
+Explique que o BioSite não substitui necessariamente um site completo. Ele pode ser uma solução inicial ou complementar.
+
+Botões:
+
+* “Quero meu BioSite”.
+* “Comparar planos”.
+* “Montar minha presença digital”.
+
+⸻
+
+13. VENDA COMPLEMENTAR E RECOMENDAÇÕES
+
+Implemente recomendações de produtos complementares, mas nunca adicione produtos ao carrinho sem autorização.
+
+Quem escolhe uma placa Google
+
+Sugira:
+
+* Protetor de Reputação.
+* BioSite.
+* Cartão NFC.
+
+Mensagem:
+
+“Já vai facilitar o acesso às avaliações? Você também pode organizar seus outros canais digitais em uma página personalizada.”
+
+Quem escolhe um cartão NFC
+
+Sugira:
+
+* BioSite.
+* Perfil da Empresa no Google.
+* Placa de balcão para avaliações.
+
+Mensagem:
+
+“Seu cartão facilita o contato individual. Uma placa no balcão pode ajudar outros clientes a encontrar os links da sua empresa.”
+
+Quem escolhe um BioSite
+
+Sugira:
+
+* Cartão NFC direcionando para a página.
+* Placa MultiLinks.
+* Otimização do Perfil da Empresa no Google.
+
+Mensagem:
+
+“Você já tem seus links organizados. Agora pode facilitar o acesso a eles também no atendimento presencial.”
+
+Restaurantes e cafés
+
+Sugira, conforme a necessidade:
+
+* Placa para cardápio.
+* Tags por mesa.
+* BioSite para reunir cardápio e canais de atendimento.
+* Placa de avaliações Google.
+
+Hotéis e pousadas
+
+Sugira:
+
+* Placas para informações dos quartos.
+* Acesso ao Wi-Fi e a informações úteis.
+* Placa de recepção.
+* MultiLinks ou BioSite conforme o pacote contratado.
+
+As recomendações devem ter relação direta com a necessidade informada pelo cliente.
+
+⸻
+
+14. PROTETOR DE REPUTAÇÃO
+
+O Protetor de Reputação deve aparecer logo abaixo dos primeiros produtos de Google Avaliações, e não apenas no final do catálogo.
+
+Apresente como uma opção adicional para quem deseja organizar o recebimento de feedback.
+
+Texto sugerido:
+
+“Quer ir além da placa? Conheça o Protetor de Reputação e veja como ele pode ajudar a organizar o feedback dos seus clientes.”
+
+Explique o funcionamento real do serviço, conforme a implementação disponível.
+
+É proibido apresentar o serviço como uma forma de esconder, bloquear ou impedir avaliações negativas públicas.
+
+O acesso às avaliações públicas deve continuar disponível para todos. Um canal privado de feedback pode existir como opção adicional, sem substituir ou dificultar a publicação de avaliações.
+
+Combo de placa + Protetor
+
+Preço inicial proposto: R$ 119,90, acrescido de mensalidade.
+
+A mensalidade promocional de R$ 10,00 foi mencionada, mas ainda precisa de confirmação definitiva.
+
+Não publique o valor recorrente como condição final se ele ainda não estiver confirmado.
+
+Não invente taxas de implantação, cancelamento ou funcionalidades.
+
+Também mantenha o Protetor disponível na seção de serviços digitais.
+
+⸻
+
+15. VISITAS COMERCIAIS E ATENDIMENTO CONSULTIVO
+
+Crie uma seção chamada “Atendimento e visitas”.
+
+Explique que a equipe realiza visitas comerciais em Curitiba e Serra Talhada, mediante combinação de data e disponibilidade.
+
+Para outras cidades, a possibilidade de visita precisa ser combinada previamente.
+
+Destaque que o atendimento pode ajudar o cliente a:
+
+* Conhecer amostras.
+* Entender as diferenças entre produtos.
+* Definir personalizações.
+* Montar pacotes.
+* Avaliar soluções para várias unidades, mesas ou quartos.
+
+Utilize chamadas:
+
+* “Vamos montar um pacote para seu negócio?”
+* “Quer personalizar com sua logo?”
+* “Prefere conhecer as amostras antes de decidir?”
+* “Agende uma conversa com nossa equipe.”
+
+O botão “Quero agendar uma visita” deve abrir o WhatsApp com uma mensagem preenchida:
+
+“Olá, equipe VãBora! Gostaria de conversar sobre soluções para minha empresa e verificar a possibilidade de uma visita comercial. Minha cidade é ______ e meu negócio é ______.”
+
+Se viável, permita informar nome, empresa, cidade, tipo de negócio, produtos de interesse e melhor período para conversar.
+
+Não confirme automaticamente uma visita sem a validação da equipe.
+
+⸻
+
+16. CARRINHO FUNCIONAL
+
+Implemente um carrinho real.
+
+O visitante deve poder:
+
+1. Adicionar produtos.
+2. Selecionar variações.
+3. Escolher cor ou personalização quando disponível.
+4. Informar quantidades.
+5. Adicionar outros produtos.
+6. Alterar quantidades.
+7. Remover itens.
+8. Ver subtotais.
+9. Ver o total.
+10. Encaminhar a lista ao WhatsApp.
+
+O carrinho deve respeitar os preços, descontos por quantidade e regras dos combos.
+
+Não aplique descontos incompatíveis.
+
+Exiba os valores iniciais e as mensalidades separadamente.
+
+Não simule um checkout ou pagamento online que não esteja integrado. O carrinho pode funcionar como lista de interesse e orçamento preliminar encaminhado para atendimento.
+
+Mantenha o carrinho acessível durante a navegação. Preserve os itens ao trocar de seção e, se possível, ao atualizar a página.
+
+⸻
+
+17. WHATSAPP CONTEXTUALIZADO
+
+Todo produto deve possuir um botão “Quero este produto” ou “Conversar sobre este produto”.
+
+O WhatsApp deve abrir com uma mensagem preenchida contendo o nome exato do produto e sua variação.
+
+Exemplo:
+
+“Olá, equipe VãBora! Tenho interesse na Placa Plana 10 × 10 cm — Google Avaliações Padrão. Gostaria de saber como funciona e como posso comprar.”
+
+Para o BioSite:
+
+“Olá, equipe VãBora! Tenho interesse no BioSite Essencial e gostaria de saber como configurar os botões para minha empresa.”
+
+Para o carrinho:
+
+“Olá, equipe VãBora! Montei uma lista de produtos no site e gostaria de confirmar as opções, personalizações e valores.”
+
+Quando disponíveis, inclua na mensagem:
+
+* Produtos.
+* Variações.
+* Quantidades.
+* Valores.
+* Personalizações.
+* Mensalidades recorrentes em separado.
+* Observações do cliente.
+
+Utilize os contatos oficiais:
+
+Curitiba:
+https://wa.me/5541988442761
+
+Serra Talhada:
+https://wa.me/5587991578326
+
+Permita escolher a unidade de atendimento quando necessário.
+
+Codifique corretamente a mensagem para a URL do WhatsApp.
+
+Não envie mensagens automaticamente. O usuário deve decidir se deseja enviá-las.
+
+⸻
+
+18. ORGANIZAÇÃO DO SITE
+
+Organize a página na seguinte ordem:
+
+1. Cabeçalho e logo.
+2. Apresentação da VãBora.
+3. Benefícios e funcionamento.
+4. Placas Google Avaliações.
+5. Protetor de Reputação.
+6. Outras placas planas e personalizadas.
+7. Placas em L.
+8. Cartões NFC.
+9. Placas 8 × 8 cm.
+10. Tags antimetal.
+11. Combos e ofertas.
+12. BioSites.
+13. Serviços digitais.
+14. Hotelaria e Quarto Inteligente.
+15. Atendimento e visitas.
+16. Perguntas frequentes.
+17. Contatos e rodapé.
+
+Utilize chamadas comerciais em diferentes partes da página, mas sem repetir a mesma frase em todos os cartões.
+
+Exemplos de botões:
+
+* “Escolher modelo”.
+* “Adicionar ao carrinho”.
+* “Quero personalizar”.
+* “Conversar sobre este produto”.
+* “Montar meu pacote”.
+* “Agendar uma conversa”.
+
+⸻
+
+19. PERGUNTAS FREQUENTES
+
+Crie uma seção de dúvidas com respostas curtas, claras e honestas.
+
+Inclua:
+
+Como funciona a placa?
+
+O cliente aproxima um celular compatível ou lê o QR Code para acessar o link configurado.
+
+Preciso instalar um aplicativo?
+
+Explique o funcionamento real, sem afirmar requisitos universais não confirmados.
+
+Posso personalizar com minha logo?
+
+Explique quais modelos permitem personalização.
+
+Posso colocar vários links?
+
+Diferencie link direto, MultiLinks e BioSite conforme os produtos oferecidos.
+
+A placa garante mais avaliações?
+
+Não. Ela facilita o acesso ao destino configurado, mas a decisão de avaliar depende do cliente.
+
+A placa garante o primeiro lugar no Google?
+
+Não. O posicionamento depende de diversos fatores.
+
+O cartão NFC salva automaticamente o contato?
+
+Não necessariamente. Isso depende da funcionalidade configurada e da ação do destinatário.
+
+BioSite é a mesma coisa que um site completo?
+
+Explique a diferença e as possibilidades de cada solução.
+
+Posso combinar produtos?
+
+Explique que a equipe pode montar pacotes conforme as opções disponíveis.
+
+Vocês fazem visitas?
+
+Informe sobre Curitiba e Serra Talhada, mediante combinação e disponibilidade. Em outras cidades, a possibilidade deve ser combinada previamente.
+
+Não invente prazos, frete, garantias ou políticas comerciais não confirmadas.
+
+⸻
+
+20. SEO, ACESSIBILIDADE E DESEMPENHO
+
+Implemente:
+
+* Design responsivo para celular, iPad e computador.
+* Carregamento otimizado das imagens.
+* Textos alternativos.
+* Contraste adequado.
+* Navegação por teclado.
+* Botões com nomes claros.
+* Estrutura coerente de títulos.
+* Metadados e descrições adequados para mecanismos de busca.
+* Links funcionando.
+* Animações leves.
+* Tratamento de falhas de carregamento.
+* Estados visuais de carregamento e interação quando necessários.
+
+Não invente endereço, avaliações, clientes ou dados empresariais para SEO.
+
+⸻
+
+21. VALIDAÇÃO COMERCIAL E PREÇOS
+
+Antes de concluir, revise todos os preços do catálogo, dos cartões, do carrinho e das mensagens de WhatsApp.
+
+Não permita divergência entre o preço apresentado no produto e o valor encaminhado para atendimento.
+
+Não apresente economia fictícia em combos.
+
+Se mostrar desconto, compare os preços avulsos reais nas mesmas condições.
+
+Confirme antes da publicação definitiva:
+
+* Mensalidade do Protetor de Reputação.
+* Escopo final dos planos BioSite Profissional e Completo.
+* Regras do combo de duas placas.
+* Regras da promoção por indicação.
+* Elegibilidade dos descontos por quantidade.
+
+Se uma informação comercial ainda não estiver confirmada, não invente uma resposta. Deixe-a identificada para validação antes da publicação.
+
+⸻
+
+22. TESTES FINAIS OBRIGATÓRIOS
+
+Teste o site inteiro, não apenas a primeira tela.
+
+Imagens
+
+Confira cada produto, variação e categoria.
+
+Preços
+
+Confira catálogo, combos, carrinho e WhatsApp.
+
+Navegação
+
+Teste menus, links internos, botões e seletores.
+
+Carrinho
+
+Teste adicionar, remover, alterar quantidades, aplicar descontos elegíveis e calcular o total.
+
+WhatsApp
+
+Teste Curitiba e Serra Talhada, confirmando se as mensagens contêm o produto e as informações corretas.
+
+Responsividade
+
+Teste diferentes larguras de tela e verifique se não existem textos cortados, botões escondidos ou imagens distorcidas.
+
+Desempenho
+
+Verifique carregamento, animações, erros e acessibilidade.
+
+Resultado final
+
+Apresente um resumo do que foi efetivamente alterado, quais funcionalidades foram testadas e quais pendências ainda exigem confirmação comercial.
+
+Não diga que algo está concluído se não foi implementado ou testado.
+
+⸻
+
+DIRETRIZ FINAL
+
+A VãBora Soluções deve transmitir profissionalismo, praticidade, inovação e confiança.
+
+Não somos apenas uma loja de plaquinhas. Oferecemos soluções para facilitar a conexão entre o estabelecimento físico e o ambiente digital.
+
+O site precisa demonstrar como os produtos se complementam:
+
+* O Perfil da Empresa no Google facilita que as pessoas encontrem o negócio.
+* A placa de avaliação facilita o acesso ao perfil e ao link de avaliação.
+* O cartão NFC facilita o compartilhamento de contatos.
+* A tag antimetal oferece uma opção prática para compartilhar um link.
+* O BioSite organiza os canais digitais em uma apresentação personalizada.
+* O Protetor de Reputação organiza o recebimento de feedback, dentro das funcionalidades efetivamente oferecidas.
+* Os combos reúnem soluções complementares.
+* O atendimento consultivo ajuda a escolher o conjunto mais adequado.
+
+Aplique precificação psicológica de maneira coerente, utilize gatilhos de persuasão com honestidade, apresente benefícios antes dos detalhes técnicos e direcione o visitante à ação seguinte.
+
+A prioridade é criar um site visualmente marcante, comercialmente persuasivo, tecnicamente funcional e sustentável para o negócio.
+
+Execute as alterações no projeto existente e faça a revisão final antes de considerar o trabalho concluído.

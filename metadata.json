@@ -1,0 +1,6 @@
+{
+  "name": "VãBora Soluções | Aproxime. Conecte. VãBora.",
+  "description": "Conecte sua empresa ao mundo digital com tecnologia NFC, QR Codes inteligentes, displays personalizados e soluções para fortalecer sua presença online e melhorar a experiência dos seus clientes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
