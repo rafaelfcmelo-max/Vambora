@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ShieldCheck, Lock, FileText } from 'lucide-react';
+import { X, Lock, FileText } from 'lucide-react';
 
 interface LegalModalProps {
   isOpen: boolean;
@@ -13,40 +13,40 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose }) => {
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm animate-fade-in"
       onClick={onClose}
     >
       <div
-        className="w-full max-w-2xl max-h-[85vh] bg-[#0D1118] border border-white/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col"
+        className="w-full max-w-2xl max-h-[85vh] bg-white border border-gray-200 rounded-3xl shadow-2xl overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="p-5 border-b border-white/5 flex items-center justify-between bg-[#050608]">
+        <div className="p-5 border-b border-gray-200 flex items-center justify-between bg-white">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-[#1677FF]/20 flex items-center justify-center text-[#35CFFF]">
+            <div className="w-9 h-9 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shadow-sm">
               <FileText className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="text-base font-bold text-white tracking-tight">
+              <h3 className="text-base font-bold text-gray-900 tracking-tight">
                 Privacidade & Termos de Uso
               </h3>
-              <span className="text-[11px] text-slate-400">VaBora Soluções</span>
+              <span className="text-[11px] text-gray-500 font-medium">VaBora Soluções</span>
             </div>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
+            className="p-2 text-gray-400 hover:text-gray-900 rounded-full hover:bg-gray-100 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Content */}
-        <div className="p-6 overflow-y-auto space-y-5 text-xs text-slate-300 leading-relaxed no-scrollbar">
+        <div className="p-6 sm:p-8 overflow-y-auto space-y-6 text-xs text-gray-600 leading-relaxed hide-scrollbar">
           <div>
-            <h4 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
-              <Lock className="w-4 h-4 text-[#35CFFF]" />
+            <h4 className="text-sm font-bold text-gray-900 mb-2 flex items-center gap-2">
+              <Lock className="w-4 h-4 text-blue-600" />
               1. Coleta e Uso de Informações
             </h4>
             <p>
@@ -58,47 +58,49 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           <div>
-            <h4 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-[#35CFFF]" />
-              2. Finalização de Pedidos e Atendimento
+            <h4 className="text-sm font-bold text-gray-900 mb-2">
+              2. Transparência sobre Tecnologia e Conformidade Google
             </h4>
             <p>
-              A finalização de pedidos deste site é realizada diretamente através do WhatsApp comercial oficial da empresa (Curitiba/PR e Serra Talhada/PE). O site não processa pagamentos automatizados diretamente na página web nem realiza cobranças sem a prévia concordância e validação do cliente.
+              Nossos produtos físicos utilizam chips NFC passivos regraváveis e QR Codes estáticos ou dinâmicos. O funcionamento depende da compatibilidade do smartphone do usuário final.
+            </p>
+            <p className="mt-1.5">
+              O Protetor de Reputação organiza o recebimento interno de feedbacks e não impede, apaga ou manipula avaliações públicas deixadas pelos clientes diretamente no Google. Não prometemos notas garantidas ou alterações arbitrárias nos algoritmos de busca.
             </p>
           </div>
 
           <div>
-            <h4 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-[#35CFFF]" />
-              3. Conformidade com Plataformas e Serviços de Terceiros
+            <h4 className="text-sm font-bold text-gray-900 mb-2">
+              3. Produção e Personalização
             </h4>
             <p>
-              Nossos produtos e displays direcionam para links escolhidos pelo cliente (Google Avaliações, Instagram, WhatsApp, Cardápios ou BioSites). Nenhuma de nossas soluções bloqueia, apaga ou impede avaliações públicas dos consumidores, respeitando integralmente as diretrizes do Google e o Código de Defesa do Consumidor.
+              Itens personalizados entram em produção após o envio e aprovação digital da arte da logomarca pelo cliente. Os prazos de produção e entrega são combinados individualmente de acordo com a localidade e o volume de peças.
             </p>
           </div>
 
           <div>
-            <h4 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
-              <FileText className="w-4 h-4 text-[#35CFFF]" />
-              4. Direitos Autorais e Personalização
+            <h4 className="text-sm font-bold text-gray-900 mb-2">
+              4. Contato do Encarregado de Dados
             </h4>
             <p>
-              Para produtos personalizados, o cliente declara possuir o direito de uso dos logotipos, nomes e materiais visuais enviados para impressão. A conferência do arquivo final e a gravação de links são confirmadas previamente com o comprador antes da produção definitiva.
+              Caso tenha dúvidas sobre como suas informações de contato são tratadas, entre em contato direto pelo WhatsApp oficial com nossa equipe em Curitiba/PR: (41) 98844-2761 ou Serra Talhada/PE: (87) 99157-8326.
             </p>
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="p-4 border-t border-white/5 bg-[#050608] flex justify-end">
+        {/* Footer Button */}
+        <div className="p-4 border-t border-gray-200 bg-gray-50 flex justify-end">
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 rounded-xl bg-[#151B25] hover:bg-[#1677FF] text-white text-xs font-bold border border-white/10 transition-colors"
+            className="px-6 py-2.5 rounded-full bg-gray-900 hover:bg-black text-white text-xs font-bold transition-all shadow-sm"
           >
-            Entendido
+            Entendido e Fechar
           </button>
         </div>
       </div>
     </div>
   );
 };
+
+export default LegalModal;

@@ -1,179 +1,128 @@
-import React, { useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight, Ruler } from 'lucide-react';
-import { GallerySection } from '../data/catalog';
-import { ProductImage } from './ProductImage';
-import { ProductItemCard } from './ProductItemCard';
+import React from 'react';
+import { ShoppingBag, Search } from 'lucide-react';
+import { useCart } from '../context/CartContext';
+import { ProductItem } from '../data/catalog';
 
-interface GallerySectionViewProps {
-  gallery: GallerySection;
-  onOpenContact: (productName: string) => void;
+export interface GallerySectionViewProps {
+  gallery: {
+    id?: string;
+    title: string;
+    subtitle: string;
+    description?: string;
+    dimension?: string;
+    products?: ProductItem[];
+    items?: ProductItem[];
+  };
+  onOpenContact: (name: string) => void;
   onOpenZoom: (src: string, alt: string) => void;
 }
 
-export const GallerySectionView: React.FC<GallerySectionViewProps> = ({
-  gallery,
-  onOpenContact,
-  onOpenZoom,
-}) => {
-  const photoCarouselRef = useRef<HTMLDivElement>(null);
-  const [photoIndex, setPhotoIndex] = useState(0);
+export function GallerySectionView({ gallery, onOpenContact, onOpenZoom }: GallerySectionViewProps) {
+  const { addItem, setIsCartOpen } = useCart();
+  const productList = gallery.products || gallery.items || [];
 
-  const scrollPhotos = (direction: 'left' | 'right') => {
-    if (!photoCarouselRef.current) return;
-    const container = photoCarouselRef.current;
-    const cardWidth = container.firstElementChild
-      ? (container.firstElementChild as HTMLElement).offsetWidth + 16
-      : 300;
-    const newScroll =
-      direction === 'left' ? container.scrollLeft - cardWidth : container.scrollLeft + cardWidth;
-    container.scrollTo({ left: newScroll, behavior: 'smooth' });
-  };
-
-  const handleScrollUpdate = () => {
-    if (!photoCarouselRef.current) return;
-    const container = photoCarouselRef.current;
-    const itemWidth = container.firstElementChild
-      ? (container.firstElementChild as HTMLElement).offsetWidth + 16
-      : 300;
-    const index = Math.round(container.scrollLeft / itemWidth);
-    setPhotoIndex(Math.min(Math.max(index, 0), gallery.photos.length - 1));
+  const handleBuy = (item: any) => {
+    addItem(item, undefined, undefined, 1);
+    setIsCartOpen(true);
   };
 
   return (
-    <section id={gallery.id} className="py-16 sm:py-20 px-4 sm:px-8 border-t border-white/5 scroll-mt-28">
-      <div className="max-w-7xl mx-auto">
-        {/* Header Block */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-6 border-b border-white/5">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#35CFFF] uppercase tracking-wider mb-2">
-              <span>Linha de Produtos</span>
-              {gallery.dimension && (
-                <>
-                  <span className="text-slate-600">·</span>
-                  <span className="inline-flex items-center gap-1 text-slate-300">
-                    <Ruler className="w-3 h-3 text-[#1677FF]" />
-                    {gallery.dimension}
-                  </span>
-                </>
-              )}
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">
-              {gallery.title}
-            </h2>
-            <p className="text-sm sm:text-base font-semibold text-[#35CFFF] mb-3">
-              {gallery.subtitle}
-            </p>
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              {gallery.description}
-            </p>
-          </div>
-
-          {/* Carousel controls for desktop */}
-          {gallery.photos.length > 1 && (
-            <div className="hidden sm:flex items-center gap-2 shrink-0">
-              <button
-                type="button"
-                onClick={() => scrollPhotos('left')}
-                aria-label={`Foto anterior de ${gallery.title}`}
-                className="p-2.5 rounded-xl bg-[#0D1118] hover:bg-[#151B25] border border-white/10 hover:border-[#1677FF] text-slate-300 hover:text-white transition-colors"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              <button
-                type="button"
-                onClick={() => scrollPhotos('right')}
-                aria-label={`Próxima foto de ${gallery.title}`}
-                className="p-2.5 rounded-xl bg-[#0D1118] hover:bg-[#151B25] border border-white/10 hover:border-[#1677FF] text-slate-300 hover:text-white transition-colors"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-          )}
+    <section className="py-20 bg-gray-50 border-b border-gray-200" id={gallery.id || 'produtos'}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Cabeçalho da Seção */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+            {gallery.title}
+          </h2>
+          <p className="text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            {gallery.subtitle}
+          </p>
         </div>
 
-        {/* Real Photos Carousel */}
-        <div className="mb-12">
-          <div className="flex items-center justify-between mb-3 text-xs text-slate-400">
-            <span className="font-semibold text-slate-300">Fotos reais do produto</span>
-            <span className="text-slate-500 text-[11px]">
-              {gallery.photos.length > 1 ? 'Deslize horizontalmente para navegar' : 'Clique para ampliar'}
-            </span>
-          </div>
+        {/* Scroll Horizontal no Mobile, Grid no Desktop */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-8 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible">
+          {productList.map((item: any) => {
+            const imgSrc = item.image || item.imageUrl || '/images/products/IMG_0705.jpg';
+            const backupSrc = item.backupImage || item.backupImageUrl;
 
-          <div
-            ref={photoCarouselRef}
-            onScroll={handleScrollUpdate}
-            tabIndex={0}
-            role="region"
-            aria-label={`Galeria de fotos: ${gallery.title}`}
-            className="flex gap-4 overflow-x-auto no-scrollbar scroll-smooth pb-2 snap-x snap-mandatory focus:outline-none focus:ring-1 focus:ring-[#1677FF]/40 rounded-xl"
-          >
-            {gallery.photos.map((photo, idx) => (
-              <div
-                key={idx}
-                className="w-[280px] sm:w-[340px] md:w-[380px] shrink-0 snap-start"
+            // Formatação do Preço
+            let formattedPrice = '';
+            if (typeof item.price === 'string') {
+              formattedPrice = item.price;
+            } else if (typeof item.price === 'number') {
+              formattedPrice = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(item.price);
+            } else if (typeof item.numericPrice === 'number') {
+              formattedPrice = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(item.numericPrice);
+            } else {
+              formattedPrice = 'Consulte';
+            }
+
+            return (
+              <div 
+                key={item.id} 
+                className="snap-center shrink-0 w-[85%] md:w-auto bg-white rounded-3xl p-5 border border-gray-100 shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition duration-300 mr-4 md:mr-0 flex flex-col"
               >
-                <ProductImage
-                  src={photo.url}
-                  backupSrc={photo.backupUrl}
-                  alt={photo.alt}
-                  onOpenZoom={onOpenZoom}
-                  aspect="aspect-4/3"
-                  className="rounded-2xl border border-white/10 shadow-md hover:border-[#1677FF]/50 transition-colors"
-                />
+                {/* Imagem com Hover de Lupa */}
+                <div 
+                  className="relative group cursor-pointer mb-5 overflow-hidden rounded-2xl bg-gray-50 border border-gray-100" 
+                  onClick={() => onOpenZoom(imgSrc, item.name)}
+                >
+                  <img 
+                    src={imgSrc} 
+                    alt={item.name} 
+                    onError={(e) => {
+                      if (backupSrc) {
+                        (e.target as HTMLImageElement).src = backupSrc;
+                      }
+                    }}
+                    className="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500" 
+                  />
+                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
+                      <Search className="text-gray-900 w-6 h-6" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Informações e Preço */}
+                <div className="flex-1 flex flex-col px-2">
+                  <h3 className="text-xl font-bold text-gray-900 leading-snug">
+                    {item.name}
+                  </h3>
+                  <p className="text-sm text-gray-500 mb-6 mt-2 flex-1 leading-relaxed line-clamp-3">
+                    {item.description}
+                  </p>
+                  
+                  <div className="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                    <div className="flex flex-col">
+                      <span className="text-2xl font-extrabold text-gray-900 font-mono tracking-tight">
+                        {formattedPrice}
+                      </span>
+                      {item.monthlyPriceLabel && (
+                        <span className="text-[11px] text-blue-600 font-semibold mt-0.5">
+                          {item.monthlyPriceLabel}
+                        </span>
+                      )}
+                    </div>
+
+                    <button 
+                      type="button"
+                      onClick={() => handleBuy(item)} 
+                      className="bg-gray-100 hover:bg-blue-600 hover:text-white text-gray-900 px-5 py-2.5 rounded-full text-sm font-bold transition flex items-center shadow-sm active:scale-95"
+                    >
+                      <ShoppingBag className="w-4 h-4 mr-2" /> Comprar
+                    </button>
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
-
-          {/* Dots Indicator */}
-          {gallery.photos.length > 1 && (
-            <div className="flex items-center justify-center gap-1.5 mt-3">
-              {gallery.photos.map((_, idx) => (
-                <button
-                  key={idx}
-                  type="button"
-                  onClick={() => {
-                    if (photoCarouselRef.current) {
-                      const container = photoCarouselRef.current;
-                      const itemWidth = container.firstElementChild
-                        ? (container.firstElementChild as HTMLElement).offsetWidth + 16
-                        : 300;
-                      container.scrollTo({ left: idx * itemWidth, behavior: 'smooth' });
-                    }
-                  }}
-                  aria-label={`Ir para a foto ${idx + 1}`}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    photoIndex === idx ? 'w-6 bg-[#35CFFF]' : 'w-1.5 bg-white/20'
-                  }`}
-                />
-              ))}
-            </div>
-          )}
+            );
+          })}
         </div>
 
-        {/* Product Cards Grid with ProductItemCard */}
-        <div>
-          <div className="mb-5 flex items-center justify-between">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-300">
-              Modelos e Variações Disponíveis
-            </h3>
-            <span className="text-xs text-slate-500">
-              {gallery.products.length} {gallery.products.length === 1 ? 'modelo' : 'modelos'}
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {gallery.products.map((product) => (
-              <ProductItemCard
-                key={product.id}
-                product={product}
-                onOpenContact={onOpenContact}
-                onOpenZoom={onOpenZoom}
-              />
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
-};
+}
+
+export default GallerySectionView;

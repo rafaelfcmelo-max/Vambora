@@ -122,7 +122,7 @@ export const CONTACT_INFO = {
   },
 };
 
-// 1. PLACAS EM L RESINADAS — 11 × 16 cm (Todas Resinadas)
+// 1. PLACAS EM L RESINADAS — 11 × 16 cm (Todas são resinadas)
 export const PLACAS_EM_L: GallerySection = {
   id: 'placas-em-l',
   number: 1,
@@ -130,7 +130,7 @@ export const PLACAS_EM_L: GallerySection = {
   subtitle: 'Destaque e ergonomia no balcão de atendimento e recepção.',
   dimension: '11 × 16 cm',
   description:
-    'Displays em formato L com inclinação ideal para balcões e recepções. Produzidos em acrílico 3 mm com acabamento em resina cristal de alto brilho e proteção duradoura. Todas as placas desta categoria são resinadas.',
+    'Displays em formato L com base inclinada para balcões e recepções. Produzidos em acrílico 3 mm de alta rigidez com camada protetora de resina cristal de alto brilho. Todas as placas desta linha são resinadas; a diferenciação entre os modelos ocorre por personalização, finalidade e serviços digitais inclusos.',
   photos: [
     {
       url: '/images/products/IMG-0904.jpg',
@@ -204,7 +204,7 @@ export const PLACAS_EM_L: GallerySection = {
         dimension: '11 × 16 cm',
         material: 'Acrílico cristal 3 mm de alta rigidez',
         printing: 'Impressão UV de alta resolução com ícones oficiais',
-        resin: 'Camada de resina cristal espessa de alto brilho',
+        resin: 'Camada de resina cristal epóxi de alto brilho',
         operation: 'Chip NFC de resposta instantânea + QR Code impresso',
         customization: 'Design padrão Google Avaliações (opção Preto ou Branco)',
         includedItems: ['1 Display em L 11 × 16 cm resinado', 'Configuração do link oficial Google'],
@@ -220,7 +220,7 @@ export const PLACAS_EM_L: GallerySection = {
       description:
         'Display em L resinado personalizado com a logomarca e identidade visual da sua empresa, integrando o link de avaliações do Google.',
       benefit: 'Identidade de marca e sofisticação no balcão que estimula a confiança dos clientes.',
-      application: 'Empresas, consultórios, lojas e restaurantes que valorizam padrão visual.',
+      application: 'Empresas, consultórios, lojas e restaurantes que valorizam padrão visual exclusivo.',
       category: 'Placas em L Resinadas',
       image: '/images/products/IMG-0705.jpg',
       backupImage: 'https://i.postimg.cc/MZYFq6Fm/IMG-0705.jpg',
@@ -228,7 +228,7 @@ export const PLACAS_EM_L: GallerySection = {
       customizable: true,
       specs: {
         dimension: '11 × 16 cm',
-        material: 'Acrílico cristal 3 mm',
+        material: 'Acrílico cristal 3 mm corte a laser',
         printing: 'Impressão UV personalizada com a arte e logotipo do cliente',
         resin: 'Camada protetora em resina cristal de alto brilho',
         operation: 'NFC + QR Code dinâmico com link da sua empresa',
@@ -258,7 +258,7 @@ export const PLACAS_EM_L: GallerySection = {
         operation: 'Aproximação NFC + QR Code para central de links',
         customization: 'Layout padrão MultiLinks',
         includedItems: ['1 Display em L 11 × 16 cm resinado', 'Configuração dos links solicitados'],
-        notes: 'Esta versão não inclui desenvolvimento de BioSite.',
+        notes: 'Esta versão padrão não inclui desenvolvimento de BioSite.',
       },
     },
     {
@@ -268,33 +268,33 @@ export const PLACAS_EM_L: GallerySection = {
       numericPrice: 219.9,
       price: 'R$ 219,90',
       description:
-        'Display em L resinado integrado à criação do BioSite Essencial com até 6 botões interativos (WhatsApp, Instagram, Wi-Fi, Cardápio, Avaliação e Pix).',
+        'Display em L resinado padrão integrado ao desenvolvimento do BioSite Essencial com até 6 botões interativos (WhatsApp, Instagram, Wi-Fi, Cardápio, Avaliação e Pix).',
       benefit: 'Apresentação física premium combinada com uma página digital ágil e organizada.',
       application: 'Negócios que buscam unificar canais físicos e digitais de forma profissional.',
       category: 'Placas em L Resinadas',
-      image: '/images/products/IMG-0705.jpg',
-      backupImage: 'https://i.postimg.cc/MZYFq6Fm/IMG-0705.jpg',
+      image: '/images/products/IMG-0662.jpg',
+      backupImage: 'https://i.postimg.cc/44t488sb/IMG-0662.jpg',
       popular: true,
       specs: {
         dimension: '11 × 16 cm + Página responsiva',
         material: 'Acrílico 3 mm resinado',
-        printing: 'Impressão UV de precisão',
+        printing: 'Impressão UV padrão MultiLinks',
         resin: 'Acabamento em resina cristal',
         operation: 'Direcionamento NFC e QR Code direto para o BioSite',
         customization: 'BioSite personalizado com logotipo e até 6 botões interativos',
-        includedItems: ['1 Display em L 11 × 16 cm resinado', 'Desenvolvimento do BioSite Essencial'],
+        includedItems: ['1 Display em L 11 × 16 cm resinado padrão', 'Desenvolvimento do BioSite Essencial'],
         notes: 'Todas as placas em L são resinadas.',
       },
     },
     {
       id: 'l-multilinks-resina-completo',
-      name: 'MultiLinks 100% Personalizada em Resina',
-      dimension: '11 × 16 cm',
+      name: 'MultiLinks 100% Personalizada + BioSite Essencial',
+      dimension: '11 × 16 cm + BioSite',
       numericPrice: 249.9,
       price: 'R$ 249,90',
       description:
-        'O display em L topo de linha: arte 100% personalizada com a identidade da sua marca, corte preciso e camada nobre de resina cristal.',
-      benefit: 'Máxima exclusividade e sofisticação para ambientes executivos e recepções exigentes.',
+        'Display em L topo de linha: personalização integral com a logomarca e identidade visual da sua marca, acabamento nobre em resina cristal e desenvolvimento do BioSite Essencial incluso no valor.',
+      benefit: 'Máxima exclusividade visual no balcão aliada a uma presença digital rápida e completa.',
       application: 'Clínicas médicas e estéticas, escritórios jurídicos, hotéis boutique e lojas premium.',
       category: 'Placas em L Resinadas',
       image: '/images/products/IMG-0649.jpg',
@@ -305,10 +305,14 @@ export const PLACAS_EM_L: GallerySection = {
         dimension: '11 × 16 cm',
         material: 'Acrílico cristal 3 mm corte a laser',
         printing: 'Impressão UV fotográfica personalizada total',
-        resin: 'Camada espessa de resina cristal de alto brilho',
-        operation: 'NFC + QR Code dinâmico gravado',
-        customization: '100% personalizada com logotipo, paleta e fontes da marca',
-        includedItems: ['1 Display em L 100% personalizado resinado', 'Programação de links e suporte'],
+        resin: 'Camada nobre de resina cristal de alto brilho',
+        operation: 'NFC + QR Code dinâmico gravado direto para o BioSite',
+        customization: 'Arte 100% personalizada + BioSite Essencial incluso',
+        includedItems: [
+          '1 Display em L 100% personalizado resinado',
+          'Desenvolvimento do BioSite Essencial incluso',
+          'Programação de links e suporte',
+        ],
         notes: 'Todas as placas em L são resinadas.',
       },
     },
@@ -477,7 +481,7 @@ export const PLACAS_PLANAS_PERSONALIZADAS: GallerySection = {
   subtitle: 'A identidade visual da sua marca em placas compactas de alta durabilidade.',
   dimension: '10 × 10 cm',
   description:
-    'Placas planas de 10 × 10 cm personalizadas com a logomarca da sua empresa, cores e informações comerciais. Fixação prática com fita 3M inclusa.',
+    'Placas planas de 10 × 10 cm produzidas em acrílico resistente de 3 mm com impressão UV personalizada com a logomarca da sua empresa, cores e informações comerciais. Acompanha fita 3M de fixação duradoura.',
   photos: [
     {
       url: '/images/products/IMG-0646.jpg',
@@ -611,10 +615,10 @@ export const PLACAS_PLANAS_PERSONALIZADAS: GallerySection = {
       id: 'placa-google-protetor',
       name: 'Placa Personalizada Google + Protetor de Reputação',
       dimension: '10 × 10 cm + Sistema Digital',
-      numericPrice: 149.9,
-      price: 'R$ 149,90',
-      monthlyNumericPrice: 29.9,
-      monthlyPriceLabel: '+ R$ 29,90/mês (manutenção do servidor e suporte aos envios de e-mail ao lojista)',
+      numericPrice: 119.9,
+      price: 'R$ 119,90',
+      monthlyNumericPrice: 19.9,
+      monthlyPriceLabel: '+ R$ 19,90/mês (manutenção do servidor e suporte aos envios de e-mail ao lojista)',
       description:
         'Placa plana de 10 × 10 cm personalizada com seu logotipo combinada ao sistema Protetor de Reputação para triagem e organização do feedback dos clientes.',
       benefit:
@@ -635,7 +639,7 @@ export const PLACAS_PLANAS_PERSONALIZADAS: GallerySection = {
         customization: 'Placa personalizada com sua marca + tela de avaliação',
         includedItems: ['1 Placa 10 × 10 cm personalizada', 'Implantação do Protetor de Reputação'],
         notes:
-          'Mensalidade obrigatória de R$ 29,90/mês para manutenção do servidor e suporte aos envios de e-mail ao lojista apresentada separadamente.',
+          'Adesão inicial de R$ 119,90 e mensalidade obrigatória de R$ 19,90/mês para manutenção do servidor apresentadas separadamente.',
       },
     },
   ],
@@ -1013,7 +1017,7 @@ export const TAGS_ANTIMETAL: GallerySection = {
   subtitle: 'Adesivos inteligentes ultrafinos com camada de ferrite para qualquer superfície.',
   dimension: 'Adesivo circular compacto (aprox. 3 cm)',
   description:
-    'Tags adesivas ultrafinas com camada interna de blindagem eletromagnética (ferrite). Podem ser coladas na traseira de smartphones, tablets, máquinas de cartão ou superfícies metálicas sem interferência no sinal NFC. Categoria independente de placas e cartões bancários.',
+    'Tags adesivas ultrafinas com tecnologia Anti-Metal (camada interna de ferrite que bloqueia as interferências eletromagnéticas emitidas pelas baterias e carcaças metálicas dos smartphones e máquinas de cartão). Podem ser coladas na traseira de smartphones, tablets ou superfícies metálicas sem anular o sinal NFC do chip. Requer smartphone compatível com leitor NFC ativado.',
   photos: [
     {
       url: '/images/products/IMG-0673.jpg',
@@ -1253,18 +1257,18 @@ export const COMMERCIAL_COMBOS: CommercialCombo[] = [
     badge: 'Destaque & Proteção',
     numericPrice: 189.9,
     price: 'R$ 189,90',
-    monthlyNumericPrice: 29.9,
-    monthlyPriceLabel: '+ R$ 29,90/mês (manutenção do servidor e suporte aos envios de e-mail ao lojista)',
+    monthlyNumericPrice: 19.9,
+    monthlyPriceLabel: '+ R$ 19,90/mês (manutenção do servidor e suporte aos envios de e-mail ao lojista)',
     description:
-      'Uma placa em L premium resinada (preta ou branca) combinada à implantação do Protetor de Reputação com mensalidade obrigatória de suporte.',
+      'Uma placa em L premium resinada (preta ou branca) combinada à implantação do Protetor de Reputação com mensalidade de suporte.',
     includes: [
       '1 Placa em L premium resinada (11 × 16 cm), preta ou branca',
       'Implantação do sistema Protetor de Reputação',
-      'Mensalidade obrigatória de R$ 29,90/mês para manutenção de servidor e envio de e-mails ao lojista',
+      'Mensalidade obrigatória de R$ 19,90/mês para manutenção de servidor e envio de e-mails ao lojista',
     ],
     ctaText: 'Quero Blindagem Total',
     highlight: true,
-    notes: 'Valor inicial de R$ 189,90 e mensalidade obrigatória de R$ 29,90/mês apresentados separadamente.',
+    notes: 'Valor inicial de R$ 189,90 e mensalidade de R$ 19,90/mês apresentados separadamente.',
   },
   {
     id: 'combo-presenca-digital-completa',
@@ -1340,7 +1344,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Produtos',
     question: 'Qual é a diferença entre a placa plana e a placa em L?',
     answer:
-      'A placa plana de 10 × 10 cm é reta e compacta, desenhada para ser colada sobre mesas ou balcões com fita 3M. A placa em L de 11 × 16 cm possui base inclinada ergonômica para ficar em pé sozinha em balcões de atendimento e recepções, e conta com acabamento integral em resina cristal.',
+      'A placa plana de 10 × 10 cm é reta e compacta em acrílico 3 mm, desenhada para ser colada sobre mesas ou balcões com fita 3M. A placa em L de 11 × 16 cm possui base inclinada ergonômica para ficar em pé sozinha em balcões de atendimento e recepções, e conta com acabamento integral em resina cristal.',
   },
   {
     category: 'Produtos',
@@ -1390,7 +1394,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Serviços digitais',
     question: 'O Protetor de Reputação tem mensalidade?',
     answer:
-      'Sim. O Protetor de Reputação possui mensalidade obrigatória de R$ 29,90/mês para cobrir a manutenção contínua do servidor e o suporte aos envios de e-mail ao lojista, apresentada separadamente do valor inicial de implantação.',
+      'Sim. O Protetor de Reputação possui mensalidade de R$ 19,90/mês para cobrir a manutenção contínua do servidor e o suporte aos envios de e-mail ao lojista, apresentada separadamente do valor inicial de implantação.',
   },
   {
     category: 'Serviços digitais',

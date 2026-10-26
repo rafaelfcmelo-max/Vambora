@@ -56,7 +56,7 @@ export function App() {
 
   return (
     <CartProvider>
-      <div className="min-h-screen bg-[#050608] text-white flex flex-col font-sans selection:bg-[#1677FF]/30 selection:text-white">
+      <div className="min-h-screen bg-[#FAFAFA] text-[#1F2937] flex flex-col font-sans selection:bg-blue-600/20 selection:text-blue-700">
         {/* 1. Cabeçalho com Logo, Navegação e Sacola */}
         <TopNav
           onOpenContact={() => handleOpenContact(undefined, 'general')}

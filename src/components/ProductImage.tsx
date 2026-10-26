@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image as ImageIcon, ZoomIn } from 'lucide-react';
+import { Image as ImageIcon, ZoomIn, Search } from 'lucide-react';
 
 interface ProductImageProps {
   src: string;
@@ -31,17 +31,17 @@ export const ProductImage: React.FC<ProductImageProps> = ({
   };
 
   return (
-    <div className={`relative overflow-hidden bg-[#0B0F14] rounded-xl border border-white/5 group ${aspect} ${className}`}>
+    <div className={`relative overflow-hidden bg-gray-50 rounded-2xl border border-gray-100 group ${aspect} ${className}`}>
       {/* Loading placeholder skeleton */}
       {!loaded && !hasError && (
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 animate-pulse" />
+        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
       )}
 
       {hasError ? (
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-[#0B0F14] text-slate-400">
-          <ImageIcon className="w-8 h-8 text-[#1677FF] mb-2 opacity-60" />
-          <p className="text-xs font-medium text-slate-300 line-clamp-2">{alt}</p>
-          <span className="text-[10px] text-slate-500 mt-1">Fotografia VãBora Soluções</span>
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-gray-100 text-gray-400">
+          <ImageIcon className="w-8 h-8 text-blue-600 mb-2 opacity-60" />
+          <p className="text-xs font-semibold text-gray-700 line-clamp-2">{alt}</p>
+          <span className="text-[10px] text-gray-400 mt-1">Fotografia VãBora Soluções</span>
         </div>
       ) : (
         <>
@@ -61,9 +61,11 @@ export const ProductImage: React.FC<ProductImageProps> = ({
               type="button"
               onClick={() => onOpenZoom(currentSrc, alt)}
               aria-label={`Ampliar foto: ${alt}`}
-              className="absolute bottom-2 right-2 p-2 bg-[#050608]/80 hover:bg-[#1677FF] text-white rounded-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-200 backdrop-blur-sm shadow-md"
+              className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
             >
-              <ZoomIn className="w-4 h-4" />
+              <div className="w-10 h-10 rounded-full bg-white/90 text-gray-900 flex items-center justify-center shadow-lg">
+                <Search className="w-5 h-5 text-gray-800" />
+              </div>
             </button>
           )}
         </>
@@ -71,3 +73,5 @@ export const ProductImage: React.FC<ProductImageProps> = ({
     </div>
   );
 };
+
+export default ProductImage;

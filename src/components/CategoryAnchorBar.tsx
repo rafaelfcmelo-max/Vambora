@@ -45,10 +45,10 @@ export const CategoryAnchorBar: React.FC = () => {
   return (
     <nav
       aria-label="Navegação rápida por categorias"
-      className="sticky top-24 z-30 w-full bg-[#050608]/95 backdrop-blur-md border-y border-white/5 py-2.5 px-4 sm:px-8 shadow-lg"
+      className="sticky top-20 z-30 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 py-2.5 px-4 sm:px-8 shadow-sm"
     >
-      <div className="max-w-7xl mx-auto flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth">
-        <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider shrink-0 pr-2 hidden md:inline">
+      <div className="max-w-7xl mx-auto flex items-center gap-2 overflow-x-auto hide-scrollbar scroll-smooth">
+        <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider shrink-0 pr-2 hidden md:inline">
           Categorias:
         </span>
         {categories.map((cat) => {
@@ -57,10 +57,10 @@ export const CategoryAnchorBar: React.FC = () => {
             <a
               key={cat.id}
               href={`#${cat.id}`}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-lg whitespace-nowrap transition-all duration-200 shrink-0 ${
+              className={`px-3.5 py-1.5 text-xs font-semibold rounded-full whitespace-nowrap transition-all duration-200 shrink-0 ${
                 isActive
-                  ? 'bg-[#1677FF] text-white shadow-[0_0_15px_rgba(22,119,255,0.4)]'
-                  : 'bg-[#0D1118] text-slate-400 hover:text-white hover:bg-[#151B25] border border-white/5'
+                  ? 'bg-blue-600 text-white shadow-sm'
+                  : 'bg-gray-100 text-gray-700 hover:text-blue-600 hover:bg-gray-200 border border-gray-200'
               }`}
             >
               {cat.label}

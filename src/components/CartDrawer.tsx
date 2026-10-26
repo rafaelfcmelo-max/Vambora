@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Trash2, Plus, Minus, MessageCircle, ShoppingBag, ArrowRight, ShieldCheck, Tag, Info } from 'lucide-react';
+import { X, Trash2, Plus, Minus, MessageCircle, ShoppingBag, Tag, Info } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { CONTACT_INFO } from '../data/catalog';
 
@@ -8,127 +8,120 @@ interface CartDrawerProps {
   onSelectPolo: (polo: 'curitiba' | 'serraTalhada') => void;
 }
 
-export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectPolo }) => {
+export const CartDrawer: React.FC<CartDrawerProps> = ({
+  preferredPolo,
+  onSelectPolo,
+}) => {
   const {
     items,
-    updateQuantity,
+    isCartOpen,
+    setIsCartOpen,
     removeItem,
+    updateQuantity,
     clearCart,
     subtotal,
     discount,
     totalInitial,
     totalMonthly,
-    isCartOpen,
-    setIsCartOpen,
   } = useCart();
 
+  const [customerName, setCustomerName] = useState('');
+  const [customerNotes, setCustomerNotes] = useState('');
   const [selectedPolo, setSelectedPolo] = useState<'curitiba' | 'serraTalhada'>(
     preferredPolo || 'curitiba'
   );
-  const [customerName, setCustomerName] = useState('');
-  const [customerNotes, setCustomerNotes] = useState('');
 
   if (!isCartOpen) return null;
 
-  const formatBRL = (val: number) => {
-    return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-  };
+  const formatBRL = (val: number) =>
+    new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val);
 
+  // Generates clean WhatsApp order message (Section 11.4 format)
   const handleCheckoutWhatsApp = () => {
-    // Curitiba is the primary commercial channel (Section 11.4)
-    const poloData = CONTACT_INFO.units[selectedPolo];
-    onSelectPolo(selectedPolo);
-
-    let message = 'Olá! Quero fazer um pedido com a VaBora Soluções.\n\n';
+    let msg = `Olá, VãBora Soluções! Gostaria de fazer o seguinte pedido:\n\n`;
 
     if (customerName.trim()) {
-      message += `Cliente: ${customerName.trim()}\n\n`;
+      msg += `*Cliente / Empresa:* ${customerName.trim()}\n\n`;
     }
 
-    if (items.length === 1) {
-      const item = items[0];
+    msg += `*ITENS DO PEDIDO:*\n`;
+    items.forEach((item, idx) => {
       const isBulk =
-        item.bulkThreshold && item.bulkUnitPrice && item.quantity >= item.bulkThreshold;
-      const effectiveUnit = isBulk ? item.bulkUnitPrice! : item.unitPrice;
-      const itemTotal = effectiveUnit * item.quantity;
+        item.bulkThreshold &&
+        item.bulkUnitPrice &&
+        item.quantity >= item.bulkThreshold;
+      const unit = isBulk ? item.bulkUnitPrice! : item.unitPrice;
+      const itemSubtotal = unit * item.quantity;
 
-      message += `Produto: ${item.name}\n`;
-      message += `Variante: ${item.variation || 'Padrão'}\n`;
-      message += `Quantidade: ${item.quantity} un.\n`;
-      message += `Preço unitário: ${formatBRL(effectiveUnit)}${isBulk ? ' (preço especial por quantidade)' : ''}\n`;
-      message += `Subtotal: ${formatBRL(itemTotal)}\n`;
-    } else {
-      // First item
-      const first = items[0];
-      const isBulkFirst =
-        first.bulkThreshold && first.bulkUnitPrice && first.quantity >= first.bulkThreshold;
-      const effectiveUnitFirst = isBulkFirst ? first.bulkUnitPrice! : first.unitPrice;
-      const firstTotal = effectiveUnitFirst * first.quantity;
-
-      message += `Produto: ${first.name}\n`;
-      message += `Variante: ${first.variation || 'Padrão'}\n`;
-      message += `Quantidade: ${first.quantity} un.\n`;
-      message += `Preço unitário: ${formatBRL(effectiveUnitFirst)}\n`;
-      message += `Subtotal: ${formatBRL(firstTotal)}\n\n`;
-
-      message += `Outros itens:\n`;
-      for (let i = 1; i < items.length; i++) {
-        const item = items[i];
-        const isBulk =
-          item.bulkThreshold && item.bulkUnitPrice && item.quantity >= item.bulkThreshold;
-        const effectiveUnit = isBulk ? item.bulkUnitPrice! : item.unitPrice;
-        const itemTotal = effectiveUnit * item.quantity;
-
-        message += `- ${item.name} (${item.variation || 'Padrão'}) | Qtd: ${item.quantity} | Un: ${formatBRL(effectiveUnit)} | Subtotal: ${formatBRL(itemTotal)}\n`;
+      msg += `${idx + 1}. *${item.name}*\n`;
+      if (item.variation) {
+        msg += `   • Modelo / Variante: ${item.variation}\n`;
       }
-    }
+      if (item.customizationNotes) {
+        msg += `   • Obs. Personalização: ${item.customizationNotes}\n`;
+      }
+      msg += `   • Quantidade: ${item.quantity} un.\n`;
+      msg += `   • Valor unitário: ${formatBRL(unit)}${isBulk ? ' (Preço atacado 10+ un.)' : ''}\n`;
+      msg += `   • Subtotal do item: ${formatBRL(itemSubtotal)}\n`;
+      if (item.monthlyUnitPrice && item.monthlyUnitPrice > 0) {
+        msg += `   • Mensalidade de manutenção: ${formatBRL(item.monthlyUnitPrice)}/mês\n`;
+      }
+      msg += `\n`;
+    });
 
+    msg += `------------------------------------\n`;
+    msg += `*Subtotal:* ${formatBRL(subtotal)}\n`;
     if (discount > 0) {
-      message += `\nDesconto aplicado (a partir de 10 unidades): -${formatBRL(discount)}\n`;
+      msg += `*Desconto Atacado (10+ un.):* -${formatBRL(discount)}\n`;
     }
-
-    message += `\nTotal inicial: ${formatBRL(totalInitial)}`;
+    msg += `*TOTAL INICIAL:* ${formatBRL(totalInitial)}\n`;
 
     if (totalMonthly > 0) {
-      message += `\nMensalidades aplicáveis: ${formatBRL(totalMonthly)}/mês (manutenção do servidor e suporte aos envios de e-mail ao lojista)`;
+      msg += `*MENSALIDADE OBRIGATÓRIA:* ${formatBRL(totalMonthly)}/mês\n`;
+      msg += `(Manutenção contínua de servidor e suporte de e-mail ao lojista)\n`;
     }
 
     if (customerNotes.trim()) {
-      message += `\n\nObservações: ${customerNotes.trim()}`;
+      msg += `\n*Observações adicionais:*\n${customerNotes.trim()}\n`;
     }
 
-    message += `\n\nPolo de contato: ${poloData.name}`;
-    message += `\n\nGostaria de confirmar o pedido e as condições comerciais.`;
+    msg += `\nPolo selecionado: ${selectedPolo === 'curitiba' ? 'Curitiba/PR' : 'Serra Talhada/PE'}\n`;
+    msg += `\nComo posso prosseguir com o pagamento e envio dos dados para personalização?`;
 
-    const encoded = encodeURIComponent(message);
-    const url = `https://wa.me/${poloData.rawPhone}?text=${encoded}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
+    const encoded = encodeURIComponent(msg);
+    const rawPhone =
+      selectedPolo === 'curitiba'
+        ? CONTACT_INFO.units.curitiba.rawPhone
+        : CONTACT_INFO.units.serraTalhada.rawPhone;
+    const targetUrl = `https://wa.me/${rawPhone}?text=${encoded}`;
+
+    window.open(targetUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
     <div
+      className="fixed inset-0 z-50 overflow-hidden bg-black/40 backdrop-blur-sm transition-opacity animate-fade-in"
+      onClick={() => setIsCartOpen(false)}
       role="dialog"
       aria-modal="true"
       aria-labelledby="cart-drawer-title"
-      className="fixed inset-0 z-50 overflow-hidden bg-black/80 backdrop-blur-sm animate-fade-in"
-      onClick={() => setIsCartOpen(false)}
     >
       <div
         className="fixed inset-y-0 right-0 max-w-full flex pl-10"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-screen max-w-md bg-[#0D1118] border-l border-white/10 flex flex-col justify-between shadow-2xl">
+        <div className="w-screen max-w-md bg-white border-l border-gray-200 flex flex-col justify-between shadow-2xl">
           {/* Header */}
-          <div className="p-5 border-b border-white/5 flex items-center justify-between bg-[#050608]">
+          <div className="p-5 border-b border-gray-200 flex items-center justify-between bg-white">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-[#1677FF]/20 flex items-center justify-center text-[#35CFFF]">
+              <div className="w-9 h-9 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600">
                 <ShoppingBag className="w-4 h-4" />
               </div>
               <div>
-                <h2 id="cart-drawer-title" className="text-base font-bold text-white tracking-tight">
+                <h2 id="cart-drawer-title" className="text-base font-bold text-gray-900 tracking-tight">
                   Sacola de Compras
                 </h2>
-                <span className="text-[11px] text-slate-400">
+                <span className="text-[11px] text-gray-500">
                   {items.length} {items.length === 1 ? 'item adicionado' : 'itens adicionados'}
                 </span>
               </div>
@@ -139,7 +132,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                 <button
                   type="button"
                   onClick={clearCart}
-                  className="text-[11px] text-slate-400 hover:text-red-400 transition-colors px-2 py-1"
+                  className="text-[11px] text-gray-400 hover:text-red-500 transition-colors px-2 py-1 font-medium"
                 >
                   Limpar
                 </button>
@@ -147,7 +140,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
               <button
                 type="button"
                 onClick={() => setIsCartOpen(false)}
-                className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
+                className="p-2 text-gray-400 hover:text-gray-900 rounded-full hover:bg-gray-100 transition-colors"
                 aria-label="Fechar sacola"
               >
                 <X className="w-5 h-5" />
@@ -156,18 +149,20 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
           </div>
 
           {/* Cart Items List */}
-          <div className="flex-1 overflow-y-auto p-5 space-y-4 no-scrollbar">
+          <div className="flex-1 overflow-y-auto p-5 space-y-4 hide-scrollbar">
             {items.length === 0 ? (
-              <div className="h-full flex flex-col items-center justify-center text-center p-6 text-slate-400">
-                <ShoppingBag className="w-12 h-12 text-slate-600 mb-3 stroke-[1.5]" />
-                <p className="text-sm font-semibold text-white mb-1">Sua sacola está vazia</p>
-                <p className="text-xs text-slate-400 max-w-xs mb-5">
+              <div className="h-full flex flex-col items-center justify-center text-center p-6 text-gray-400">
+                <div className="w-16 h-16 rounded-full bg-gray-50 flex items-center justify-center mb-4 border border-gray-200">
+                  <ShoppingBag className="w-8 h-8 text-gray-400" />
+                </div>
+                <p className="text-base font-bold text-gray-900 mb-1">Sua sacola está vazia</p>
+                <p className="text-xs text-gray-500 max-w-xs mb-6">
                   Explore nossos displays em L, placas 10 × 10 cm, cartões NFC e combos para adicionar produtos.
                 </p>
                 <button
                   type="button"
                   onClick={() => setIsCartOpen(false)}
-                  className="px-4 py-2 rounded-xl bg-[#151B25] hover:bg-[#1677FF] text-white text-xs font-bold border border-white/10 transition-colors"
+                  className="px-6 py-2.5 rounded-full bg-gray-900 hover:bg-black text-white text-xs font-bold transition-all shadow-sm"
                 >
                   Ver Catálogo
                 </button>
@@ -184,10 +179,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                 return (
                   <div
                     key={item.id}
-                    className="p-3.5 rounded-xl bg-[#151B25] border border-white/5 flex gap-3 text-xs"
+                    className="p-4 rounded-2xl bg-gray-50 border border-gray-200 flex gap-3 text-xs"
                   >
                     {/* Thumbnail */}
-                    <div className="w-16 h-16 rounded-lg overflow-hidden bg-black/40 border border-white/5 shrink-0">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden bg-white border border-gray-200 shrink-0">
                       <img
                         src={item.image}
                         alt={item.name}
@@ -199,13 +194,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                     <div className="flex-1 min-w-0 flex flex-col justify-between">
                       <div>
                         <div className="flex items-start justify-between gap-2">
-                          <h4 className="font-bold text-white text-xs leading-snug truncate">
+                          <h4 className="font-bold text-gray-900 text-xs leading-snug truncate">
                             {item.name}
                           </h4>
                           <button
                             type="button"
                             onClick={() => removeItem(item.id)}
-                            className="text-slate-500 hover:text-red-400 p-0.5"
+                            className="text-gray-400 hover:text-red-500 p-0.5 transition-colors"
                             title="Remover"
                           >
                             <Trash2 className="w-3.5 h-3.5" />
@@ -213,49 +208,49 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                         </div>
 
                         {item.variation && (
-                          <span className="text-[10px] text-slate-400 block mt-0.5">
-                            Variante: <strong className="text-white">{item.variation}</strong>
+                          <span className="text-[10px] text-gray-500 block mt-0.5">
+                            Variante: <strong className="text-gray-800">{item.variation}</strong>
                           </span>
                         )}
 
                         {item.customizationNotes && (
-                          <span className="text-[10px] text-[#35CFFF] block mt-0.5 truncate">
+                          <span className="text-[10px] text-blue-600 block mt-0.5 truncate font-medium">
                             Personalização: {item.customizationNotes}
                           </span>
                         )}
 
                         {isBulk && (
-                          <span className="inline-flex items-center gap-1 text-[10px] text-[#35CFFF] font-semibold mt-1">
+                          <span className="inline-flex items-center gap-1 text-[10px] text-blue-600 font-semibold mt-1">
                             <Tag className="w-2.5 h-2.5" />
-                            Preço por quantidade aplicado (10+ un.)
+                            Preço por atacado aplicado (10+ un.)
                           </span>
                         )}
 
                         {item.monthlyUnitPrice && item.monthlyUnitPrice > 0 ? (
-                          <span className="text-[10px] text-amber-400 block mt-0.5 font-medium">
+                          <span className="text-[10px] text-blue-600 block mt-0.5 font-bold">
                             + {formatBRL(item.monthlyUnitPrice)}/mês recorrente
                           </span>
                         ) : null}
                       </div>
 
                       {/* Quantity & Item Subtotal */}
-                      <div className="flex items-center justify-between mt-2 pt-2 border-t border-white/5">
-                        <div className="flex items-center gap-1.5 bg-[#0D1118] px-2 py-0.5 rounded-lg border border-white/10">
+                      <div className="flex items-center justify-between mt-3 pt-2.5 border-t border-gray-200">
+                        <div className="flex items-center gap-1.5 bg-white px-2 py-0.5 rounded-full border border-gray-200 shadow-sm">
                           <button
                             type="button"
                             onClick={() => updateQuantity(item.id, -1)}
-                            className="text-slate-400 hover:text-white p-0.5"
+                            className="text-gray-500 hover:text-gray-900 p-0.5"
                             aria-label="Diminuir quantidade"
                           >
                             <Minus className="w-3 h-3" />
                           </button>
-                          <span className="text-xs font-bold text-white px-1.5 font-mono">
+                          <span className="text-xs font-bold text-gray-900 px-1.5 font-mono">
                             {item.quantity}
                           </span>
                           <button
                             type="button"
                             onClick={() => updateQuantity(item.id, 1)}
-                            className="text-slate-400 hover:text-white p-0.5"
+                            className="text-gray-500 hover:text-gray-900 p-0.5"
                             aria-label="Aumentar quantidade"
                           >
                             <Plus className="w-3 h-3" />
@@ -263,10 +258,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                         </div>
 
                         <div className="text-right">
-                          <span className="text-[11px] text-slate-400 block">
+                          <span className="text-[11px] text-gray-400 block font-mono">
                             {formatBRL(effectiveUnit)} /un
                           </span>
-                          <span className="text-xs font-bold text-white font-mono">
+                          <span className="text-xs font-extrabold text-gray-900 font-mono">
                             {formatBRL(itemTotal)}
                           </span>
                         </div>
@@ -280,10 +275,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
 
           {/* Footer Controls & Checkout */}
           {items.length > 0 && (
-            <div className="p-5 border-t border-white/10 bg-[#050608] space-y-4">
+            <div className="p-5 border-t border-gray-200 bg-white space-y-4">
               {/* Optional Client Name Input */}
               <div>
-                <label className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
+                <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider block mb-1">
                   Seu Nome ou Empresa (opcional)
                 </label>
                 <input
@@ -291,13 +286,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                   value={customerName}
                   onChange={(e) => setCustomerName(e.target.value)}
                   placeholder="Ex: Dra. Mariana / Loja Exemplo"
-                  className="w-full px-3 py-1.5 rounded-lg bg-[#0D1118] border border-white/10 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#35CFFF]"
+                  className="w-full px-3 py-2 rounded-xl bg-gray-50 border border-gray-200 text-xs text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
                 />
               </div>
 
               {/* Optional Custom Notes */}
               <div>
-                <label className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
+                <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider block mb-1">
                   Observações ou Links desejados
                 </label>
                 <input
@@ -305,13 +300,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                   value={customerNotes}
                   onChange={(e) => setCustomerNotes(e.target.value)}
                   placeholder="Ex: Enviar logo em alta / Link do Google Maps"
-                  className="w-full px-3 py-1.5 rounded-lg bg-[#0D1118] border border-white/10 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#35CFFF]"
+                  className="w-full px-3 py-2 rounded-xl bg-gray-50 border border-gray-200 text-xs text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
                 />
               </div>
 
               {/* Polo Selector */}
               <div>
-                <label className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
+                <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider block mb-1">
                   Polo de Atendimento no WhatsApp:
                 </label>
                 <div className="grid grid-cols-2 gap-2">
@@ -321,13 +316,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                       setSelectedPolo('curitiba');
                       onSelectPolo('curitiba');
                     }}
-                    className={`p-2 rounded-lg text-xs font-medium border text-left transition-all ${
+                    className={`p-2.5 rounded-2xl text-xs font-semibold border text-left transition-all ${
                       selectedPolo === 'curitiba'
-                        ? 'bg-[#1677FF] text-white border-[#35CFFF]'
-                        : 'bg-[#0D1118] text-slate-400 border-white/5 hover:border-white/20'
+                        ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
+                        : 'bg-gray-50 text-gray-700 border-gray-200 hover:border-gray-300'
                     }`}
                   >
-                    <span className="font-bold block">Curitiba / PR (Principal)</span>
+                    <span className="font-bold block">Curitiba / PR</span>
                     <span className="text-[10px] opacity-80">(41) 98844-2761</span>
                   </button>
 
@@ -337,10 +332,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                       setSelectedPolo('serraTalhada');
                       onSelectPolo('serraTalhada');
                     }}
-                    className={`p-2 rounded-lg text-xs font-medium border text-left transition-all ${
+                    className={`p-2.5 rounded-2xl text-xs font-semibold border text-left transition-all ${
                       selectedPolo === 'serraTalhada'
-                        ? 'bg-[#1677FF] text-white border-[#35CFFF]'
-                        : 'bg-[#0D1118] text-slate-400 border-white/5 hover:border-white/20'
+                        ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
+                        : 'bg-gray-50 text-gray-700 border-gray-200 hover:border-gray-300'
                     }`}
                   >
                     <span className="font-bold block">Serra Talhada / PE</span>
@@ -350,33 +345,33 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
               </div>
 
               {/* Price Calculation Summary (Section 11.3) */}
-              <div className="space-y-1.5 pt-2 border-t border-white/5 text-xs">
-                <div className="flex items-center justify-between text-slate-400">
+              <div className="space-y-1.5 pt-2 border-t border-gray-100 text-xs">
+                <div className="flex items-center justify-between text-gray-500">
                   <span>Subtotal:</span>
-                  <span className="font-mono text-slate-200">{formatBRL(subtotal)}</span>
+                  <span className="font-mono text-gray-900">{formatBRL(subtotal)}</span>
                 </div>
 
                 {discount > 0 && (
-                  <div className="flex items-center justify-between text-[#35CFFF]">
+                  <div className="flex items-center justify-between text-blue-600 font-semibold">
                     <span>Desconto por quantidade (10+ un.):</span>
                     <span className="font-mono">-{formatBRL(discount)}</span>
                   </div>
                 )}
 
-                <div className="flex items-center justify-between text-base font-extrabold text-white pt-1">
+                <div className="flex items-center justify-between text-base font-extrabold text-gray-900 pt-1">
                   <span>Total Inicial:</span>
-                  <span className="font-mono text-lg text-white">{formatBRL(totalInitial)}</span>
+                  <span className="font-mono text-lg text-gray-900">{formatBRL(totalInitial)}</span>
                 </div>
 
-                {/* Recurring monthly fee presented separately (Section 11.3) */}
+                {/* Recurring monthly fee presented separately */}
                 {totalMonthly > 0 && (
-                  <div className="p-2.5 rounded-lg bg-[#151B25] border border-white/5 flex items-start gap-2 mt-2">
-                    <Info className="w-4 h-4 text-[#35CFFF] shrink-0 mt-0.5" />
+                  <div className="p-3 rounded-2xl bg-blue-50/70 border border-blue-100 flex items-start gap-2 mt-2">
+                    <Info className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-xs font-bold text-[#35CFFF] block">
+                      <span className="text-xs font-bold text-blue-700 block">
                         Mensalidade obrigatória: {formatBRL(totalMonthly)}/mês
                       </span>
-                      <span className="text-[10px] text-slate-400 block">
+                      <span className="text-[10px] text-gray-600 block leading-relaxed mt-0.5">
                         Para manutenção do servidor e suporte aos envios de e-mail ao lojista. Cobrada separadamente do valor inicial.
                       </span>
                     </div>
@@ -384,17 +379,17 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
                 )}
               </div>
 
-              {/* Checkout Button */}
+              {/* Checkout Button (Pill Shape Wistag) */}
               <button
                 type="button"
                 onClick={handleCheckoutWhatsApp}
-                className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-gradient-to-r from-[#1677FF] to-[#0D5BCC] hover:from-[#35CFFF] hover:to-[#1677FF] text-white text-xs sm:text-sm font-bold shadow-lg transition-all active:scale-95"
+                className="w-full flex items-center justify-center gap-2 px-5 py-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all active:scale-95"
               >
-                <MessageCircle className="w-4 h-4 fill-white/20" />
+                <MessageCircle className="w-4 h-4" />
                 <span>Finalizar Pedido pelo WhatsApp</span>
               </button>
 
-              <p className="text-[10px] text-slate-500 text-center">
+              <p className="text-[10px] text-gray-400 text-center font-medium">
                 A finalização ocorre via WhatsApp oficial sem cobrança automática no site.
               </p>
             </div>
@@ -404,3 +399,5 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ preferredPolo, onSelectP
     </div>
   );
 };
+
+export default CartDrawer;

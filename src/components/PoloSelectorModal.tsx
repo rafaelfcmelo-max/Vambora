@@ -72,31 +72,27 @@ export const PoloSelectorModal: React.FC<PoloSelectorModalProps> = ({
       role="dialog"
       aria-modal="true"
       aria-labelledby="polo-modal-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm animate-fade-in"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm animate-fade-in"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-lg bg-[#0B0F14] border border-[#1677FF]/30 rounded-2xl p-6 sm:p-7 shadow-2xl overflow-hidden glow-blue"
+        className="relative w-full max-w-lg bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Glow ambient background */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-[#1677FF]/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#35CFFF]/10 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="flex items-start justify-between mb-4 relative z-10">
+        <div className="flex items-start justify-between mb-4">
           <div>
-            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#35CFFF] mb-1">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600 mb-1">
               <MessageCircle className="w-3.5 h-3.5" />
               Atendimento WhatsApp
             </div>
-            <h3 id="polo-modal-title" className="text-xl font-bold text-white tracking-tight">
+            <h3 id="polo-modal-title" className="text-xl sm:text-2xl font-extrabold text-gray-900 tracking-tight">
               Selecione o polo de atendimento
             </h3>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-white/10 transition-colors"
+            className="p-2 text-gray-400 hover:text-gray-900 rounded-full hover:bg-gray-100 transition-colors"
             aria-label="Fechar"
           >
             <X className="w-5 h-5" />
@@ -104,84 +100,86 @@ export const PoloSelectorModal: React.FC<PoloSelectorModalProps> = ({
         </div>
 
         {target?.itemName && (
-          <div className="mb-5 p-3.5 rounded-xl bg-[#101B32]/60 border border-[#1677FF]/20 relative z-10">
-            <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-0.5">
+          <div className="mb-5 p-3.5 rounded-2xl bg-blue-50/70 border border-blue-100">
+            <span className="text-[11px] font-bold text-blue-600 uppercase tracking-wider block mb-0.5">
               Item selecionado
             </span>
-            <p className="text-sm font-semibold text-white">{target.itemName}</p>
+            <p className="text-sm font-bold text-gray-900">{target.itemName}</p>
           </div>
         )}
 
-        <p className="text-xs text-slate-400 mb-4 leading-relaxed relative z-10">
+        <p className="text-xs text-gray-500 mb-4 leading-relaxed font-normal">
           A VãBora Soluções atende todo o Brasil com pronta entrega e suporte dedicado a partir de dois polos operacionais:
         </p>
 
         {/* Polos choices */}
-        <div className="space-y-3 relative z-10">
+        <div className="space-y-3">
           {/* Curitiba */}
           <button
             type="button"
             onClick={() => handleSelect('curitiba', getPoloUrl(CONTACT_INFO.units.curitiba.rawPhone))}
-            className="w-full text-left p-4 rounded-xl bg-[#050608] hover:bg-[#101B32]/80 border border-white/10 hover:border-[#1677FF] transition-all duration-200 group flex items-center justify-between"
+            className="w-full text-left p-4 rounded-2xl bg-gray-50 hover:bg-white border border-gray-200 hover:border-blue-600 transition-all duration-200 group flex items-center justify-between shadow-sm hover:shadow-md"
           >
             <div className="flex items-center gap-3.5">
-              <div className="w-10 h-10 rounded-lg bg-[#1677FF]/15 border border-[#1677FF]/30 flex items-center justify-center text-[#35CFFF] group-hover:scale-105 transition-transform">
+              <div className="w-11 h-11 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 group-hover:scale-105 transition-transform shadow-sm">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-sm font-bold text-white group-hover:text-[#35CFFF] transition-colors">
+                  <span className="text-sm font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                     Polo Curitiba / PR
                   </span>
                   {preferredPolo === 'curitiba' && (
-                    <span className="text-[10px] px-2 py-0.5 rounded bg-[#1677FF]/20 text-[#35CFFF] font-semibold border border-[#1677FF]/40">
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue-600 text-white font-bold shadow-sm">
                       Preferido
                     </span>
                   )}
                 </div>
-                <span className="text-xs text-slate-400 block mt-0.5">
+                <span className="text-xs text-gray-500 block mt-0.5 font-mono">
                   WhatsApp: {CONTACT_INFO.units.curitiba.phone}
                 </span>
               </div>
             </div>
-            <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-white group-hover:translate-x-1 transition-all" />
+            <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
           </button>
 
           {/* Serra Talhada */}
           <button
             type="button"
             onClick={() => handleSelect('serraTalhada', getPoloUrl(CONTACT_INFO.units.serraTalhada.rawPhone))}
-            className="w-full text-left p-4 rounded-xl bg-[#050608] hover:bg-[#101B32]/80 border border-white/10 hover:border-[#1677FF] transition-all duration-200 group flex items-center justify-between"
+            className="w-full text-left p-4 rounded-2xl bg-gray-50 hover:bg-white border border-gray-200 hover:border-blue-600 transition-all duration-200 group flex items-center justify-between shadow-sm hover:shadow-md"
           >
             <div className="flex items-center gap-3.5">
-              <div className="w-10 h-10 rounded-lg bg-[#1677FF]/15 border border-[#1677FF]/30 flex items-center justify-center text-[#35CFFF] group-hover:scale-105 transition-transform">
+              <div className="w-11 h-11 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 group-hover:scale-105 transition-transform shadow-sm">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-sm font-bold text-white group-hover:text-[#35CFFF] transition-colors">
+                  <span className="text-sm font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                     Polo Serra Talhada / PE
                   </span>
                   {preferredPolo === 'serraTalhada' && (
-                    <span className="text-[10px] px-2 py-0.5 rounded bg-[#1677FF]/20 text-[#35CFFF] font-semibold border border-[#1677FF]/40">
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue-600 text-white font-bold shadow-sm">
                       Preferido
                     </span>
                   )}
                 </div>
-                <span className="text-xs text-slate-400 block mt-0.5">
+                <span className="text-xs text-gray-500 block mt-0.5 font-mono">
                   WhatsApp: {CONTACT_INFO.units.serraTalhada.phone}
                 </span>
               </div>
             </div>
-            <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-white group-hover:translate-x-1 transition-all" />
+            <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
           </button>
         </div>
 
-        <div className="mt-5 pt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-500 relative z-10">
+        <div className="mt-5 pt-4 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-400 font-medium">
           <span>Mensagem pré-preenchida com o item selecionado</span>
-          <span className="text-slate-400">Atendimento oficial</span>
+          <span className="text-gray-600 font-semibold">Atendimento oficial</span>
         </div>
       </div>
     </div>
   );
 };
+
+export default PoloSelectorModal;

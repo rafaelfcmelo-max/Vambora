@@ -1,89 +1,88 @@
 import React, { useState } from 'react';
-import { Smartphone, Check, Sparkles, ArrowRight, Layers, FileText, Clock, Users, HelpCircle } from 'lucide-react';
+import { Smartphone, Check, Sparkles, ArrowRight } from 'lucide-react';
 import { DIGITAL_SERVICES } from '../data/catalog';
 
-interface BioSiteShowcaseSectionProps {
+export interface BioSiteShowcaseSectionProps {
   onOpenContact: (planName: string) => void;
 }
 
 export const BioSiteShowcaseSection: React.FC<BioSiteShowcaseSectionProps> = ({ onOpenContact }) => {
-  const [selectedPlan, setSelectedPlan] = useState<'essencial' | 'profissional' | 'completo'>('profissional');
+  const [selectedPlan] = useState<'essencial' | 'profissional' | 'completo'>('profissional');
 
   const biositePlans = DIGITAL_SERVICES.filter((s) => s.id.startsWith('biosite'));
 
   return (
-    <section id="biosites" className="py-20 px-4 sm:px-8 border-t border-white/5 bg-[#0D1118]/80 scroll-mt-28">
+    <section id="biosites" className="py-16 lg:py-20 px-4 sm:px-8 border-b border-gray-200 bg-white scroll-mt-28">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#151B25] border border-[#1677FF]/30 text-xs font-semibold text-[#35CFFF] mb-3">
-            <Smartphone className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-xs font-bold text-blue-700 mb-3 uppercase tracking-wider">
+            <Smartphone className="w-3.5 h-3.5 text-blue-600" />
             <span>Presença Digital no Smartphone</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
             Seus principais links em uma página com a identidade da sua marca.
           </h2>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-4">
+          <p className="text-base text-gray-600 leading-relaxed mb-4 font-normal">
             Reúna seus canais em uma página organizada, com apresentação visual personalizada e acesso rápido às informações que seus clientes procuram.
           </p>
-          <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="text-sm text-gray-500 leading-relaxed font-normal">
             Uma página simples de links resolve uma necessidade básica. Um BioSite personalizado permite trabalhar melhor a apresentação da marca e organizar a jornada do cliente conforme os recursos contratados.
           </p>
         </div>
 
-        {/* 3 Plans Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        {/* 3 Plans Mobile Snap Carousel, Desktop Grid */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-8 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible mb-12">
           {biositePlans.map((plan) => {
-            const isSelected = plan.id.includes(selectedPlan);
             const isProf = plan.id.includes('profissional');
 
             return (
               <div
                 key={plan.id}
-                className={`p-6 sm:p-7 rounded-2xl bg-[#0D1118] border flex flex-col justify-between transition-all duration-300 glow-border ${
+                className={`snap-center shrink-0 w-[85%] sm:w-[70%] md:w-auto mr-4 md:mr-0 p-6 sm:p-7 rounded-3xl border flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-xl transform hover:-translate-y-1.5 ${
                   isProf
-                    ? 'border-[#1677FF] shadow-[0_0_25px_rgba(22,119,255,0.2)] bg-[#151B25]/60'
-                    : 'border-white/5'
+                    ? 'border-blue-600 bg-white ring-2 ring-blue-100 shadow-md'
+                    : 'border-gray-200 bg-gray-50'
                 }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-[11px] font-bold text-[#35CFFF] uppercase tracking-wider">
+                    <span className="text-[11px] font-bold text-blue-600 uppercase tracking-wider bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">
                       {plan.tagline}
                     </span>
                     {isProf && (
-                      <span className="text-[10px] px-2 py-0.5 rounded bg-[#1677FF]/30 text-white font-bold uppercase tracking-wider">
+                      <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-blue-600 text-white font-bold uppercase tracking-wider shadow-sm">
                         Recomendado
                       </span>
                     )}
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-2">{plan.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed mb-5">{plan.description}</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{plan.title}</h3>
+                  <p className="text-xs text-gray-500 leading-relaxed mb-5 font-normal">{plan.description}</p>
 
                   <div className="space-y-2.5 mb-6">
-                    <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block">
+                    <span className="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">
                       Recursos inclusos:
                     </span>
                     {plan.includes.map((it, idx) => (
-                      <div key={idx} className="flex items-start gap-2 text-xs text-slate-300">
-                        <Check className="w-3.5 h-3.5 text-[#35CFFF] shrink-0 mt-0.5" />
+                      <div key={idx} className="flex items-start gap-2 text-xs text-gray-700">
+                        <Check className="w-3.5 h-3.5 text-blue-600 shrink-0 mt-0.5" />
                         <span>{it}</span>
                       </div>
                     ))}
                   </div>
 
                   {plan.scopeNote && (
-                    <div className="p-2.5 rounded-lg bg-[#050608] border border-white/5 text-[10px] text-slate-400 mb-5">
+                    <div className="p-3 rounded-2xl bg-white border border-gray-200 text-[10px] text-gray-500 mb-5 shadow-sm">
                       {plan.scopeNote}
                     </div>
                   )}
                 </div>
 
                 <div>
-                  <div className="pt-4 border-t border-white/5 mb-4 flex items-baseline justify-between">
-                    <span className="text-xs text-slate-400">Investimento único:</span>
-                    <span className="text-2xl font-extrabold text-white font-mono tracking-tight">
+                  <div className="pt-4 border-t border-gray-200 mb-4 flex items-baseline justify-between">
+                    <span className="text-xs text-gray-400">Investimento único:</span>
+                    <span className="text-2xl font-extrabold text-gray-900 font-mono tracking-tight">
                       {plan.price}
                     </span>
                   </div>
@@ -91,10 +90,10 @@ export const BioSiteShowcaseSection: React.FC<BioSiteShowcaseSectionProps> = ({ 
                   <button
                     type="button"
                     onClick={() => onOpenContact(plan.title)}
-                    className={`w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-md flex items-center justify-center gap-2 ${
+                    className={`w-full py-3.5 px-5 rounded-full text-xs sm:text-sm font-bold transition-all shadow-sm flex items-center justify-center gap-2 active:scale-95 ${
                       isProf
-                        ? 'bg-gradient-to-r from-[#1677FF] to-[#0D5BCC] hover:from-[#35CFFF] hover:to-[#1677FF] text-white'
-                        : 'bg-[#151B25] hover:bg-[#1677FF] text-white border border-white/10'
+                        ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-blue-500/25'
+                        : 'bg-gray-900 hover:bg-black text-white'
                     }`}
                   >
                     <span>Quero meu {plan.title.replace('BioSite ', '')}</span>
@@ -107,19 +106,19 @@ export const BioSiteShowcaseSection: React.FC<BioSiteShowcaseSectionProps> = ({ 
         </div>
 
         {/* Honest Comparison Callout */}
-        <div className="p-6 rounded-2xl bg-[#151B25] border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300">
+        <div className="p-6 rounded-3xl bg-gray-50 border border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-600 shadow-sm">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#1677FF]/20 flex items-center justify-center text-[#35CFFF] shrink-0">
+            <div className="w-10 h-10 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shrink-0">
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
-              <strong className="text-white block">Quer um pacote de presença digital completa?</strong>
-              <span className="text-slate-400">Combine seu BioSite com placa de balcão e cartão NFC com desconto de combo.</span>
+              <strong className="text-gray-900 block text-sm">Quer um pacote de presença digital completa?</strong>
+              <span className="text-gray-500">Combine seu BioSite com placa de balcão e cartão NFC com desconto de combo.</span>
             </div>
           </div>
           <a
-            href="#combos-comerciais"
-            className="px-4 py-2.5 rounded-xl bg-[#0D1118] hover:bg-[#1677FF] text-white font-semibold transition-colors shrink-0 border border-white/10"
+            href="#combos"
+            className="px-5 py-2.5 rounded-full bg-white hover:bg-gray-100 text-gray-900 font-bold transition-all shrink-0 border border-gray-300 shadow-sm"
           >
             Ver Combos com BioSite
           </a>
@@ -128,3 +127,5 @@ export const BioSiteShowcaseSection: React.FC<BioSiteShowcaseSectionProps> = ({ 
     </section>
   );
 };
+
+export default BioSiteShowcaseSection;

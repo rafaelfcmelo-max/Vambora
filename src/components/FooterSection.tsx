@@ -7,32 +7,32 @@ export const FooterSection: React.FC = () => {
 
   return (
     <>
-      <footer className="bg-[#050608] border-t border-white/5 py-12 px-4 sm:px-8 text-slate-400 text-xs">
+      <footer className="bg-gray-100 border-t border-gray-200 py-12 px-4 sm:px-8 text-gray-500 text-xs">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-          {/* Brand Lockup with Neutral High-Contrast Area for Pristine Legibility */}
+          {/* Brand Lockup */}
           <div className="flex flex-col sm:flex-row items-center gap-3.5">
-            <div className="bg-white p-1 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center shrink-0">
+            <div className="bg-white p-2 rounded-2xl border border-gray-200 shadow-sm flex items-center justify-center shrink-0">
               <img
                 src={CONTACT_INFO.logo.local}
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = CONTACT_INFO.logo.remote;
                 }}
                 alt="VãBora Soluções"
-                className="h-7 w-auto object-contain"
+                className="h-8 w-auto object-contain"
               />
             </div>
             <div>
-              <div className="text-sm font-bold text-white tracking-tight">
-                {CONTACT_INFO.name} — <span className="text-[#35CFFF] font-normal">{CONTACT_INFO.slogan}</span>
+              <div className="text-sm font-bold text-gray-900 tracking-tight">
+                {CONTACT_INFO.name} — <span className="text-blue-600 font-medium">{CONTACT_INFO.slogan}</span>
               </div>
-              <p className="text-[11px] text-slate-400 mt-0.5">
+              <p className="text-[11px] text-gray-500 mt-0.5">
                 {CONTACT_INFO.positioning}
               </p>
             </div>
           </div>
 
           {/* Polos, Legal Links & Copyright */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 text-[11px] text-slate-500">
+          <div className="flex flex-col sm:flex-row items-center gap-3 text-[11px] text-gray-500">
             <div className="flex items-center gap-2">
               <span>Polo Curitiba/PR: (41) 98844-2761</span>
               <span>·</span>
@@ -42,7 +42,7 @@ export const FooterSection: React.FC = () => {
             <button
               type="button"
               onClick={() => setLegalOpen(true)}
-              className="text-slate-400 hover:text-[#35CFFF] underline underline-offset-2 transition-colors"
+              className="text-gray-600 hover:text-blue-600 underline underline-offset-2 transition-colors font-medium"
             >
               Privacidade e Termos
             </button>
@@ -56,3 +56,5 @@ export const FooterSection: React.FC = () => {
     </>
   );
 };
+
+export default FooterSection;

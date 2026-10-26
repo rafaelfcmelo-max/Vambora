@@ -1,190 +1,171 @@
 import React, { useState } from 'react';
-import { ShoppingBag, Menu, X, Instagram, MessageCircle } from 'lucide-react';
-import { CONTACT_INFO } from '../data/catalog';
+import { ShoppingBag, Menu, X, MapPin } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
-interface TopNavProps {
-  onOpenContact: (customItem?: string) => void;
+export interface TopNavProps {
+  onOpenContact: () => void;
   preferredPolo: 'curitiba' | 'serraTalhada' | null;
   onSelectPolo: (polo: 'curitiba' | 'serraTalhada') => void;
 }
 
-export const TopNav: React.FC<TopNavProps> = ({
-  onOpenContact,
-  preferredPolo,
-  onSelectPolo,
-}) => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+export function TopNav({ onOpenContact, preferredPolo, onSelectPolo }: TopNavProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { totalItemsCount, setIsCartOpen } = useCart();
 
-  const navLinks = [
-    { label: 'Início', href: '#inicio' },
-    { label: 'Produtos', href: '#produtos-google' },
-    { label: 'Soluções digitais', href: '#servicos-digitais' },
-    { label: 'Para empresas', href: '#para-empresas' },
-    { label: 'Revenda', href: '#revenda-parcerias' },
-    { label: 'Sobre a VaBora', href: '#sobre-vabora' },
-    { label: 'Contato', href: '#contato' },
-  ];
-
   return (
-    <header className="sticky top-0 z-40 w-full bg-[#050608]/95 backdrop-blur-md border-b border-white/5 transition-all">
-      {/* Top Polos Strip */}
-      <div className="bg-[#0D1118] border-b border-white/5 text-[11px] text-slate-400 py-1.5 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
-            <span className="text-slate-500 whitespace-nowrap">Polos oficiais:</span>
-            <span className="text-white font-medium whitespace-nowrap">Curitiba/PR (Principal)</span>
-            <span className="text-slate-600">·</span>
-            <span className="text-white font-medium whitespace-nowrap">Serra Talhada/PE</span>
-          </div>
-
-          <div className="flex items-center gap-4 shrink-0">
-            <a
-              href={CONTACT_INFO.instagram.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-slate-300 hover:text-[#35CFFF] transition-colors"
-              title="Instagram Oficial VaBora Soluções"
-            >
-              <Instagram className="w-3.5 h-3.5 text-[#35CFFF]" />
-              <span className="hidden sm:inline">Instagram</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Top Bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6">
-        {/* Zone 1: Logo with Neutral High-Contrast Area for perfect legibility (Section 1.1) */}
-        <a
-          href="#inicio"
-          className="flex items-center gap-2.5 text-base sm:text-lg font-bold tracking-tight text-white whitespace-nowrap shrink-0 group"
-        >
-          <div className="bg-white p-1 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center shrink-0">
-            <img
-              src={CONTACT_INFO.logo.local}
-              onError={(e) => {
-                (e.target as HTMLImageElement).src = CONTACT_INFO.logo.remote;
-              }}
-              alt="Logo VaBora Soluções"
-              className="h-6 w-auto object-contain"
-            />
-          </div>
-          <span className="font-extrabold text-white tracking-tight group-hover:text-[#35CFFF] transition-colors">
-            VaBora Soluções
-          </span>
+    <header className="bg-white border-b border-gray-200 sticky top-0 z-50 transition-all">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        {/* Logotipo VãBora */}
+        <a href="#inicio" className="flex-shrink-0 flex items-center cursor-pointer group">
+          <img 
+            src="https://i.postimg.cc/PqF7G23b/IMG-0891.png" 
+            alt="VãBora Soluções" 
+            className="h-10 w-auto object-contain transition-transform group-hover:scale-105 duration-200"
+          />
         </a>
-
-        {/* Zone 2: Navigation Links (Section 3) */}
-        <nav
-          aria-label="Navegação principal"
-          className="hidden xl:flex items-center gap-6 text-xs xl:text-sm font-semibold text-slate-300"
-        >
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="hover:text-[#35CFFF] transition-colors whitespace-nowrap shrink-0"
-            >
-              {link.label}
-            </a>
-          ))}
+        
+        {/* Navegação Desktop */}
+        <nav className="hidden md:flex space-x-8">
+          <a 
+            href="#produtos" 
+            className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
+          >
+            Produtos
+          </a>
+          <a 
+            href="#servicos" 
+            className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
+          >
+            Serviços Digitais
+          </a>
+          <a 
+            href="#combos" 
+            className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
+          >
+            Combos e Ofertas
+          </a>
         </nav>
 
-        {/* Zone 3: Actions - Shopping Bag Trigger with Live Counter + Direct Contact */}
-        <div className="flex items-center gap-3 shrink-0">
-          {/* Sacola de Compras with Counter Badge (Section 3) */}
-          <button
+        <div className="flex items-center space-x-4">
+          {/* Seletor de Polos de Atendimento */}
+          <div className="hidden lg:flex items-center text-xs text-gray-500 mr-2 bg-gray-50 px-3.5 py-1.5 rounded-full border border-gray-200">
+            <MapPin className="w-3.5 h-3.5 mr-1.5 text-blue-600 shrink-0" />
+            <button 
+              type="button"
+              onClick={() => onSelectPolo('curitiba')}
+              className={`hover:text-gray-900 transition ${preferredPolo === 'curitiba' ? 'text-blue-600 font-bold' : ''}`}
+            >
+              Curitiba
+            </button>
+            <span className="mx-1.5 text-gray-300">•</span>
+            <button 
+              type="button"
+              onClick={() => onSelectPolo('serraTalhada')}
+              className={`hover:text-gray-900 transition ${preferredPolo === 'serraTalhada' ? 'text-blue-600 font-bold' : ''}`}
+            >
+              Serra Talhada
+            </button>
+          </div>
+
+          <button 
+            type="button"
+            onClick={onOpenContact}
+            className="hidden md:block text-sm font-medium text-gray-700 hover:text-gray-900 transition"
+          >
+            Falar com consultor
+          </button>
+
+          {/* Botão de Sacola (Pill shape com Side Cart trigger) */}
+          <button 
             type="button"
             onClick={() => setIsCartOpen(true)}
-            aria-label={`Ver sacola de compras (${totalItemsCount} itens)`}
-            className="relative flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#151B25] hover:bg-[#1677FF]/20 text-white text-xs font-bold border border-white/10 hover:border-[#1677FF] transition-all"
+            aria-label={`Abrir sacola de compras com ${totalItemsCount} itens`}
+            className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 border border-gray-200 px-5 py-2.5 rounded-full transition text-sm font-semibold text-gray-900 shadow-sm active:scale-95"
           >
-            <ShoppingBag className="w-4 h-4 text-[#35CFFF]" />
+            <ShoppingBag className="w-4 h-4 text-gray-700" />
             <span className="hidden sm:inline">Sacola</span>
-            {totalItemsCount > 0 && (
-              <span className="w-5 h-5 rounded-full bg-[#1677FF] text-white text-[11px] font-black flex items-center justify-center shadow-md animate-scale-in">
-                {totalItemsCount}
-              </span>
-            )}
+            <span className="bg-blue-600 text-white rounded-full min-w-5 h-5 px-1.5 flex items-center justify-center text-xs font-bold shadow-sm">
+              {totalItemsCount}
+            </span>
           </button>
-
-          {/* WhatsApp Action */}
-          <button
+          
+          {/* Botão Hambúrguer Mobile */}
+          <button 
             type="button"
-            onClick={() => onOpenContact()}
-            className="flex items-center gap-2 px-4 py-2 text-xs font-bold text-white bg-gradient-to-r from-[#1677FF] to-[#0D5BCC] hover:from-[#35CFFF] hover:to-[#1677FF] rounded-xl transition-all shadow-[0_0_15px_rgba(22,119,255,0.3)] whitespace-nowrap active:scale-95"
-          >
-            <MessageCircle className="w-3.5 h-3.5 fill-white/20" />
-            <span className="hidden md:inline">Atendimento</span>
-            <span className="md:hidden">Contato</span>
-          </button>
-
-          {/* Mobile Menu Button */}
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden text-gray-900 p-2 rounded-lg hover:bg-gray-100 transition" 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Abrir menu de navegação"
-            aria-expanded={mobileMenuOpen}
-            className="xl:hidden p-2 text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Drawer Menu (Section 3: O menu deve funcionar de verdade, inclusive no celular) */}
-      {mobileMenuOpen && (
-        <div className="xl:hidden bg-[#0D1118] border-b border-white/10 px-4 py-5 animate-fade-in shadow-2xl">
-          <div className="flex flex-col gap-2">
-            <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider px-2 mb-1">
-              Navegação
-            </span>
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:text-white hover:bg-[#151B25] transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+      {/* Menu Mobile */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 shadow-xl">
+          <div className="flex flex-col space-y-3">
+            <a 
+              href="#produtos" 
+              onClick={() => setIsMenuOpen(false)}
+              className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
+            >
+              Produtos
+            </a>
+            <a 
+              href="#servicos" 
+              onClick={() => setIsMenuOpen(false)}
+              className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
+            >
+              Serviços Digitais
+            </a>
+            <a 
+              href="#combos" 
+              onClick={() => setIsMenuOpen(false)}
+              className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
+            >
+              Combos e Ofertas
+            </a>
 
-            <div className="pt-3 mt-2 border-t border-white/5 flex flex-col gap-2">
-              <button
-                type="button"
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  setIsCartOpen(true);
-                }}
-                className="flex items-center justify-between px-3 py-2.5 rounded-xl bg-[#151B25] text-white text-xs font-bold border border-white/10"
-              >
-                <div className="flex items-center gap-2">
-                  <ShoppingBag className="w-4 h-4 text-[#35CFFF]" />
-                  <span>Ver Sacola de Compras</span>
-                </div>
-                <span className="w-5 h-5 rounded-full bg-[#1677FF] text-white text-[11px] font-bold flex items-center justify-center">
-                  {totalItemsCount}
-                </span>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenContact();
-                }}
-                className="flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-gradient-to-r from-[#1677FF] to-[#0D5BCC] text-white text-xs font-bold shadow-md"
-              >
-                <MessageCircle className="w-4 h-4 fill-white/20" />
-                <span>Falar no WhatsApp</span>
-              </button>
+            {/* Seletor de Polo no Mobile */}
+            <div className="pt-2 flex items-center justify-between text-xs text-gray-600 bg-gray-50 p-3 rounded-xl border border-gray-200">
+              <span className="font-semibold flex items-center">
+                <MapPin className="w-3.5 h-3.5 mr-1 text-blue-600" /> Polo:
+              </span>
+              <div className="space-x-2">
+                <button 
+                  type="button"
+                  onClick={() => onSelectPolo('curitiba')}
+                  className={`px-3 py-1 rounded-full text-xs transition ${preferredPolo === 'curitiba' ? 'bg-blue-600 text-white font-bold' : 'bg-gray-200 text-gray-700'}`}
+                >
+                  Curitiba
+                </button>
+                <button 
+                  type="button"
+                  onClick={() => onSelectPolo('serraTalhada')}
+                  className={`px-3 py-1 rounded-full text-xs transition ${preferredPolo === 'serraTalhada' ? 'bg-blue-600 text-white font-bold' : 'bg-gray-200 text-gray-700'}`}
+                >
+                  Serra Talhada
+                </button>
+              </div>
             </div>
+
+            <button 
+              type="button"
+              onClick={() => {
+                setIsMenuOpen(false);
+                onOpenContact();
+              }}
+              className="w-full mt-2 bg-gray-900 hover:bg-black text-white py-3 rounded-full text-sm font-bold shadow-md transition text-center"
+            >
+              Falar com consultor
+            </button>
           </div>
         </div>
       )}
     </header>
   );
-};
+}
+
+export default TopNav;

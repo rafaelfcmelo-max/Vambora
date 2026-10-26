@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, Send, CheckCircle2, ShieldCheck, HelpCircle, ArrowRight, Package, MessageCircle } from 'lucide-react';
+import { Users, Send, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { CONTACT_INFO } from '../data/catalog';
 
 export const ResellerSection: React.FC = () => {
@@ -61,19 +61,19 @@ export const ResellerSection: React.FC = () => {
   return (
     <section
       id="revenda-parcerias"
-      className="py-20 px-4 sm:px-8 border-t border-white/5 bg-[#050608] relative scroll-mt-28"
+      className="py-16 lg:py-20 px-4 sm:px-8 border-b border-gray-200 bg-white relative scroll-mt-28"
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#151B25] border border-amber-500/30 text-xs font-semibold text-amber-400 mb-3">
-            <Users className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-xs font-bold text-blue-700 mb-3 uppercase tracking-wider">
+            <Users className="w-3.5 h-3.5 text-blue-600" />
             <span>Oportunidade Comercial</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
             Revenda e Parcerias Comerciais
           </h2>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-base text-gray-600 leading-relaxed font-normal">
             Seja um parceiro comercial da VaBora Soluções na sua cidade ou região. Leve tecnologia NFC, QR Codes inteligentes e displays de alto padrão para comércios, clínicas, hotéis e restaurantes locais.
           </p>
         </div>
@@ -82,53 +82,53 @@ export const ResellerSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Information Column (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="p-7 sm:p-8 rounded-2xl bg-[#0D1118] border border-white/5 glow-border">
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">
+            <div className="p-7 sm:p-9 rounded-3xl bg-gray-50 border border-gray-200 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 O que você pode solicitar à nossa equipe:
               </h3>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+              <p className="text-sm text-gray-600 leading-relaxed mb-6 font-normal">
                 Apresentamos aos futuros parceiros todas as informações necessárias para avaliar a integração das soluções VaBora à sua cartela de clientes:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {benefits.map((b, idx) => (
-                  <div key={idx} className="p-4 rounded-xl bg-[#151B25]/60 border border-white/5">
-                    <div className="flex items-center gap-2 text-xs font-bold text-white mb-1.5">
-                      <CheckCircle2 className="w-4 h-4 text-[#35CFFF] shrink-0" />
+                  <div key={idx} className="p-4 rounded-2xl bg-white border border-gray-200 shadow-sm">
+                    <div className="flex items-center gap-2 text-xs font-bold text-gray-900 mb-1.5">
+                      <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
                       <span>{b.title}</span>
                     </div>
-                    <p className="text-xs text-slate-300 leading-relaxed">{b.desc}</p>
+                    <p className="text-xs text-gray-500 leading-relaxed font-normal">{b.desc}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Integrity Notice (Section 14) */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-[#151B25] border border-white/5 text-xs text-slate-400 leading-relaxed flex items-start gap-3">
-              <ShieldCheck className="w-5 h-5 text-[#35CFFF] shrink-0 mt-0.5" />
+            {/* Integrity Notice */}
+            <div className="p-5 rounded-3xl bg-blue-50/70 border border-blue-100 text-xs text-gray-700 leading-relaxed flex items-start gap-3">
+              <ShieldCheck className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
               <p>
-                <strong>Transparência comercial:</strong> As condições de fornecimento por volume, personalizações e logística são apresentadas e alinhadas diretamente no atendimento comercial. Não divulgamos margens hipotéticas ou promessas irreais; trabalhamos com valores claros e respeito mútuo.
+                <strong className="text-gray-900 font-bold">Transparência comercial:</strong> As condições de fornecimento por volume, personalizações e logística são apresentadas e alinhadas diretamente no atendimento comercial. Não divulgamos margens hipotéticas ou promessas irreais; trabalhamos com valores claros e respeito mútuo.
               </p>
             </div>
           </div>
 
           {/* Form Column (5 cols) */}
           <div className="lg:col-span-5">
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#0D1118] border border-[#1677FF]/30 glow-border">
-              <div className="flex items-center gap-2 text-xs font-bold text-[#35CFFF] uppercase tracking-wider mb-2">
-                <Send className="w-3.5 h-3.5" />
+            <div className="p-7 sm:p-9 rounded-3xl bg-white border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-2 text-xs font-bold text-blue-700 uppercase tracking-wider mb-2">
+                <Send className="w-3.5 h-3.5 text-blue-600" />
                 <span>Solicitar Contato Comercial</span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
                 Quero ser Revendedor ou Parceiro
               </h3>
-              <p className="text-xs text-slate-300 mb-6">
+              <p className="text-xs text-gray-500 mb-6 font-normal">
                 Preencha os campos abaixo para conversar diretamente com nosso polo de atendimento:
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider block mb-1">
+                  <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider block mb-1">
                     Seu Nome Completo *
                   </label>
                   <input
@@ -137,41 +137,40 @@ export const ResellerSection: React.FC = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Ex: Carlos Silva"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-[#151B25] border border-white/10 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#35CFFF] transition-colors"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-xs sm:text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white"
                   />
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider block mb-1">
-                    Nome da Empresa / Negócio *
+                  <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider block mb-1">
+                    Nome da Empresa / Agência / Loja:
                   </label>
                   <input
                     type="text"
-                    required
                     value={company}
                     onChange={(e) => setCompany(e.target.value)}
-                    placeholder="Ex: Agência Criativa / Loja Física"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-[#151B25] border border-white/10 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#35CFFF] transition-colors"
+                    placeholder="Ex: Agência Criativa / Papelaria Central"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-xs sm:text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white"
                   />
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider block mb-1">
-                      Cidade e Estado *
+                    <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider block mb-1">
+                      Cidade / UF *
                     </label>
                     <input
                       type="text"
                       required
                       value={city}
                       onChange={(e) => setCity(e.target.value)}
-                      placeholder="Ex: Curitiba / PR"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-[#151B25] border border-white/10 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#35CFFF] transition-colors"
+                      placeholder="Ex: Londrina / PR"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-xs sm:text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white"
                     />
                   </div>
 
                   <div>
-                    <label className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider block mb-1">
+                    <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider block mb-1">
                       WhatsApp com DDD *
                     </label>
                     <input
@@ -179,61 +178,55 @@ export const ResellerSection: React.FC = () => {
                       required
                       value={whatsapp}
                       onChange={(e) => setWhatsapp(e.target.value)}
-                      placeholder="Ex: (41) 99999-9999"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-[#151B25] border border-white/10 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#35CFFF] transition-colors"
+                      placeholder="(00) 00000-0000"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-xs sm:text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider block mb-1">
-                    Tipo de Interesse
+                  <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider block mb-1">
+                    Modalidade de Interesse:
                   </label>
                   <select
                     value={interestType}
                     onChange={(e) => setInterestType(e.target.value)}
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-[#151B25] border border-white/10 text-xs sm:text-sm text-white focus:outline-none focus:border-[#35CFFF] transition-colors"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-xs sm:text-sm text-gray-900 focus:outline-none focus:border-blue-600"
                   >
-                    <option value="Revenda física de displays e cartões">
-                      Revenda física de displays e cartões
-                    </option>
-                    <option value="Agência de Marketing / Prestador de Serviços">
-                      Agência de Marketing / Prestador de Serviços
-                    </option>
-                    <option value="Representação comercial regional">
-                      Representação comercial regional
-                    </option>
-                    <option value="Fornecimento para redes e franquias">
-                      Fornecimento para redes e franquias
-                    </option>
-                    <option value="Outro formato de parceria">Outro formato de parceria</option>
+                    <option value="Revenda física de displays e cartões">Revenda física de displays e cartões</option>
+                    <option value="Parceria de indicação comercial">Parceria de indicação comercial</option>
+                    <option value="Agência / Gráfica parceira">Agência / Gráfica parceira</option>
+                    <option value="Fornecimento em grande volume / Corporativo">Fornecimento em grande volume / Corporativo</option>
+                    <option value="Outro formato">Outro formato</option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider block mb-1">
-                    Mensagem ou Dúvidas (Opcional)
+                  <label className="text-[11px] font-bold text-gray-500 uppercase tracking-wider block mb-1">
+                    Mensagem adicional (opcional):
                   </label>
                   <textarea
-                    rows={3}
+                    rows={2}
                     value={messageText}
                     onChange={(e) => setMessageText(e.target.value)}
-                    placeholder="Conte um pouco sobre sua atuação ou o volume estimado..."
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-[#151B25] border border-white/10 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#35CFFF] transition-colors resize-none"
+                    placeholder="Conte um pouco sobre sua atuação e sua cidade..."
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-xs sm:text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-gradient-to-r from-[#1677FF] to-[#0D5BCC] hover:from-[#35CFFF] hover:to-[#1677FF] text-white text-xs sm:text-sm font-bold shadow-md transition-all active:scale-95"
+                  className="w-full py-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 active:scale-95"
                 >
-                  <MessageCircle className="w-4 h-4 fill-white/20" />
+                  <Send className="w-4 h-4" />
                   <span>Enviar Solicitação de Parceria</span>
                 </button>
 
-                <p className="text-[10px] text-slate-500 text-center">
-                  O formulário abre o WhatsApp comercial com suas informações organizadas.
-                </p>
+                {submitted && (
+                  <p className="text-[11px] text-emerald-600 font-semibold text-center mt-2 animate-fade-in">
+                    ✓ Janela do WhatsApp aberta! Conclua o envio da mensagem para nossa equipe.
+                  </p>
+                )}
               </form>
             </div>
           </div>
@@ -242,3 +235,5 @@ export const ResellerSection: React.FC = () => {
     </section>
   );
 };
+
+export default ResellerSection;

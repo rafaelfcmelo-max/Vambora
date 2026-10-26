@@ -57,58 +57,60 @@ export const HowItWorksSection: React.FC = () => {
   ];
 
   return (
-    <section id="como-funciona" className="py-20 px-4 sm:px-8 border-t border-white/5 bg-[#050608] scroll-mt-28">
+    <section id="como-funciona" className="py-16 lg:py-20 px-4 sm:px-8 border-b border-gray-200 bg-gray-50 scroll-mt-28">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#151B25] border border-[#1677FF]/30 text-xs font-semibold text-[#35CFFF] mb-3">
-            <QrCode className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-xs font-bold text-blue-700 mb-3 uppercase tracking-wider">
+            <QrCode className="w-3.5 h-3.5 text-blue-600" />
             <span>Simplicidade em Primeiro Lugar</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
             Veja como funciona na prática
           </h2>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-base text-gray-600 leading-relaxed font-normal">
             Conecte seu negócio aos clientes com mais praticidade, uma apresentação profissional e acesso rápido aos seus canais digitais.
           </p>
         </div>
 
-        {/* 3 Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        {/* 3 Steps - Clean White Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {steps.map((st, idx) => {
             const Icon = st.icon;
             return (
               <div
                 key={idx}
-                className="p-6 sm:p-7 rounded-2xl bg-[#0D1118] border border-white/5 relative overflow-hidden group hover:border-[#1677FF]/40 transition-all glow-border"
+                className="p-7 rounded-3xl bg-white border border-gray-200/90 shadow-sm hover:shadow-xl transform hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden group flex flex-col justify-between"
               >
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-12 h-12 rounded-xl bg-[#1677FF]/15 border border-[#1677FF]/30 flex items-center justify-center text-[#35CFFF] group-hover:scale-105 group-hover:bg-[#1677FF] group-hover:text-white transition-all">
-                    <Icon className="w-6 h-6" />
+                <div>
+                  <div className="flex items-center justify-between mb-5">
+                    <div className="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 group-hover:scale-105 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
+                      <Icon className="w-6 h-6" />
+                    </div>
+                    <span className="text-3xl font-black text-gray-200 font-mono group-hover:text-blue-200 transition-colors">
+                      {st.step}
+                    </span>
                   </div>
-                  <span className="text-3xl font-black text-slate-700 font-mono group-hover:text-[#35CFFF]/40 transition-colors">
-                    {st.step}
-                  </span>
-                </div>
 
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#35CFFF] transition-colors">
-                  {st.title}
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  {st.desc}
-                </p>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    {st.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed font-normal">
+                    {st.desc}
+                  </p>
+                </div>
               </div>
             );
           })}
         </div>
 
         {/* Priority Benefits Grid */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-[#0D1118] border border-white/5">
+        <div className="p-8 sm:p-10 rounded-3xl bg-white border border-gray-200/90 shadow-sm">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
               Por que sua empresa ganha com essa tecnologia?
             </h3>
-            <p className="text-xs sm:text-sm text-slate-400">
+            <p className="text-sm text-gray-500 font-normal">
               O visitante não precisa conhecer tecnologia para sentir o valor da solução.
             </p>
           </div>
@@ -117,13 +119,13 @@ export const HowItWorksSection: React.FC = () => {
             {benefits.map((b, idx) => {
               const BIcon = b.icon;
               return (
-                <div key={idx} className="flex gap-3.5">
-                  <div className="w-9 h-9 rounded-lg bg-[#151B25] border border-white/10 flex items-center justify-center text-[#35CFFF] shrink-0">
-                    <BIcon className="w-4 h-4" />
+                <div key={idx} className="flex gap-4 items-start p-3 rounded-2xl hover:bg-gray-50 transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+                    <BIcon className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-white mb-1">{b.title}</h4>
-                    <p className="text-xs text-slate-400 leading-relaxed">{b.desc}</p>
+                    <h4 className="text-sm font-bold text-gray-900 mb-1">{b.title}</h4>
+                    <p className="text-xs text-gray-500 leading-relaxed font-normal">{b.desc}</p>
                   </div>
                 </div>
               );
@@ -134,3 +136,5 @@ export const HowItWorksSection: React.FC = () => {
     </section>
   );
 };
+
+export default HowItWorksSection;

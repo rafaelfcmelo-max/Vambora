@@ -1,0 +1,320 @@
+﻿Documentação Base de UX/UI (Modelo Wistag)
+Este material serve como modelo base (estrutura e design) para a criação de um site próprio. Embora a Wistag seja a fornecedora das soluções, o novo site terá seus próprios preços, prazos, público-alvo (B2B/B2C) e conteúdo, reaproveitando apenas a inteligência de conversão, navegação e disposição visual.
+1. ARQUITETURA E ESTRUTURA (SITEMAP)
+A página possui uma arquitetura clássica de "Landing Page Mista" (venda direta + apresentação de SaaS). A hierarquia da informação flui do topo de funil (o que é) para o meio (prova social e produtos) e fundo (FAQ e rodapé).
+
+
+Estrutura de Seções (Top to Bottom):
+
+
+* Header (Navegação Global):
+   * Logo à esquerda.
+   * Links centrais (Produtos, Como funciona, Revenda, Sobre).
+   * Área de Login (Seus pedidos / Painel Wistag).
+   * Carrinho de Compras (Sacola) e badge de frete fixo.
+* Hero Section (Dobra Principal):
+   * Título de impacto ("Tecnologia que aproxima").
+   * Subtítulo focado em SEO e clareza (Avaliações, pagamentos, links por NFC e QR Code).
+   * CTA Duplo: Primário ("Ver produtos") e Secundário ("Como funciona").
+   * Card flutuante de produto em destaque (Ex: Plaquinha Avaliação).
+* Vitrine de Produtos (Grid): [ATENÇÃO: Substituir pelo conteúdo da sua marca (seus preços, seus prazos, seus clientes e depoimentos)]
+   * Exibição de cards com os principais produtos (Placas, Tags, Cartões).
+   * Preço, botão de "Saiba mais" e "Adicionar à sacola".
+* Feature Showcase (MultLinks):
+   * Apresentação da solução digital ("Seu negócio inteiro. Em uma página").
+   * Demonstração visual de como o software interage com o produto físico.
+* Prova Social (Social Proof): [ATENÇÃO: Substituir pelo conteúdo da sua marca (seus preços, seus prazos, seus clientes e depoimentos)]
+   * Faixa de logotipos de empresas clientes (Burger King, Subway, Coco Bambu, etc.).
+   * Dados de tração em tempo real (Nº de clientes, acessos via tags).
+* Apresentação do Painel SaaS:
+   * Explicação da plataforma de gestão (onde os links são alterados sem mensalidade).
+* Passo a Passo de Personalização (Timeline):
+   * Fluxo de 4 passos visuais: Escolha > Envie > Aprove > Receba.
+* Portfólio / Carrossel de Projetos:
+   * Slider com exemplos reais de clientes (1 a 10 exemplos).
+* Sessão B2B e Cross-sell:
+   * Produtos à pronta entrega.
+   * Chamada para Revendedores e Logística.
+* FAQ (Dúvidas Frequentes): [ATENÇÃO: Substituir pelo conteúdo da sua marca (seus preços, seus prazos, seus clientes e depoimentos)]
+   * Componente de Accordion para quebrar objeções (mensalidade, frete, uso).
+* Rodapé (Footer) & Flutuantes:
+   * Botão flutuante do WhatsApp para vendas e suporte.
+   * Banner de Consentimento de Cookies.
+   * Links institucionais, CNPJ, contatos e redes sociais.
+2. UI DESIGN (SISTEMA VISUAL)
+Para transmitir a ideia de "tecnologia acessível", o design deve ser minimalista (estilo Apple/Stripe), focado em dar destaque aos produtos físicos coloridos dos clientes.
+Paleta de Cores Recomendada
+Aplicação
+	Cor Hex
+	Descrição
+	Background Principal
+	#FAFAFA
+	Branco gelo, evita o contraste gritante do branco puro
+	Background Secundário
+	#111827
+	Cinza carvão profundo, ideal para a seção do Painel SaaS
+	Cor Primária (Action/CTAs)
+	#2563EB
+	Azul vibrante tecnológico ou preto sólido para visual premium
+	Texto Principal
+	#1F2937
+	Cinza escuro otimizado para legibilidade
+	Texto Secundário
+	#6B7280
+	Cinza médio para descrições e textos auxiliares
+	Bordas e Divisores
+	#E5E7EB
+	Tom suave para separação estrutural sem poluição visual
+	Tipografia
+* Títulos (H1, H2, H3): Inter ou SF Pro Display (Peso Bold/Extrabold). Traz um aspecto tech e moderno.
+* Corpo de Texto (p, spans): Inter (Peso Regular/Medium). Excelente legibilidade em telas pequenas.
+Estilo de Componentes
+* Botões: Bordas arredondadas (Pill shape, border-radius: 9999px para ações principais e 8px para ações secundárias). Sem sombras pesadas, apenas um leve hover transform ou mudança de opacidade.
+* Cards de Produto: Fundo branco (#FFFFFF), bordas sutis (1px solid #E5E7EB), e uma sombra muito suave no hover (box-shadow: 0 4px 6px -1px rgba(0,0,0, 0.1)). As imagens devem ter fundo transparente (PNG/WebP).
+* Ícones: Linha fina (Outline), estilo Lucide Icons ou Phosphor Icons, transmitindo leveza.
+Comportamento Mobile
+* Header: Recolhe para um menu Hamburguer. O ícone da "Sacola" permanece visível fora do menu.
+* Hero: O card de destaque cai para baixo do texto. O texto centraliza (text-align: center).
+* Grids (Produtos e Portfólio): Transformam-se em carrosséis de rolagem horizontal nativa (overflow-x-auto, snap-x) para economizar espaço vertical.
+3. UX E JORNADA DO USUÁRIO
+* CTA Principal: O botão "Adicionar à sacola" ou "Ver produtos". A cor e o peso visual desses botões devem ofuscar todo o resto na tela.
+* Fluxo de Conversão (User Journey):
+   1. O usuário entra e entende imediatamente a proposta de valor no Hero.
+   2. Ele vê as marcas famosas (Gatilho de Autoridade).
+   3. Navega pelos produtos físicos.
+   4. Descobre que não há mensalidade e o gerenciamento é digital (Quebra de Objeção).
+   5. Clica em "Adicionar à Sacola", onde provavelmente um Side Cart (carrinho lateral) se abre sem tirar o usuário da página.
+   6. Checkout direto.
+* Gatilhos de Engajamento:
+   * Micro-interações: Cards de produto com um leve transform: translateY(-4px) e imagens que ganham um sutil zoom ao passar o mouse.
+   * Urgência Suave: Badge de "Produção Própria" e "Pronta entrega".
+   * Suporte: O WhatsApp no canto inferior direito garante aos mais inseguros que há um ser humano por trás da operação de e-commerce.
+4. ESPECIFICAÇÕES TÉCNICAS
+Para modelar este site com alta performance, SEO otimizado e escalabilidade:
+
+
+* Stack Front-end Recomendada:
+   * Framework: Next.js (React) ou Nuxt.js (Vue). Permite renderização do lado do servidor (SSR) para SEO e velocidade.
+   * Estilização: Tailwind CSS (permite replicar o design rapidamente usando classes utilitárias).
+   * Gerenciamento de Estado: Zustand ou Redux Toolkit (para o carrinho de compras "Sacola").
+* Estrutura de Dados (Modelo de Produto no JSON):
+
+
+{
+
+
+  "id": "1",
+
+
+  "name": "Plaquinha Avaliação Preta NFC",
+
+
+  "price": 89.00,
+
+
+  "category": "Placas",
+
+
+  "features": ["NFC", "QR Code", "Acrílico 10x10"],
+
+
+  "imageUrl": "/images/placa-google.webp",
+
+
+  "customizable": true
+
+
+}
+
+
+* Integrações Vitais:
+   * Analytics: Google Tag Manager, Meta Pixel (vitais para e-commerce).
+   * Checkout: Stripe, Pagar.me ou MercadoPago (API transparente).
+   * Suporte: API do WhatsApp (Botão flutuante).
+   * SaaS vinculado: O front-end precisará consumir uma API própria caso implemente a funcionalidade de "Painel Wistag" depois.
+5. ESQUELETO DE CÓDIGO (HTML + Tailwind CSS)
+Abaixo, a estrutura fundamental semântica reproduzindo o Header e a Hero Section.l<!DOCTYPE html><html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Wistag Clone - Produtos NFC</title>
+ <!-- Usando CDN do Tailwind para prototipagem rápida -->
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">  <!-- HEADER -->  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+     <!-- Logo -->
+     <div class="flex-shrink-0 font-bold text-2xl tracking-tight">
+       Wistag.
+     </div>  <!-- Navegação Desktop -->
+
+
+  <nav class="hidden md:flex space-x-8">
+
+
+    <a href="#produtos" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">Produtos</a>
+
+
+    <a href="#como-funciona" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">Como funciona</a>
+
+
+    <a href="#revenda" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">Revenda</a>
+
+
+  </nav>
+
+
+  <!-- Ações: Login e Sacola -->
+
+
+  <div class="flex items-center space-x-4">
+
+
+    <a href="#" class="hidden md:block text-sm font-medium text-gray-700">Entrar</a>
+
+
+    <button class="flex items-center space-x-1 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full transition">
+
+
+      <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+
+
+      <span class="text-sm font-bold">0</span>
+
+
+    </button>
+
+
+  </div>
+
+
+</div>
+
+
+  </header>  <!-- HERO SECTION -->  <main>
+   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">  <!-- Coluna Texto -->
+
+
+  <div class="space-y-6 text-center lg:text-left">
+
+
+    <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold tracking-wide uppercase">
+
+
+      Sem mensalidade • Produção Própria
+
+
+    </div>
+
+
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight">
+
+
+      [Inserir Título Principal Aqui] <br>
+
+
+      <span class="text-blue-600">[Subtítulo / Destaque]</span>
+
+
+    </h1>
+
+
+    <p class="text-lg text-gray-600 max-w-lg mx-auto lg:mx-0">
+
+
+      [Inserir descrição do produto, proposta de valor ou benefícios do seu negócio].
+
+
+    </p>
+
+
+    <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-4">
+
+
+      <a href="#produtos" class="bg-gray-900 hover:bg-black text-white px-8 py-3 rounded-full font-medium transition text-center shadow-lg hover:shadow-xl">
+
+
+        Ver produtos
+
+
+      </a>
+
+
+      <a href="#como-funciona" class="bg-white border border-gray-300 hover:border-gray-400 text-gray-700 px-8 py-3 rounded-full font-medium transition text-center">
+
+
+        Como funciona →
+
+
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+
+  <!-- Coluna Imagem/Produto Destaque -->
+
+
+  <div class="relative flex justify-center">
+
+
+    <!-- Mock do Card de Produto Flutuante -->
+
+
+    <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full border border-gray-100 transform hover:-translate-y-2 transition duration-300">
+
+
+      <div class="bg-gray-100 rounded-xl h-64 mb-4 flex items-center justify-center">
+
+
+        <span class="text-gray-400 font-medium">[ Imagem Plaquinha NFC ]</span>
+
+
+      </div>
+
+
+      <h3 class="text-xl font-bold text-gray-900">[Seu Produto]</h3>
+
+
+      <p class="text-sm text-gray-500 mb-4">[Descrição rápida / Especificações]</p>
+
+
+      <div class="flex justify-between items-center">
+
+
+        <span class="text-2xl font-extrabold text-gray-900">[Seu Preço]</span>
+
+
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium transition">
+
+
+          Adicionar
+
+
+        </button>
+
+
+      </div>
+
+
+    </div>
+
+
+    <!-- Efeito visual no fundo (Blob) -->
+
+
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10"></div>
+
+
+  </div>
+
+
+</section>
+
+
+  </main></body>
+</html>
+```
