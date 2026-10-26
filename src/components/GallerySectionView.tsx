@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShoppingBag, Search } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { useCart } from '../context/CartContext';
 import { ProductItem } from '../data/catalog';
 
@@ -30,19 +31,25 @@ export function GallerySectionView({ gallery, onOpenContact, onOpenZoom }: Galle
     <section className="py-20 bg-gray-50 border-b border-gray-200" id={gallery.id || 'produtos'}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Cabeçalho da Seção */}
-        <div className="text-center mb-14">
+        {/* Cabeçalho da Seção com Animação Scroll */}
+        <motion.div 
+          className="text-center mb-14"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
             {gallery.title}
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
             {gallery.subtitle}
           </p>
-        </div>
+        </motion.div>
 
-        {/* Scroll Horizontal no Mobile, Grid no Desktop */}
+        {/* Scroll Horizontal no Mobile, Grid no Desktop com Efeito Cascata (Stagger) */}
         <div className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-8 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible">
-          {productList.map((item: any) => {
+          {productList.map((item: any, index: number) => {
             const imgSrc = item.image || item.imageUrl || '/images/products/IMG_0705.jpg';
             const backupSrc = item.backupImage || item.backupImageUrl;
 
@@ -59,9 +66,13 @@ export function GallerySectionView({ gallery, onOpenContact, onOpenZoom }: Galle
             }
 
             return (
-              <div 
+              <motion.div 
                 key={item.id} 
-                className="snap-center shrink-0 w-[85%] md:w-auto bg-white rounded-3xl p-5 border border-gray-100 shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition duration-300 mr-4 md:mr-0 flex flex-col"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="snap-center shrink-0 w-[85%] md:w-auto bg-white rounded-3xl p-5 border border-gray-100 shadow-sm hover:shadow-xl transform hover:-translate-y-2 transition duration-300 mr-4 md:mr-0 flex flex-col"
               >
                 {/* Imagem com Hover de Lupa */}
                 <div 
@@ -115,7 +126,7 @@ export function GallerySectionView({ gallery, onOpenContact, onOpenZoom }: Galle
                     </button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

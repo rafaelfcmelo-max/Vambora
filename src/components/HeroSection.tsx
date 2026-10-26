@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, MessageCircle } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { useCart } from '../context/CartContext';
 import { PLACAS_EM_L } from '../data/catalog';
 
@@ -27,8 +28,14 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
     <section className="bg-gray-50 border-b border-gray-200 overflow-hidden relative" id="inicio">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
-        {/* Textos da Esquerda */}
-        <div className="space-y-6 text-center lg:text-left">
+        {/* Textos da Esquerda com Animação de Scroll */}
+        <motion.div 
+          className="space-y-6 text-center lg:text-left"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-bold tracking-wide uppercase border border-blue-100/80">
             Aproxime. Conecte. VãBora.
           </div>
@@ -58,10 +65,16 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
               Falar com consultor
             </button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Card Destaque Flutuante (Branco) */}
-        <div className="relative flex justify-center">
+        <motion.div 
+          className="relative flex justify-center"
+          initial={{ opacity: 0, scale: 0.95, y: 20 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
           {/* Efeito visual no fundo (Blob Wistag) */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 sm:w-80 sm:h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10 pointer-events-none" />
 
@@ -103,7 +116,7 @@ export function HeroSection({ onOpenContact }: HeroSectionProps) {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
       </div>
     </section>

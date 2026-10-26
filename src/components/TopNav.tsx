@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ShoppingBag, Menu, X, MapPin } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useCart } from '../context/CartContext';
 
 export interface TopNavProps {
@@ -44,6 +45,12 @@ export function TopNav({ onOpenContact, preferredPolo, onSelectPolo }: TopNavPro
             className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
           >
             Combos e Ofertas
+          </a>
+          <a 
+            href="#protetor-reputacao" 
+            className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
+          >
+            Protetor de Reputação
           </a>
         </nav>
 
@@ -102,68 +109,82 @@ export function TopNav({ onOpenContact, preferredPolo, onSelectPolo }: TopNavPro
         </div>
       </div>
 
-      {/* Menu Mobile */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 shadow-xl">
-          <div className="flex flex-col space-y-3">
-            <a 
-              href="#produtos" 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
-            >
-              Produtos
-            </a>
-            <a 
-              href="#servicos" 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
-            >
-              Serviços Digitais
-            </a>
-            <a 
-              href="#combos" 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
-            >
-              Combos e Ofertas
-            </a>
+      {/* Menu Mobile com Animação Fluida */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div 
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 shadow-xl overflow-hidden"
+          >
+            <div className="flex flex-col space-y-3">
+              <a 
+                href="#produtos" 
+                onClick={() => setIsMenuOpen(false)}
+                className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
+              >
+                Produtos
+              </a>
+              <a 
+                href="#servicos" 
+                onClick={() => setIsMenuOpen(false)}
+                className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
+              >
+                Serviços Digitais
+              </a>
+              <a 
+                href="#combos" 
+                onClick={() => setIsMenuOpen(false)}
+                className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
+              >
+                Combos e Ofertas
+              </a>
+              <a 
+                href="#protetor-reputacao" 
+                onClick={() => setIsMenuOpen(false)}
+                className="text-base font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100"
+              >
+                Protetor de Reputação
+              </a>
 
-            {/* Seletor de Polo no Mobile */}
-            <div className="pt-2 flex items-center justify-between text-xs text-gray-600 bg-gray-50 p-3 rounded-xl border border-gray-200">
-              <span className="font-semibold flex items-center">
-                <MapPin className="w-3.5 h-3.5 mr-1 text-blue-600" /> Polo:
-              </span>
-              <div className="space-x-2">
-                <button 
-                  type="button"
-                  onClick={() => onSelectPolo('curitiba')}
-                  className={`px-3 py-1 rounded-full text-xs transition ${preferredPolo === 'curitiba' ? 'bg-blue-600 text-white font-bold' : 'bg-gray-200 text-gray-700'}`}
-                >
-                  Curitiba
-                </button>
-                <button 
-                  type="button"
-                  onClick={() => onSelectPolo('serraTalhada')}
-                  className={`px-3 py-1 rounded-full text-xs transition ${preferredPolo === 'serraTalhada' ? 'bg-blue-600 text-white font-bold' : 'bg-gray-200 text-gray-700'}`}
-                >
-                  Serra Talhada
-                </button>
+              {/* Seletor de Polo no Mobile */}
+              <div className="pt-2 flex items-center justify-between text-xs text-gray-600 bg-gray-50 p-3 rounded-xl border border-gray-200">
+                <span className="font-semibold flex items-center">
+                  <MapPin className="w-3.5 h-3.5 mr-1 text-blue-600" /> Polo:
+                </span>
+                <div className="space-x-2">
+                  <button 
+                    type="button"
+                    onClick={() => onSelectPolo('curitiba')}
+                    className={`px-3 py-1 rounded-full text-xs transition ${preferredPolo === 'curitiba' ? 'bg-blue-600 text-white font-bold' : 'bg-gray-200 text-gray-700'}`}
+                  >
+                    Curitiba
+                  </button>
+                  <button 
+                    type="button"
+                    onClick={() => onSelectPolo('serraTalhada')}
+                    className={`px-3 py-1 rounded-full text-xs transition ${preferredPolo === 'serraTalhada' ? 'bg-blue-600 text-white font-bold' : 'bg-gray-200 text-gray-700'}`}
+                  >
+                    Serra Talhada
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <button 
-              type="button"
-              onClick={() => {
-                setIsMenuOpen(false);
-                onOpenContact();
-              }}
-              className="w-full mt-2 bg-gray-900 hover:bg-black text-white py-3 rounded-full text-sm font-bold shadow-md transition text-center"
-            >
-              Falar com consultor
-            </button>
-          </div>
-        </div>
-      )}
+              <button 
+                type="button"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  onOpenContact();
+                }}
+                className="w-full mt-2 bg-gray-900 hover:bg-black text-white py-3 rounded-full text-sm font-bold shadow-md transition text-center"
+              >
+                Falar com consultor
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
